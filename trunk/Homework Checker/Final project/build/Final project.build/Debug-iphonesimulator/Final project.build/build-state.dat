@@ -1,0 +1,275 @@
+TFinal project
+v7
+r0
+t312932679.931451
+cCheck dependencies
+cProcessInfoPlistFile "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Info.plist" Final_project-Info.plist
+cCompileXIB "/Users/jakecohen/Documents/Final project/MainWindow.xib"
+cProcessPCH /var/folders/xb/xbxxb90DHkClpYf5Boh1RE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Final_project_Prefix-aytedekbevgpkqfitjvaqabfrgtc/Final_project_Prefix.pch.gch Final_project_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cDataModelVersionCompile "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final_project.momd" "/Users/jakecohen/Documents/Final project/Final_project.xcdatamodeld"
+cCompileC "build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/main.o" "/Users/jakecohen/Documents/Final project/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/Final_projectAppDelegate.o" "/Users/jakecohen/Documents/Final project/Classes/Final_projectAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/FinalProjectTableViewController.o" "/Users/jakecohen/Documents/Final project/Classes/FinalProjectTableViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project" normal i386
+cGenerateDSYMFile "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app.dSYM" "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project"
+cTouch "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C8173060000000000000132
+t1283552006
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004BFDFEB400000000001CFA90
+t1274937012
+s1899152
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004BFDFEA8000000000000046B
+t1274937000
+s1131
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/Availability.h
+c000000004BF4CBF90000000000001A3B
+t1274334201
+s6715
+
+N/Users/jakecohen/Documents/Final project/Classes/FinalProjectTableViewController.h
+c000000004CF6867D00000000000001DF
+t1291224701
+s479
+i<UIKit/UIKit.h>
+
+N/Users/jakecohen/Documents/Final project/Classes/FinalProjectTableViewController.m
+c000000004CF6C1C30000000000000771
+t1291239875
+s1905
+i"FinalProjectTableViewController.h"
+
+N/Users/jakecohen/Documents/Final project/Classes/Final_projectAppDelegate.h
+c000000004CF426E7000000000000039A
+t1291069159
+s922
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+i"FinalProjectTableViewController.h"
+
+N/Users/jakecohen/Documents/Final project/Classes/Final_projectAppDelegate.m
+c000000004CF426EE0000000000001E48
+t1291069166
+s7752
+i"Final_projectAppDelegate.h"
+
+N/Users/jakecohen/Documents/Final project/Final_project.xcdatamodeld
+c000000004CF41DED0000000000000088
+t1291066861
+s136
+
+N/Users/jakecohen/Documents/Final project/Final_project_Prefix.pch
+c000000004CF41DED000000000000016E
+t1291066861
+s366
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+
+N/Users/jakecohen/Documents/Final project/MainWindow.xib
+c000000004CF41DED00000000000021E9
+t1291066861
+s8681
+
+N/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app
+t1291239879
+s238
+
+N/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app.dSYM
+t1291239879
+s102
+
+N/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project
+t1291239879
+s24284
+
+N/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final_project.momd
+t1291067097
+s136
+
+N/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Info.plist
+t1291067095
+s615
+
+N/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/MainWindow.nib
+t1291067096
+s990
+
+N/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/PkgInfo
+t1291067095
+s8
+
+N/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/Final project.LinkFileList
+c000000004CF425C800000000000001C7
+t1291068872
+s455
+
+N/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/FinalProjectTableViewController.o
+t1291239879
+s19160
+
+N/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/Final_projectAppDelegate.o
+t1291238865
+s58584
+
+N/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/main.o
+t1291067097
+s6308
+
+N/Users/jakecohen/Documents/Final project/main.m
+c000000004CF41DED0000000000000181
+t1291066861
+s385
+i<UIKit/UIKit.h>
+
+N/var/folders/xb/xbxxb90DHkClpYf5Boh1RE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Final_project_Prefix-aytedekbevgpkqfitjvaqabfrgtc/Final_project_Prefix.pch.gch
+t1291067097
+s16097072
+
+NFinal_project-Info.plist
+c000000004CF41DED000000000000038D
+t1291066861
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies312932679#312932679#0(0"0(0#1#0"8612568288#0"0#
+
+CCompileC "build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/FinalProjectTableViewController.o" "/Users/jakecohen/Documents/Final project/Classes/FinalProjectTableViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s312932679.826474
+e312932679.892495
+r1
+xCompileC
+xbuild/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/FinalProjectTableViewController.o
+x/Users/jakecohen/Documents/Final project/Classes/FinalProjectTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/jakecohen/Documents/Final project/Classes/FinalProjectTableViewController.m312932679#312932679#0(0"0(0#0#82"/Users/jakecohen/Documents/Final project/Classes/FinalProjectTableViewController.m8615959136#2127"    cd "/Users/jakecohen/Documents/Final project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-generated-files.hmap" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-own-target-headers.hmap" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-all-target-headers.hmap" -iquote "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-project-headers.hmap" "-F/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator" "-I/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/include" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/DerivedSources/i386" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/DerivedSources" -include /var/folders/xb/xbxxb90DHkClpYf5Boh1RE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Final_project_Prefix-aytedekbevgpkqfitjvaqabfrgtc/Final_project_Prefix.pch -c "/Users/jakecohen/Documents/Final project/Classes/FinalProjectTableViewController.m" -o "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/FinalProjectTableViewController.o"0#
+
+CCompileC "build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/Final_projectAppDelegate.o" "/Users/jakecohen/Documents/Final project/Classes/Final_projectAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s312931665.350399
+e312931665.803323
+r1
+xCompileC
+xbuild/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/Final_projectAppDelegate.o
+x/Users/jakecohen/Documents/Final project/Classes/Final_projectAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@83"Compile /Users/jakecohen/Documents/Final project/Classes/Final_projectAppDelegate.m312931665#312931665#0(0"0(0#0#75"/Users/jakecohen/Documents/Final project/Classes/Final_projectAppDelegate.m8386658438904705024#2113"    cd "/Users/jakecohen/Documents/Final project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-generated-files.hmap" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-own-target-headers.hmap" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-all-target-headers.hmap" -iquote "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-project-headers.hmap" "-F/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator" "-I/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/include" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/DerivedSources/i386" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/DerivedSources" -include /var/folders/xb/xbxxb90DHkClpYf5Boh1RE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Final_project_Prefix-aytedekbevgpkqfitjvaqabfrgtc/Final_project_Prefix.pch -c "/Users/jakecohen/Documents/Final project/Classes/Final_projectAppDelegate.m" -o "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/Final_projectAppDelegate.o"0#
+
+CCompileC "build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/main.o" "/Users/jakecohen/Documents/Final project/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s312759897.408534
+e312759897.521143
+r1
+xCompileC
+xbuild/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/main.o
+x/Users/jakecohen/Documents/Final project/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/jakecohen/Documents/Final project/main.m312759897#312759897#0(0"0(0#0#47"/Users/jakecohen/Documents/Final project/main.m8631567744#2065"    cd "/Users/jakecohen/Documents/Final project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-generated-files.hmap" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-own-target-headers.hmap" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-all-target-headers.hmap" -iquote "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-project-headers.hmap" "-F/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator" "-I/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/include" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/DerivedSources/i386" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/DerivedSources" -include /var/folders/xb/xbxxb90DHkClpYf5Boh1RE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Final_project_Prefix-aytedekbevgpkqfitjvaqabfrgtc/Final_project_Prefix.pch -c "/Users/jakecohen/Documents/Final project/main.m" -o "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/jakecohen/Documents/Final project/MainWindow.xib"
+s312759895.826213
+e312759896.171074
+r1
+xCompileXIB
+x/Users/jakecohen/Documents/Final project/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib312759895#312759896#0(0"0(0#0#55"/Users/jakecohen/Documents/Final project/MainWindow.xib8625860672#588"    cd "/Users/jakecohen/Documents/Final project"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/MainWindow.nib" "/Users/jakecohen/Documents/Final project/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CDataModelVersionCompile "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final_project.momd" "/Users/jakecohen/Documents/Final project/Final_project.xcdatamodeld"
+s312759897.407179
+e312759897.540639
+r1
+xDataModelVersionCompile
+x/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final_project.momd
+x/Users/jakecohen/Documents/Final project/Final_project.xcdatamodeld
+lSLF07#2@117"DataModelVersionCompile "build/Debug-iphonesimulator/Final project.app/Final_project.momd" Final_project.xcdatamodeld312759897#312759897#0(0"0(0#0#67"/Users/jakecohen/Documents/Final project/Final_project.xcdatamodeld8631061056#416"    cd "/Users/jakecohen/Documents/Final project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 "/Users/jakecohen/Documents/Final project/Final_project.xcdatamodeld" "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final_project.momd"0#
+
+CGenerateDSYMFile "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app.dSYM" "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project"
+s312932679.915325
+e312932679.928538
+r1
+xGenerateDSYMFile
+x/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app.dSYM
+x/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project
+lSLF07#2@131"GenerateDSYMFile "build/Debug-iphonesimulator/Final project.app.dSYM" "build/Debug-iphonesimulator/Final project.app/Final project"312932679#312932679#0(0"0(0#0#100"/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project8615642656#413"    cd "/Users/jakecohen/Documents/Final project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project" -o "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app.dSYM"0#
+
+CLd "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project" normal i386
+s312932679.892592
+e312932679.915228
+r1
+xLd
+x/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project
+xnormal
+xi386
+lSLF07#2@105"Link /Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project312932679#312932679#0(0"0(0#0#0"8615864128#970"    cd "/Users/jakecohen/Documents/Final project"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk "-L/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator" "-F/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator" -filelist "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Objects-normal/i386/Final project.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -o "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Final project"0#
+
+CProcessInfoPlistFile "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Info.plist" Final_project-Info.plist
+s312759895.821349
+e312759895.826095
+r1
+xProcessInfoPlistFile
+x/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Info.plist
+xFinal_project-Info.plist
+lSLF07#2@32"Process Final_project-Info.plist312759895#312759895#0(0"0(0#0#65"/Users/jakecohen/Documents/Final project/Final_project-Info.plist7020115031944815616#509"    cd "/Users/jakecohen/Documents/Final project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Final_project-Info.plist -genpkginfo "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app/Info.plist"0#
+
+CProcessPCH /var/folders/xb/xbxxb90DHkClpYf5Boh1RE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Final_project_Prefix-aytedekbevgpkqfitjvaqabfrgtc/Final_project_Prefix.pch.gch Final_project_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s312759896.171223
+e312759897.406830
+r1
+xProcessPCH
+x/var/folders/xb/xbxxb90DHkClpYf5Boh1RE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Final_project_Prefix-aytedekbevgpkqfitjvaqabfrgtc/Final_project_Prefix.pch.gch
+xFinal_project_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile Final_project_Prefix.pch312759896#312759897#0(0"0(0#0#65"/Users/jakecohen/Documents/Final project/Final_project_Prefix.pch8630875008#1947"    cd "/Users/jakecohen/Documents/Final project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-generated-files.hmap" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-own-target-headers.hmap" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-all-target-headers.hmap" -iquote "/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/Final project-project-headers.hmap" "-F/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator" "-I/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/include" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/DerivedSources/i386" "-I/Users/jakecohen/Documents/Final project/build/Final project.build/Debug-iphonesimulator/Final project.build/DerivedSources" -c "/Users/jakecohen/Documents/Final project/Final_project_Prefix.pch" -o /var/folders/xb/xbxxb90DHkClpYf5Boh1RE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Final_project_Prefix-aytedekbevgpkqfitjvaqabfrgtc/Final_project_Prefix.pch.gch0#
+
+CTouch "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app"
+s312932679.928645
+e312932679.931411
+r1
+xTouch
+x/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app
+lSLF07#2@92"Touch /Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app312932679#312932679#0(0"0(0#0#0"8615511008#292"    cd "/Users/jakecohen/Documents/Final project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/jakecohen/Documents/Final project/build/Debug-iphonesimulator/Final project.app"0#
+
