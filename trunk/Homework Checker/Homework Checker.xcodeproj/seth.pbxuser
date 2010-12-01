@@ -1,0 +1,66 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Homework Checker */ = {
+		activeExec = 0;
+		executables = (
+			5D00EF0512A6C20100079C9E /* Homework Checker */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5D00EF0512A6C20100079C9E /* Homework Checker */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Homework Checker */;
+		codeSenseManager = 5D00EF1112A6C22900079C9E /* Code sense */;
+		executables = (
+			5D00EF0512A6C20100079C9E /* Homework Checker */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 312918529;
+			PBXWorkspaceStateSaveDate = 312918529;
+		};
+		sourceControlManager = 5D00EF1012A6C22900079C9E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	5D00EF0512A6C20100079C9E /* Homework Checker */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Homework Checker";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5D00EF1012A6C22900079C9E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "Computer Application Design and Programming";
+			};
+		};
+	};
+	5D00EF1112A6C22900079C9E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
