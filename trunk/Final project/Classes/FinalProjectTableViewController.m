@@ -39,42 +39,21 @@ NSLog(@"%@", milkenSite);
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 	{
+		NSError *error = NULL;
 		NSString *htmlCheck = [[[NSString alloc] initWithData:milkenSiteData encoding:NSUTF8StringEncoding] autorelease];
 		NSLog(@"htmlCheck = %@", htmlCheck);
 		
-		NSXMLParser *parser = [[NSXMLParser alloc] initWithData:milkenSiteData];
-		[parser setDelegate:self];
-		[parser parse];
-		[parser release];
-		NSLog(@"%@", classes);
+		NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"httml://[^\"']"
+																   options:NSMatchingWithTransparentBounds
+																	 error:&error];
+		NSTextCheckingResult *regexResult = [[NSCheckingResult alloc]initWithC]
+		[regex enumerateMatchesInString:htmlCheck
+								options:NSMatchingWithTransparentBounds
+								  range:NSMakeRange(0, [htmlCheck length])
+							 usingBlock:
+				
 	}
 
-- (void)parser:(NSXMLParser *)parser
-foundCharacters:(NSString *)string
-{
-	[titleString appendString:string];
-}
-
-- (void)parser:(NSXMLParser *)parser
- didEndElement:(NSString *)elementName
-  namespaceURI:(NSString *)namespaceURI
- qualifiedName:(NSString *)qName
-{
-	if ([elementName isEqual:@"tbody"])
-	{
-		NSLog(@"found table");
-	}
-	
-	if ([elementName isEqual:@"tr"])
-	{
-		NSLog(@"%@", elementName);
-		waitingForEntryTitle = NO;
-	}
-	
-	if ([elementName isEqual:@"td"]){
-		NSLog(@"ended a song entry");
-	}
-}
 	
 
 
