@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1343665E12A45D5500159EB2 /* Faculty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1343665D12A45D5500159EB2 /* Faculty.xib */; };
+		1343665E12A45D5500159EB2 /* FacultyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1343665D12A45D5500159EB2 /* FacultyView.xib */; };
 		1D3623260D0F684500981E51 /* HWCheckerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* HWCheckerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		5D9B071912AFE92800BB5971 /* PeriodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D9B071512AFE92800BB5971 /* PeriodView.xib */; };
+		5D9B071A12AFE92800BB5971 /* TeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9B071712AFE92800BB5971 /* TeacherViewController.m */; };
+		5D9B071B12AFE92800BB5971 /* TeacherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D9B071812AFE92800BB5971 /* TeacherView.xib */; };
+		5D9B071F12AFE97B00BB5971 /* DepartmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9B071E12AFE97B00BB5971 /* DepartmentViewController.m */; };
+		5D9B072312AFE98800BB5971 /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9B072112AFE98800BB5971 /* CourseViewController.m */; };
+		5D9B072912AFE9BC00BB5971 /* CourseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D9B072812AFE9BC00BB5971 /* CourseView.xib */; };
+		5D9B073012AFE9F600BB5971 /* DepartmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D9B072F12AFE9F600BB5971 /* DepartmentView.xib */; };
+		5D9B074712AFEB6F00BB5971 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 5D9B074612AFEB6F00BB5971 /* Models */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1343665D12A45D5500159EB2 /* Faculty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Faculty.xib; sourceTree = "<group>"; };
+		1343665D12A45D5500159EB2 /* FacultyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacultyView.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* HWCheckerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWCheckerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* HWCheckerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWCheckerAppDelegate.m; sourceTree = "<group>"; };
@@ -27,6 +35,17 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HWChecker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWChecker_Prefix.pch; sourceTree = "<group>"; };
+		5D9B071512AFE92800BB5971 /* PeriodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodView.xib; sourceTree = "<group>"; };
+		5D9B071612AFE92800BB5971 /* TeacherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherViewController.h; path = ../TeacherViewController.h; sourceTree = "<group>"; };
+		5D9B071712AFE92800BB5971 /* TeacherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherViewController.m; path = ../TeacherViewController.m; sourceTree = "<group>"; };
+		5D9B071812AFE92800BB5971 /* TeacherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherView.xib; sourceTree = "<group>"; };
+		5D9B071E12AFE97B00BB5971 /* DepartmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentViewController.m; sourceTree = SOURCE_ROOT; };
+		5D9B072012AFE98800BB5971 /* CourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseViewController.h; sourceTree = SOURCE_ROOT; };
+		5D9B072112AFE98800BB5971 /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewController.m; sourceTree = SOURCE_ROOT; };
+		5D9B072212AFE98800BB5971 /* DepartmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DepartmentViewController.h; path = ../DepartmentViewController.h; sourceTree = "<group>"; };
+		5D9B072812AFE9BC00BB5971 /* CourseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseView.xib; sourceTree = "<group>"; };
+		5D9B072F12AFE9F600BB5971 /* DepartmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartmentView.xib; sourceTree = "<group>"; };
+		5D9B074612AFEB6F00BB5971 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HWChecker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HWChecker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +66,13 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5D9B074612AFEB6F00BB5971 /* Models */,
+				5D9B072012AFE98800BB5971 /* CourseViewController.h */,
+				5D9B072112AFE98800BB5971 /* CourseViewController.m */,
+				5D9B072212AFE98800BB5971 /* DepartmentViewController.h */,
+				5D9B071E12AFE97B00BB5971 /* DepartmentViewController.m */,
+				5D9B071612AFE92800BB5971 /* TeacherViewController.h */,
+				5D9B071712AFE92800BB5971 /* TeacherViewController.m */,
 				1D3623240D0F684500981E51 /* HWCheckerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* HWCheckerAppDelegate.m */,
 			);
@@ -69,7 +95,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				1343665D12A45D5500159EB2 /* Faculty.xib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -87,6 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				5D9B072812AFE9BC00BB5971 /* CourseView.xib */,
+				5D9B072F12AFE9F600BB5971 /* DepartmentView.xib */,
+				1343665D12A45D5500159EB2 /* FacultyView.xib */,
+				5D9B071512AFE92800BB5971 /* PeriodView.xib */,
+				5D9B071812AFE92800BB5971 /* TeacherView.xib */,
 				8D1107310486CEB800E47090 /* HWChecker-Info.plist */,
 			);
 			name = Resources;
@@ -129,7 +159,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HWChecker" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,7 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				1343665E12A45D5500159EB2 /* Faculty.xib in Resources */,
+				1343665E12A45D5500159EB2 /* FacultyView.xib in Resources */,
+				5D9B071912AFE92800BB5971 /* PeriodView.xib in Resources */,
+				5D9B071B12AFE92800BB5971 /* TeacherView.xib in Resources */,
+				5D9B072912AFE9BC00BB5971 /* CourseView.xib in Resources */,
+				5D9B073012AFE9F600BB5971 /* DepartmentView.xib in Resources */,
+				5D9B074712AFEB6F00BB5971 /* Models in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +200,9 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* HWCheckerAppDelegate.m in Sources */,
+				5D9B071A12AFE92800BB5971 /* TeacherViewController.m in Sources */,
+				5D9B071F12AFE97B00BB5971 /* DepartmentViewController.m in Sources */,
+				5D9B072312AFE98800BB5971 /* CourseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
