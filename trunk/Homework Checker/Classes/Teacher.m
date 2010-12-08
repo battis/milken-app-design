@@ -7,7 +7,7 @@
 //
 
 #import "Teacher.h"
-
+#import "Course.h"
 
 @implementation Teacher
 
@@ -59,22 +59,34 @@
 	[super dealloc];
 }
 
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"%@ (%d courses)", name, [self courseCount]];
+}
+
 + (Teacher *)randomTeacher:(Department *)aDepartment
 {
-	static NSString *firstNames[3] = {
-		@"Roger",
-		@"Sarah",
-		@"Jason"
+	static NSString *firstNames[6] = {
+		@"Adam",
+		@"Barbara",
+		@"Charles",
+		@"Diana",
+		@"Ethan",
+		@"Francis"
 	};
 	
 	static NSString *lastNames[3] = {
-		@"Fuller",
-		@"Shulkind",
-		@"Ablin"
+		@"Smith",
+		@"Jones",
+		@"Doe"
 	};
 	
-	Teacher *randomTeacher = [[Teacher alloc] initWithName:[NSString stringWithFormat:@"%@ %@", firstNames[random() % 3], lastNames[random() % 3]]];
-	[randomTeacher addCourse:[Course randomCourse:randomTeacher]];
+	Teacher *randomTeacher = [[Teacher alloc] initWithName:[NSString stringWithFormat:@"%@ %@", firstNames[rand() % 6], lastNames[rand() % 3]]];
+	int numCourses = random() % 4 + 1;
+	for (int i = 0; i < numCourses; i++)
+	{
+		[randomTeacher addCourse:[Course randomCourse:randomTeacher]];
+	}
 	[randomTeacher autorelease];
 	return randomTeacher;
 }

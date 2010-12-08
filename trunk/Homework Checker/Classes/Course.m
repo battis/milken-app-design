@@ -24,6 +24,11 @@
 	return self;
 }
 
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"%@ ()", name, [assignmentPage absoluteString]];
+}
+
 + (Course *)randomCourse:(Teacher *)aTeacher
 {
 	NSString *titles[3] = {
@@ -38,9 +43,9 @@
 		@""
 	};
 	
-	Course *randomCourse = [[Course alloc] initWithName:[NSString stringWithFormat:@"%@%@", levels[random() %3], titles[random() % 3]]
+	Course *randomCourse = [[Course alloc] initWithName:[NSString stringWithFormat:@"%@%@", levels[rand() %3], titles[rand() % 3]]
 										 taughtBy:aTeacher
-									assignmentPage:[NSURL URLWithString:@"http://faculty.milkenschool.org/%@/%@/assignments/index"]]; 
+									assignmentPage:[NSURL URLWithString:@"http://faculty.milkenschool.org/sbattis/appdesign/assignments/index"]]; 
 	[randomCourse autorelease];
 	return randomCourse;
 }

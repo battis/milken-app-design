@@ -7,6 +7,9 @@
 //
 
 #import "Homework_CheckerAppDelegate.h"
+#import "Department.h"
+#import "Teacher.h"
+#import "Course.h"
 
 @implementation Homework_CheckerAppDelegate
 
@@ -18,7 +21,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    // Override point for customization after application launch.
+	NSMutableArray *depts = [[NSMutableArray alloc] init];
+	int numDepts = random() % 3 + 1;
+	for (int i = 0; i < numDepts; i++)
+	{
+		[depts addObject:[Department randomDepartment]];
+	}
+	
+	for (Department *dept in depts)
+	{
+		NSLog(@"%@", dept);
+		NSMutableArray *teachers = [dept teachers];
+		for (Teacher *teacher in teachers)
+		{
+			NSLog(@"    %@", teacher);
+			NSMutableArray *courses = [teacher courses];
+			for (Course *course in courses)
+			{
+				NSLog(@"        %@", course);
+			}
+			[courses release];
+		}
+		[teachers release];
+	}
+	[depts release];
     
     [window makeKeyAndVisible];
     

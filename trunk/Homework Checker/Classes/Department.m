@@ -7,7 +7,7 @@
 //
 
 #import "Department.h"
-
+#import "Teacher.h"
 
 @implementation Department
 
@@ -45,16 +45,25 @@
 	[super dealloc];
 }
 
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"%@ (%d teachers)", name, [self teacherCount]];
+}
+
 + (Department *)randomDepartment
 {
 	NSString *deptNames[3] = {
-		@"תירבע",
+		@"Hebrew",
 		@"English",
 		@"Witchcraft & Wizardry"
 	};
 	
-	Department *randomDept = [[Department alloc] initWithName:deptNames[random() % 3]];
-	[randomDept addTeacher:[Teacher randomTeacher:randomDept]];
+	Department *randomDept = [[Department alloc] initWithName:deptNames[rand() % 3]];
+	int numTeachers = random() % 10 + 1;
+	for (int i = 0; i < numTeachers; i++)
+	{
+		[randomDept addTeacher:[Teacher randomTeacher:randomDept]];
+	}
 	[randomDept autorelease];
 	return randomDept;
 }
