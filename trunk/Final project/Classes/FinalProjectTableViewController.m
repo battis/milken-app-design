@@ -43,15 +43,36 @@ NSLog(@"%@", milkenSite);
 		NSString *htmlCheck = [[[NSString alloc] initWithData:milkenSiteData encoding:NSUTF8StringEncoding] autorelease];
 		NSLog(@"htmlCheck = %@", htmlCheck);
 		
-		NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"httml://[^\"']"
-																   options:NSMatchingWithTransparentBounds
-																	 error:&error];
-		NSTextCheckingResult *regexResult = [[NSCheckingResult alloc]initWithC]
-		[regex enumerateMatchesInString:htmlCheck
-								options:NSMatchingWithTransparentBounds
-								  range:NSMakeRange(0, [htmlCheck length])
-							 usingBlock:
-				
+		NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"<strong>[^<]*"
+																		  options:0
+																			error:&error];
+		
+		NSArray *matches = [regex matchesInString:htmlCheck 
+										  options:0
+											range:NSMakeRange(0,[htmlCheck length])];
+		NSLog(@"%@", matches);
+		
+		for (NSTextCheckingResult *match in matches){
+			NSLog(@"%@", [htmlCheck substringWithRange:[match range]]);
+			
+		}
+		
+	/*	NSRegularExpression *regexSecondPass = [[NSRegularExpression alloc] initWithPattern:@".[^web]*"
+																		  options:0
+																			error:&error];
+		
+		matches = [regexSecondPass matchesInString:htmlCheck 
+										  options:0
+											range:NSMakeRange(0,[htmlCheck length])];
+		
+		for (NSTextCheckingResult *match in matches){
+			NSLog(@"%@", [htmlCheck substringWithRange:[match range]]);
+		}*/
+		
+		
+		
+
+		
 	}
 
 	
