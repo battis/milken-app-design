@@ -2,7 +2,7 @@
 {
 	1D3623240D0F684500981E51 /* Homework_CheckerAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {911, 569}}";
+			sepNavIntBoundsRect = "{{0, 0}, {911, 564}}";
 			sepNavSelRange = "{364, 0}";
 			sepNavVisRange = "{0, 364}";
 			sepNavWindowFrame = "{{15, 113}, {940, 660}}";
@@ -11,8 +11,8 @@
 	1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1965, 1508}}";
-			sepNavSelRange = "{694, 0}";
-			sepNavVisRange = "{100, 1008}";
+			sepNavSelRange = "{296, 0}";
+			sepNavVisRange = "{100, 992}";
 			sepNavWindowFrame = "{{38, 92}, {940, 660}}";
 		};
 	};
@@ -129,6 +129,12 @@
 			5D9B067412AFE4EA00BB5971 /* PBXTextBookmark */ = 5D9B067412AFE4EA00BB5971 /* PBXTextBookmark */;
 			5D9B067512AFE4EA00BB5971 /* PBXTextBookmark */ = 5D9B067512AFE4EA00BB5971 /* PBXTextBookmark */;
 			5D9B067612AFE4EA00BB5971 /* PBXTextBookmark */ = 5D9B067612AFE4EA00BB5971 /* PBXTextBookmark */;
+			5D9B068E12AFE66A00BB5971 /* XCBuildMessageTextBookmark */ = 5D9B068E12AFE66A00BB5971 /* XCBuildMessageTextBookmark */;
+			5D9B068F12AFE66A00BB5971 /* PBXTextBookmark */ = 5D9B068F12AFE66A00BB5971 /* PBXTextBookmark */;
+			5D9B069412AFE6A100BB5971 /* PBXTextBookmark */ = 5D9B069412AFE6A100BB5971 /* PBXTextBookmark */;
+			5D9B06A412AFE6D200BB5971 /* PBXTextBookmark */ = 5D9B06A412AFE6D200BB5971 /* PBXTextBookmark */;
+			5D9B06A512AFE6D200BB5971 /* PBXTextBookmark */ = 5D9B06A512AFE6D200BB5971 /* PBXTextBookmark */;
+			5D9B06A612AFE6D200BB5971 /* PBXTextBookmark */ = 5D9B06A612AFE6D200BB5971 /* PBXTextBookmark */;
 			5DBEADE212AF550C00588E65 = 5DBEADE212AF550C00588E65 /* PBXTextBookmark */;
 			5DC6D27D12AFCEBA004A5B3B = 5DC6D27D12AFCEBA004A5B3B /* PBXTextBookmark */;
 			5DC6D27E12AFCEBA004A5B3B = 5DC6D27E12AFCEBA004A5B3B /* PBXTextBookmark */;
@@ -275,7 +281,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */;
 		name = "Homework_CheckerAppDelegate.m: 28";
 		rLen = 0;
-		rLoc = 694;
+		rLoc = 715;
 		rType = 0;
 		vrLen = 1008;
 		vrLoc = 100;
@@ -504,7 +510,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */;
 		name = "Homework_CheckerAppDelegate.m: 28";
 		rLen = 0;
-		rLoc = 694;
+		rLoc = 715;
 		rType = 0;
 		vrLen = 1008;
 		vrLoc = 100;
@@ -529,7 +535,72 @@
 		vrLen = 766;
 		vrLoc = 520;
 	};
+	5D9B068E12AFE66A00BB5971 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Department.h: No such file or directory";
+		fRef = 1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 12;
+		rType = 1;
+	};
+	5D9B068F12AFE66A00BB5971 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */;
+		name = "Homework_CheckerAppDelegate.m: 10";
+		rLen = 0;
+		rLoc = 297;
+		rType = 0;
+		vrLen = 221;
+		vrLoc = 100;
+	};
+	5D9B069412AFE6A100BB5971 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */;
+		name = "Homework_CheckerAppDelegate.m: 13";
+		rLen = 0;
+		rLoc = 297;
+		rType = 0;
+		vrLen = 242;
+		vrLoc = 100;
+	};
+	5D9B06A412AFE6D200BB5971 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* Homework_CheckerAppDelegate.h */;
+		name = "Homework_CheckerAppDelegate.h: 19";
+		rLen = 0;
+		rLoc = 364;
+		rType = 0;
+		vrLen = 364;
+		vrLoc = 0;
+	};
+	5D9B06A512AFE6D200BB5971 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */;
+		name = "Homework_CheckerAppDelegate.m: 10";
+		rLen = 0;
+		rLoc = 297;
+		rType = 0;
+		vrLen = 1008;
+		vrLoc = 100;
+	};
+	5D9B06A612AFE6D200BB5971 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */;
+		name = "Homework_CheckerAppDelegate.m: 12";
+		rLen = 0;
+		rLoc = 296;
+		rType = 0;
+		vrLen = 992;
+		vrLoc = 100;
+	};
 	5DBEAD9F12AF491700588E65 /* Department.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Department.h;
+		path = "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/App Design SVN/Homework Checker/Classes/Department.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {911, 564}}";
 			sepNavSelRange = "{406, 0}";
@@ -537,35 +608,38 @@
 		};
 	};
 	5DBEADA012AF491700588E65 /* Department.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = Department.m;
+		path = "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/App Design SVN/Homework Checker/Classes/Department.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {911, 936}}";
-			sepNavSelRange = "{849, 0}";
-			sepNavVisRange = "{520, 766}";
-		};
-	};
-	5DBEADA212AF4D0B00588E65 /* Teacher.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {911, 777}}";
-			sepNavSelRange = "{504, 0}";
-			sepNavVisRange = "{153, 642}";
-			sepNavWindowFrame = "{{15, 213}, {940, 660}}";
+			sepNavIntBoundsRect = "{{0, 0}, {614, 936}}";
+			sepNavSelRange = "{1111, 0}";
+			sepNavVisRange = "{880, 206}";
 		};
 	};
 	5DBEADA312AF4D0B00588E65 /* Teacher.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = Teacher.m;
+		path = "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/App Design SVN/Homework Checker/Classes/Teacher.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1020, 1235}}";
 			sepNavSelRange = "{1278, 0}";
 			sepNavVisRange = "{0, 832}";
 		};
 	};
-	5DBEADC312AF52FE00588E65 /* Course.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {911, 630}}";
-			sepNavSelRange = "{419, 0}";
-			sepNavVisRange = "{16, 548}";
-		};
-	};
 	5DBEADC412AF52FE00588E65 /* Course.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = Course.m;
+		path = "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/App Design SVN/Homework Checker/Classes/Course.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1034, 702}}";
 			sepNavSelRange = "{540, 0}";
@@ -577,7 +651,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */;
 		name = "Homework_CheckerAppDelegate.m: 15";
 		rLen = 0;
-		rLoc = 343;
+		rLoc = 364;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 214;

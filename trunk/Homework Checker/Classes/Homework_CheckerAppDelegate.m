@@ -7,9 +7,9 @@
 //
 
 #import "Homework_CheckerAppDelegate.h"
-#import "Department.h"
-#import "Teacher.h"
-#import "Course.h"
+#import "Models/Department.h"
+#import "Models/Teacher.h"
+#import "Models/Course.h"
 
 @implementation Homework_CheckerAppDelegate
 
