@@ -13,6 +13,9 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		5DBEADA112AF491700588E65 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEADA012AF491700588E65 /* Department.m */; };
+		5DBEADA412AF4D0B00588E65 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEADA312AF4D0B00588E65 /* Teacher.m */; };
+		5DBEADC512AF52FE00588E65 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEADC412AF52FE00588E65 /* Course.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,12 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Homework_Checker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Homework_Checker_Prefix.pch; sourceTree = "<group>"; };
+		5DBEAD9F12AF491700588E65 /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		5DBEADA012AF491700588E65 /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		5DBEADA212AF4D0B00588E65 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		5DBEADA312AF4D0B00588E65 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		5DBEADC312AF52FE00588E65 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		5DBEADC412AF52FE00588E65 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Homework_Checker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Homework_Checker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +54,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5DBEAD9E12AF48F500588E65 /* Models */,
 				1D3623240D0F684500981E51 /* Homework_CheckerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* Homework_CheckerAppDelegate.m */,
 			);
@@ -97,6 +107,19 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DBEAD9E12AF48F500588E65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5DBEAD9F12AF491700588E65 /* Department.h */,
+				5DBEADA012AF491700588E65 /* Department.m */,
+				5DBEADA212AF4D0B00588E65 /* Teacher.h */,
+				5DBEADA312AF4D0B00588E65 /* Teacher.m */,
+				5DBEADC312AF52FE00588E65 /* Course.h */,
+				5DBEADC412AF52FE00588E65 /* Course.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +184,9 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* Homework_CheckerAppDelegate.m in Sources */,
+				5DBEADA112AF491700588E65 /* Department.m in Sources */,
+				5DBEADA412AF4D0B00588E65 /* Teacher.m in Sources */,
+				5DBEADC512AF52FE00588E65 /* Course.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
