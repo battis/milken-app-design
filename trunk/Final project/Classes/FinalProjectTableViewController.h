@@ -12,6 +12,7 @@
 @interface FinalProjectTableViewController : NSObject <NSXMLParserDelegate>{
 	
 	BOOL waitingForEntryTitle;
+	NSString *regularEx;
 	NSMutableString *titleString;
 	NSMutableArray *classes;
 	NSMutableData *milkenSiteData;
