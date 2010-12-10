@@ -41,9 +41,40 @@ NSLog(@"%@", milkenSite);
 	{
 		NSError *error = NULL;
 		NSString *htmlCheck = [[[NSString alloc] initWithData:milkenSiteData encoding:NSUTF8StringEncoding] autorelease];
+		NSString *mathString = @"Mathematics";
+		NSString *englishString = @"English";
 		NSLog(@"htmlCheck = %@", htmlCheck);
 		
-		NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"<strong>[^<]*"
+		NSRange mathStringRange = [htmlCheck rangeOfString:mathString];
+		NSRange englishStringRange = [htmlCheck rangeOfString:englishString];
+		
+		NSLog(@"location: %d, length: %d", mathStringRange.location, mathStringRange.length);
+		
+		
+		int mathLocation = mathStringRange.location;
+		//int mathLastLocation = mathStringRange.length;
+		
+		int englishLocation = englishStringRange.location;
+		//int englishLastLocation = englishStringRange.length;
+		
+		int counter = 0;
+		
+		for (int i=0; [htmlCheck characterAtIndex:englishLocation-i] == [htmlCheck characterAtIndex:mathLocation-i]; i++){
+			counter = i;
+			NSLog(@"for loop");
+		}
+		
+		NSLog(@"%d",counter);
+		
+		NSRange leftRange = NSMakeRange(englishLocation-counter, englishLocation-1);
+		
+		NSString *leftString = [htmlCheck substringWithRange:leftRange]	;	
+		NSLog(@"the string before english is: ");
+		
+		
+		
+		
+		/*NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"<strong>[^<]*"
 																		  options:0
 																			error:&error];
 		
@@ -55,7 +86,7 @@ NSLog(@"%@", milkenSite);
 		for (NSTextCheckingResult *match in matches){
 			NSLog(@"%@", [htmlCheck substringWithRange:[match range]]);
 			
-		}
+		}*/
 		
 	/*	NSRegularExpression *regexSecondPass = [[NSRegularExpression alloc] initWithPattern:@".[^web]*"
 																		  options:0
