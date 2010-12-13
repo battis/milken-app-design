@@ -52,29 +52,43 @@ NSLog(@"%@", milkenSite);
 		
 		
 		int mathLocation = mathStringRange.location;
-		//int mathLastLocation = mathStringRange.length;
+		int mathLength = mathStringRange.length;
 		
 		int englishLocation = englishStringRange.location;
-		//int englishLastLocation = englishStringRange.length;
+		int englishLength = englishStringRange.length;
 		
 		int counter = 0;
 		
-		for (int i=0; [htmlCheck characterAtIndex:englishLocation-i] == [htmlCheck characterAtIndex:mathLocation-i]; i++){
+		for (int i=1; [htmlCheck characterAtIndex:englishLocation-i] == [htmlCheck characterAtIndex:mathLocation-i]; i++){
 			counter = i;
-			NSLog(@"for loop");
 		}
 		
 		NSLog(@"%d",counter);
 		
-		NSRange leftRange = NSMakeRange(englishLocation-counter, englishLocation-1);
+		NSLog(@"we want a range from %d to %d", englishLocation-counter, englishLocation-1);
+		
+		NSRange leftRange = NSMakeRange(englishLocation-counter, counter);
 		
 		NSString *leftString = [htmlCheck substringWithRange:leftRange]	;	
-		NSLog(@"the string before english is: ");
+		NSLog(@"the string before english is: %@", leftString);
 		
+		counter = 0;
 		
+		for(int i=1; [htmlCheck characterAtIndex:englishLocation+englishLength+i] == [htmlCheck characterAtIndex:mathLocation+mathLength+i];i++){
+			counter = i;
+		}
 		
+		NSLog(@"%d",counter);
+
+		NSRange rightRange = NSMakeRange(englishLocation+englishLength+1, counter);
 		
-		/*NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"<strong>[^<]*"
+		NSString *rightString = [htmlCheck substringWithRange:rightRange]	;
+
+			NSLog(@"the string after english is: %@", rightString);
+		
+		NSString *regexString= [[NSString alloc] initWithFormat:@"(?<=%@)(.*?)(?=%@)%@", leftString, rightString];
+		
+		NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:regexString
 																		  options:0
 																			error:&error];
 		
@@ -82,24 +96,13 @@ NSLog(@"%@", milkenSite);
 										  options:0
 											range:NSMakeRange(0,[htmlCheck length])];
 		NSLog(@"%@", matches);
-		
+		//use modulus to only get odd matches
 		for (NSTextCheckingResult *match in matches){
 			NSLog(@"%@", [htmlCheck substringWithRange:[match range]]);
 			
-		}*/
+		}
 		
-	/*	NSRegularExpression *regexSecondPass = [[NSRegularExpression alloc] initWithPattern:@".[^web]*"
-																		  options:0
-																			error:&error];
-		
-		matches = [regexSecondPass matchesInString:htmlCheck 
-										  options:0
-											range:NSMakeRange(0,[htmlCheck length])];
-		
-		for (NSTextCheckingResult *match in matches){
-			NSLog(@"%@", [htmlCheck substringWithRange:[match range]]);
-		}*/
-		
+			
 		
 		
 
