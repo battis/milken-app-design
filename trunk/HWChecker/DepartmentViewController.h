@@ -1,16 +1,18 @@
 //
-//  Departments.h
-//  HWChecker
+//  ItemsViewController.h
+//  Homepwner
 //
-//  Created by (11) Aaron Daniel on 12/6/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by bhardy on 7/30/09.
+//  Copyright 2009 Big Nerd Ranch. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
+//@class TeacherViewController;
 
 @interface DepartmentViewController : UITableViewController {
-
+	//TeacherViewController *detailViewController;
+	NSMutableArray *departments;
 }
 
 @end
