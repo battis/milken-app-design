@@ -6,10 +6,9 @@
 //  Copyright 2009 Big Nerd Ranch. All rights reserved.
 //
 
-#import "HWCheckerAppDelegate.h"
 #import "DepartmentViewController.h"
-//#import "TeacherViewController.h"
 #import "Department.h"
+#import "TeacherViewController.h"
 
 @implementation DepartmentViewController
 
@@ -85,21 +84,22 @@
 	return cell;
 }
 
-/*
+
 - (void)tableView:(UITableView *)aTableView 
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	// Do I need to create the instance of ItemDetailController?
-	if (!detailViewController) {
-		detailViewController = [[TeacherViewController alloc] init];
+	// Do I need to create the instance of TeacherDetailController?
+	if (!teacherViewController) {
+		teacherViewController = [[TeacherViewController alloc] init];
 	}
 	
-	
+	[teacherViewController setTeachers:[[departments objectAtIndex:[indexPath row]] teachers]];
+		
 	// Push it onto the top of the navigation controller's stack
-	[[self navigationController] pushViewController:detailViewController 
+	[[self navigationController] pushViewController:teacherViewController 
 										   animated:YES];
 }
-*/
+
 
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)aTableView 
@@ -196,7 +196,7 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 
 
 - (void)dealloc {
-	//[detailViewController release];
+	[teacherViewController release];
 	[departments release];
     [super dealloc];
 }

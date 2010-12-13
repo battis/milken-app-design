@@ -7,27 +7,22 @@
 //
 
 #import "TeacherViewController.h"
-#import "CourseViewController.h"
-#import "Models/Teacher.h
+#import "Teacher.h"
 
-@implementation ItemsViewController
+@implementation TeacherViewController
+
+@synthesize teachers;
 
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
 	
-	// Create an array of 10 random possession objects
-	possessions = [[NSMutableArray alloc] init];
-	for (int i = 0; i < 10; i++) {
-		[possessions addObject:[Possession randomPossession]];
-	}
+	// Set the nav bar to have the back button when 
+	// TeacherViewController is on top of the stack
+	//[[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil]];
 	
-	// Set the nav bar to have the pre-fab'ed Edit button when 
-	// ItemsViewController is on top of the stack
-	[[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
-	
-	// Set the title of the nav bar to Homepwner when ItemsViewController
+	// Set the title of the nav bar to Teachers when TeacherViewController
 	// is on top of the stack
-	[[self navigationItem] setTitle:@"Homepwner"];
+	[[self navigationItem] setTitle:@"Teachers"];
 	
 	return self;
 }
@@ -57,17 +52,15 @@
 	return 1;
 }
 
-
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	int numberOfRows = [possessions count];
+	int numberOfRows = [teachers count];
 	// If we are editing, we will have one more row than we have possessions
 	if ([self isEditing])
 		numberOfRows++;
 	
 	return numberOfRows;
 }
-
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -78,38 +71,35 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"] autorelease];	
 	
 	// If the table view is filling a row with a possession in it, do as normal 
-	if ([indexPath row] < [possessions count])
-		[[cell textLabel] setText:[[possessions objectAtIndex:[indexPath row]] description]];
+	if ([indexPath row] < [teachers count])
+		[[cell textLabel] setText:[[teachers objectAtIndex:[indexPath row]] description]];
 	else // Otherwise, if we are editing we have one extra row - place this text in that row
 		[[cell textLabel] setText:@"Add New Item..."];
 	
 	return cell;
 }
 
-
-- (void)tableView:(UITableView *)aTableView 
-didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	// Do I need to create the instance of ItemDetailController?
-	if (!detailViewController) {
-		detailViewController = [[ItemDetailViewController alloc] init];
-	}
-	
-	// Give detail view controller a pointer to the possession object in this row
-	[detailViewController setEditingPossession:
-	 [possessions objectAtIndex:[indexPath row]]];
-	
-	// Push it onto the top of the navigation controller's stack
-	[[self navigationController] pushViewController:detailViewController 
-										   animated:YES];
-}
-
+/*
+ - (void)tableView:(UITableView *)aTableView 
+ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Do I need to create the instance of ItemDetailController?
+ if (!detailViewController) {
+ detailViewController = [[TeacherViewController alloc] init];
+ }
+ 
+ 
+ // Push it onto the top of the navigation controller's stack
+ [[self navigationController] pushViewController:detailViewController 
+ animated:YES];
+ }
+ */
 
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)aTableView 
            editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath 
 {		
-	if ([self isEditing] && [indexPath row] == [possessions count]) {
+	if ([self isEditing] && [indexPath row] == [teachers count]) {
 		// During editing...
 		// The last row during editing will show an insert style button
 		return UITableViewCellEditingStyleInsert;
@@ -124,16 +114,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 	// If the table view is asking to commit a delete command...
 	if (editingStyle == UITableViewCellEditingStyleDelete) {
 		// We remove the row being deleted from the possessions array
-		[possessions removeObjectAtIndex:[indexPath row]];
+		[teachers removeObjectAtIndex:[indexPath row]];
 		// We also remove that row from the table view with an animation
 		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
 						 withRowAnimation:UITableViewRowAnimationFade];
 	} else if (editingStyle == UITableViewCellEditingStyleInsert) {
-		// If the editing style of the row was insertion, we add a new possession object
-		// and a new row to the table view
-		[possessions addObject:[Possession randomPossession]];
-		[tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
-						 withRowAnimation:UITableViewRowAnimationLeft];
+		
 	}
 }
 
@@ -142,16 +128,16 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 	  toIndexPath:(NSIndexPath *)toIndexPath 
 {
 	// Get pointer to object being moved
-	Possession * p = [possessions objectAtIndex:[fromIndexPath row]];
+	Teacher * p = [teachers objectAtIndex:[fromIndexPath row]];
 	
 	// Retain it... (retain count = 2, 1 for scope of this method, 1 for being inside array)
 	[p retain];
 	
 	// Remove p from our array, it is automatically sent release (retain count of p = 1)
-	[possessions removeObjectAtIndex:[fromIndexPath row]];
+	[teachers removeObjectAtIndex:[fromIndexPath row]];
 	
 	// Re-insert p into array at new location, it is automatically retained (retain count of p = 2)
-	[possessions insertObject:p atIndex:[toIndexPath row]];
+	[teachers insertObject:p atIndex:[toIndexPath row]];
 	
 	// Release p (retain count = 1, only owner is now array)
 	[p release];
@@ -164,13 +150,13 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 	// We need to insert/remove a new row in to table view to say "Add New Item..."
 	if (flag) {
 		// If entering edit mode, we add another row to our table view
-		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[possessions count] 
+		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[teachers count] 
 													inSection:0];
 		[[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
 								withRowAnimation:UITableViewRowAnimationLeft];	
 	} else {
 		// If leaving edit mode, we remove last row from table view
-		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[possessions count] 
+		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[teachers count] 
 													inSection:0];
 		[[self tableView] deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
 								withRowAnimation:UITableViewRowAnimationFade];
@@ -181,7 +167,7 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 canMoveRowAtIndexPath:(NSIndexPath *)indexPath 
 {
 	// Only allow rows showing possessions to move
-	if ([indexPath row] < [possessions count])
+	if ([indexPath row] < [teachers count])
 		return YES;
 	return NO;
 }
@@ -190,22 +176,22 @@ canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath 
 	   toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
 {
-	if ([proposedDestinationIndexPath row] < [possessions count]) {
+	if ([proposedDestinationIndexPath row] < [teachers count]) {
 		// If we are moving to a row that currently is showing a possession,
 		// then we return the row the user wanted to move to
 		return proposedDestinationIndexPath;
 	}
 	// Execution gets here if we are trying to move a row to underneath the "Add New Item..."
 	// row, have the moving row go one row above it instead.
-	NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[possessions count] - 1 
+	NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[teachers count] - 1 
 													  inSection:0];
 	return betterIndexPath;
 }
 
 
 - (void)dealloc {
-	[detailViewController release];
-	[possessions release];
+	//[detailViewController release];
+	[teachers release];
     [super dealloc];
 }
 
