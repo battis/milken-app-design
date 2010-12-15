@@ -41,6 +41,8 @@ NSLog(@"%@", milkenSite);
 	{
 		NSError *error = NULL;
 		NSString *htmlCheck = [[[NSString alloc] initWithData:milkenSiteData encoding:NSUTF8StringEncoding] autorelease];
+		
+		//use department names we already know to deduce the regular expression for finding the departments
 		NSString *mathString = @"Mathematics";
 		NSString *englishString = @"English";
 		NSLog(@"htmlCheck = %@", htmlCheck);
@@ -58,7 +60,7 @@ NSLog(@"%@", milkenSite);
 		int englishLength = englishStringRange.length;
 		
 		int counter = 0;
-		
+		//run through each letter to the left of the department as long as the characters are equal
 		for (int i=1; [htmlCheck characterAtIndex:englishLocation-i] == [htmlCheck characterAtIndex:mathLocation-i]; i++){
 			counter = i;
 		}
@@ -71,41 +73,55 @@ NSLog(@"%@", milkenSite);
 		
 		NSString *leftString = [htmlCheck substringWithRange:leftRange]	;	
 		NSLog(@"the string before english is: %@", leftString);
-		
+	
 		counter = 0;
 		
+		//run through each letter to the right of the department as long as the characters are equal
 		for(int i=1; [htmlCheck characterAtIndex:englishLocation+englishLength+i] == [htmlCheck characterAtIndex:mathLocation+mathLength+i];i++){
 			counter = i;
 		}
 		
 		NSLog(@"%d",counter);
 
-		NSRange rightRange = NSMakeRange(englishLocation+englishLength+1, counter);
+		NSRange rightRange = NSMakeRange(englishLocation+englishLength, counter);
 		
 		NSString *rightString = [htmlCheck substringWithRange:rightRange]	;
 
 			NSLog(@"the string after english is: %@", rightString);
 		
-		NSString *regexString= [[NSString alloc] initWithFormat:@"(?<=%@)(.*?)(?=%@)%@", leftString, rightString];
+		//create the string for the regular expression to look for departments between leftString and rightString
+		NSString *regexString= [[NSString alloc] initWithFormat:@"%@([\\w -]*[^ ])( */.*)* *%@", leftString, rightString];
 		
+		//create the regular expression
 		NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:regexString
 																		  options:0
 																			error:&error];
-		
+		//run the regular expression and place the results into matches
 		NSArray *matches = [regex matchesInString:htmlCheck 
 										  options:0
 											range:NSMakeRange(0,[htmlCheck length])];
 		NSLog(@"%@", matches);
-		//use modulus to only get odd matches
+		//run through the array to get the departments
 		for (NSTextCheckingResult *match in matches){
-			NSLog(@"%@", [htmlCheck substringWithRange:[match range]]);
+			NSLog(@"match: %@", [htmlCheck substringWithRange:[match rangeAtIndex:1]]);
 			
 		}
 		
-			
 		
+		//find teacher names from their email addresses by looking for @mchschool.org in the html
 		
-
+		NSString *emailFormat =@"@milkenschool.org";
+		NSRange emailFormatRange = [htmlCheck rangeOfString:emailFormat];
+		
+		NSLog(@"range is: %d",emailFormatRange.location);
+		counter = 0;
+		
+		for(int i=1; [htmlCheck characterAtIndex:emailFormatRange.location-i] != ':'; i++){
+			counter = i;
+		}
+		
+		NSLog(@"%@", [htmlCheck substringWithRange:NSMakeRange(emailFormatRange.location-counter, counter)]);
+		
 		
 	}
 
