@@ -15,4 +15,6 @@
 	NSMutableArray *departments;
 }
 
+@property (copy) NSMutableArray *teachers;
+
 @end

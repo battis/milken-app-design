@@ -79,21 +79,22 @@
 	return cell;
 }
 
-/*
+
  - (void)tableView:(UITableView *)aTableView 
  didSelectRowAtIndexPath:(NSIndexPath *)indexPath
  {
- // Do I need to create the instance of ItemDetailController?
- if (!detailViewController) {
- detailViewController = [[TeacherViewController alloc] init];
+  //Do I need to create the instance of CourseDetailController?
+if (!courseViewController) {
+ courseViewController = [[CourseViewController alloc] init];
  }
  
+	 [courseViewController setCourses:[[teachers objectAtIndex: [indexPath row]] courses]];
  
  // Push it onto the top of the navigation controller's stack
- [[self navigationController] pushViewController:detailViewController 
+ [[self navigationController] pushViewController:courseViewController 
  animated:YES];
  }
- */
+ 
 
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)aTableView 

@@ -1,173 +1,197 @@
 //
-//  Classes.m
-//  HWChecker
+//  ItemsViewController.m
+//  Homepwner
 //
-//  Created by (11) Aaron Daniel on 12/6/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by bhardy on 7/30/09.
+//  Copyright 2009 Big Nerd Ranch. All rights reserved.
 //
 
 #import "CourseViewController.h"
+#import "Course.h"
 
 @implementation CourseViewController
 
+@synthesize courses;
 
-#pragma mark -
-#pragma mark Initialization
-
-/*
-- (id)initWithStyle:(UITableViewStyle)style {
-    // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if ((self = [super initWithStyle:style])) {
-    }
-    return self;
+- (id)init {
+	[super initWithStyle:UITableViewStyleGrouped];
+	
+	// Set the nav bar to have the back button when 
+	// CourseViewController is on top of the stack
+	//[[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil]];
+	
+	// Set the title of the nav bar to Courses when CourseViewController
+	// is on top of the stack
+	[[self navigationItem] setTitle:@"Courses"];
+	
+	return self;
 }
-*/
 
 
-#pragma mark -
-#pragma mark View lifecycle
-
-/*
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	[[self tableView] reloadData];
 }
-*/
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
 
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidUnload {
+	// Release any retained subviews of the main view.
+	// e.g. self.myOutlet = nil;
 }
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-*/
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 
-#pragma mark -
-#pragma mark Table view data source
+#pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return <#number of sections#>;
+	return 1;
 }
 
-
+// Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return <#number of rows in section#>;
+	int numberOfRows = [courses count];
+	// If we are editing, we will have one more row than we have possessions
+	if ([self isEditing])
+		numberOfRows++;
+	
+	return numberOfRows;
 }
-
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
-    // Configure the cell...
-    
-    return cell;
+	// Check for a reusable cell first, use that if it exists 
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"]; 
+	if (!cell)
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"] autorelease];	
+	
+	// If the table view is filling a row with a possession in it, do as normal 
+	if ([indexPath row] < [courses count])
+		[[cell textLabel] setText:[[courses objectAtIndex:[indexPath row]] description]];
+	else // Otherwise, if we are editing we have one extra row - place this text in that row
+		[[cell textLabel] setText:@"Add New Item..."];
+	
+	return cell;
 }
-
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+ - (void)tableView:(UITableView *)aTableView 
+ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Do I need to create the instance of ItemDetailController?
+ if (!detailViewController) {
+ detailViewController = [[CourseViewController alloc] init];
+ }
+ 
+ 
+ // Push it onto the top of the navigation controller's stack
+ [[self navigationController] pushViewController:detailViewController 
+ animated:YES];
+ }
+ */
 
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-
-#pragma mark -
-#pragma mark Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	/*
-	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
+- (UITableViewCellEditingStyle)tableView:(UITableView *)aTableView 
+           editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath 
+{		
+	if ([self isEditing] && [indexPath row] == [courses count]) {
+		// During editing...
+		// The last row during editing will show an insert style button
+		return UITableViewCellEditingStyleInsert;
+	}
+	return UITableViewCellEditingStyleDelete;
 }
 
-
-#pragma mark -
-#pragma mark Memory management
-
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Relinquish ownership any cached data, images, etc that aren't in use.
+- (void)tableView:(UITableView *)tableView 
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle 
+forRowAtIndexPath:(NSIndexPath *)indexPath 
+{
+	// If the table view is asking to commit a delete command...
+	if (editingStyle == UITableViewCellEditingStyleDelete) {
+		// We remove the row being deleted from the possessions array
+		[courses removeObjectAtIndex:[indexPath row]];
+		// We also remove that row from the table view with an animation
+		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
+						 withRowAnimation:UITableViewRowAnimationFade];
+	} else if (editingStyle == UITableViewCellEditingStyleInsert) {
+		
+	}
 }
 
-- (void)viewDidUnload {
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
+- (void)tableView:(UITableView *)tableView 
+moveRowAtIndexPath:(NSIndexPath *)fromIndexPath 
+	  toIndexPath:(NSIndexPath *)toIndexPath 
+{
+	// Get pointer to object being moved
+	Course * p = [courses objectAtIndex:[fromIndexPath row]];
+	
+	// Retain it... (retain count = 2, 1 for scope of this method, 1 for being inside array)
+	[p retain];
+	
+	// Remove p from our array, it is automatically sent release (retain count of p = 1)
+	[courses removeObjectAtIndex:[fromIndexPath row]];
+	
+	// Re-insert p into array at new location, it is automatically retained (retain count of p = 2)
+	[courses insertObject:p atIndex:[toIndexPath row]];
+	
+	// Release p (retain count = 1, only owner is now array)
+	[p release];
+}
+
+- (void)setEditing:(BOOL)flag animated:(BOOL)animated
+{
+	// Always call super implementation of this method, it needs to do some work
+	[super setEditing:flag animated:animated];
+	// We need to insert/remove a new row in to table view to say "Add New Item..."
+	if (flag) {
+		// If entering edit mode, we add another row to our table view
+		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[courses count] 
+													inSection:0];
+		[[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+								withRowAnimation:UITableViewRowAnimationLeft];	
+	} else {
+		// If leaving edit mode, we remove last row from table view
+		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[courses count] 
+													inSection:0];
+		[[self tableView] deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
+								withRowAnimation:UITableViewRowAnimationFade];
+	}
+}
+
+- (BOOL)tableView:(UITableView *)tableView 
+canMoveRowAtIndexPath:(NSIndexPath *)indexPath 
+{
+	// Only allow rows showing possessions to move
+	if ([indexPath row] < [courses count])
+		return YES;
+	return NO;
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView 
+targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath 
+	   toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
+{
+	if ([proposedDestinationIndexPath row] < [courses count]) {
+		// If we are moving to a row that currently is showing a possession,
+		// then we return the row the user wanted to move to
+		return proposedDestinationIndexPath;
+	}
+	// Execution gets here if we are trying to move a row to underneath the "Add New Item..."
+	// row, have the moving row go one row above it instead.
+	NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[courses count] - 1 
+													  inSection:0];
+	return betterIndexPath;
 }
 
 
 - (void)dealloc {
+	//[detailViewController release];
+	[courses release];
     [super dealloc];
 }
 
