@@ -11,7 +11,7 @@
 
 @implementation Department
 
-@synthesize name, teachers;
+@synthesize name, teachers, rangeInHtml;
 
 - (id)initWithName:(NSString *)aName teachers:(NSMutableArray *)someTeachers
 {

@@ -13,10 +13,12 @@
 @interface Department : NSObject {
 	NSString *name;
 	NSMutableArray *teachers;
+	NSRange *rangeInHtml;
 }
 
 @property (copy) NSString *name;
 @property (readonly) NSMutableArray *teachers;
+@property (retain) NSRange *rangeInHtml;
 
 + (Department *)randomDepartment;
 
