@@ -122,6 +122,13 @@ NSLog(@"%@", milkenSite);
 		
 		NSLog(@"%@", [htmlCheck substringWithRange:NSMakeRange(emailFormatRange.location-counter, counter)]);
 		
+		//Use the regular expression "(\w)(\w*)\d*@milkenschool.org" to find teacher names and first initial.
+		
+		/*to do list: 1) load ranges into departments
+						2) find teacher names and put them into their 
+						   3) corresponding departments based on their ranges
+							 
+		
 		
 	}
 
