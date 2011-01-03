@@ -102,8 +102,13 @@ NSLog(@"%@", milkenSite);
 											range:NSMakeRange(0,[htmlCheck length])];
 		NSLog(@"%@", matches);
 		//run through the array to get the departments
-		for (NSTextCheckingResult *match in matches){
-			NSLog(@"match: %@", [htmlCheck substringWithRange:[match rangeAtIndex:1]]);
+		for (int i = 0; i< [matches count]; i++){
+			NSString *departmentName = [htmlCheck substringWithRange:[[matches objectAtIndex:i] rangeAtIndex:1]];
+			NSRange departmentNameRange = [[matches objectAtIndex:i] rangeAtIndex:1];
+			NSRange nextDepartmentNameRange = [[matches objectAtIndex:i+1] rangeAtIndex:1];
+			
+			NSRange departmentRange = NSMakeRange(departmentNameRange.location, departmentNameRange.location - nextDepartmentNameRange.location);
+			NSLog(@"%@", departmentRange);
 			
 		}
 		
@@ -120,13 +125,35 @@ NSLog(@"%@", milkenSite);
 			counter = i;
 		}
 		
+		regexString= @"(\\w)(\\w+)\\d*@milkenschool.org";
+		
+		//create the regular expression
+		
+		NSRegularExpression *regexTeachers = [[NSRegularExpression alloc] initWithPattern:regexString
+																		  options:0
+																			error:&error];
+		
+		
+		NSArray *matchesTeachers = [regexTeachers matchesInString:htmlCheck 
+										  options:0
+											range:NSMakeRange(0,[htmlCheck length])];
+	
+		//run through the array to get the departments
+		for (NSTextCheckingResult *matchTeachers in matchesTeachers){
+		 NSString *lastName = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:2]];
+			NSString *firstInitial = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:1]];
+			NSString *teacherName = [[NSString alloc]initWithFormat:@"name:%@. %@", [firstInitial capitalizedString], [lastName capitalizedString]];
+			NSRange teacherRange = [htmlCheck rangeOfString:lastName];
+			
+		}
+		
 		NSLog(@"%@", [htmlCheck substringWithRange:NSMakeRange(emailFormatRange.location-counter, counter)]);
 		
 		//Use the regular expression "(\w)(\w*)\d*@milkenschool.org" to find teacher names and first initial.
 		
 		/*to do list: 1) load ranges into departments
 						2) find teacher names and put them into their 
-						   3) corresponding departments based on their ranges
+						   3) corresponding departments based on their ranges*/
 							 
 		
 		
