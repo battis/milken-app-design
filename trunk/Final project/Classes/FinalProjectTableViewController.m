@@ -7,7 +7,7 @@
 //
 
 #import "FinalProjectTableViewController.h"
-#import "classes/models/Department.h"
+#import "Department.h"
 
 
 @implementation FinalProjectTableViewController
@@ -73,7 +73,7 @@ NSLog(@"%@", milkenSite);
 		NSRange leftRange = NSMakeRange(englishLocation-counter, counter);
 		
 		NSString *leftString = [htmlCheck substringWithRange:leftRange]	;	
-		NSLog(@"the string before english is: %@", leftString);
+		
 	
 		counter = 0;
 		
@@ -86,9 +86,8 @@ NSLog(@"%@", milkenSite);
 
 		NSRange rightRange = NSMakeRange(englishLocation+englishLength, counter);
 		
-		NSString *rightString = [htmlCheck substringWithRange:rightRange]	;
+		NSString *rightString = [htmlCheck substringWithRange:rightRange];
 
-			NSLog(@"the string after english is: %@", rightString);
 		
 		//create the string for the regular expression to look for departments between leftString and rightString
 		NSString *regexString= [[NSString alloc] initWithFormat:@"%@([\\w -]*[^ ])( */.*)* *%@", leftString, rightString];
@@ -101,8 +100,10 @@ NSLog(@"%@", milkenSite);
 		NSArray *matches = [regex matchesInString:htmlCheck 
 										  options:0
 											range:NSMakeRange(0,[htmlCheck length])];
-		NSLog(@"%@", matches);
+		//NSLog(@"%@", matches);
 		//run through the array to get the departments
+		departments = [[NSMutableArray alloc] init];
+		
 		for (int i = 0; i < ([matches count]-1); i++){
 			NSString *departmentName = [htmlCheck substringWithRange:[[matches objectAtIndex:i] rangeAtIndex:1]];
 			NSRange departmentNameRange = [[matches objectAtIndex:i] rangeAtIndex:1];
@@ -110,17 +111,20 @@ NSLog(@"%@", milkenSite);
 			
 			NSRange departmentRange = NSMakeRange(departmentNameRange.location, departmentNameRange.location - nextDepartmentNameRange.location);
 			
-			Department *currentDepartment = [[Department alloc] initWithName:departmentName];
+			Department *currentDepartment = [[Department alloc] initWithName:departmentName range:departmentRange];
 			
 			[departments addObject:currentDepartment];
 			
-			NSLog(@"%d", departmentRange.location);
+			//NSLog(@"%@", departmentName);
 			
 			
 		}
 		
 		
-		
+		for(int i=0;i< [departments count]; i++){
+			NSLog(@"Department: %@ with range %d", [[departments objectAtIndex:i] name], [[departments objectAtIndex:i] range].location);
+			
+		}
 		
 		//find teacher names from their email addresses by looking for @mchschool.org in the html
 		

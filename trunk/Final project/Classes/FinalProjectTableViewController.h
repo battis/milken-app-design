@@ -14,7 +14,7 @@
 	BOOL waitingForEntryTitle;
 	NSString *regularEx;
 	NSMutableString *titleString;
-	NSMutableArray *classes;
+	NSMutableArray *departments;
 	NSMutableData *milkenSiteData;
 	NSURLConnection *connectionInProgress;
 
