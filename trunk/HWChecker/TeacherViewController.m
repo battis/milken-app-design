@@ -8,6 +8,7 @@
 
 #import "TeacherViewController.h"
 #import "Teacher.h"
+#import "AssignmentViewController.h"
 
 @implementation TeacherViewController
 
@@ -189,16 +190,6 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 	return betterIndexPath;
 }
 
-#pragma mark Link to AssignmentViewController
-
-- (void)applicationDidFinishLaunching:(UIApplication *)application {
-	webView = [[AssignmentViewController alloc] initWithNibName:@”AssignmentView” bundle:[NSBundle mainBundle]];
-	
-	[AssignmentView addSubview:[WebView view]];
-	
-	// Override point for customization after app launch
-	[AssignmentView makeKeyAndVisible];
-}
 
 
 - (void)dealloc {

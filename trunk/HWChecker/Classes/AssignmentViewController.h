@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Course.h"
 
 @interface AssignmentViewController : UIViewController {
 
-	
+	Course *course;
 	IBOutlet UIWebView *webView;	
 }
 
 @property (nonatomic,retain) UIWebView *webView;
+@property (retain) Course *course;
 
 @end

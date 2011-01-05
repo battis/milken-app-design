@@ -10,6 +10,7 @@
 #import "Department.h"
 #import "TeacherViewController.h"
 
+
 @implementation DepartmentViewController
 
 - (id)init {
@@ -193,6 +194,7 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 													  inSection:0];
 	return betterIndexPath;
 }
+
 
 
 - (void)dealloc {

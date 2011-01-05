@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class CourseViewController;
+@class AssignmentViewController;
 
 @interface CourseViewController : UITableViewController {
-	CourseViewController *courseViewController;
+	AssignmentViewController *assignmentViewController;
 	NSMutableArray *courses;
 }
 

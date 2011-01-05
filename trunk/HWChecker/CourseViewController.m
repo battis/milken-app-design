@@ -8,6 +8,7 @@
 
 #import "CourseViewController.h"
 #import "Course.h"
+#import "AssignmentViewController.h"
 
 @implementation CourseViewController
 
@@ -186,6 +187,18 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 	NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[courses count] - 1 
 													  inSection:0];
 	return betterIndexPath;
+}
+
+#pragma mark Link to AssignmentViewController
+
+- (void)didSelectRowAtIndexPath:(UIApplication *)application  didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	if(!assignmentViewController)
+	{
+		assignmentViewController = [[AssignmentViewController alloc] init];
+	}
+	[assignmentViewController setCourse:[courses objectAtIndex:[indexPath row]]];
+	[[self navigationController] pushViewController:assignmentViewController animated:YES];
 }
 
 
