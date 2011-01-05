@@ -7,6 +7,7 @@
 //
 
 #import "FinalProjectTableViewController.h"
+#import "classes/models/Department.h"
 
 
 @implementation FinalProjectTableViewController
@@ -45,7 +46,7 @@ NSLog(@"%@", milkenSite);
 		//use department names we already know to deduce the regular expression for finding the departments
 		NSString *mathString = @"Mathematics";
 		NSString *englishString = @"English";
-		NSLog(@"htmlCheck = %@", htmlCheck);
+		
 		
 		NSRange mathStringRange = [htmlCheck rangeOfString:mathString];
 		NSRange englishStringRange = [htmlCheck rangeOfString:englishString];
@@ -102,15 +103,23 @@ NSLog(@"%@", milkenSite);
 											range:NSMakeRange(0,[htmlCheck length])];
 		NSLog(@"%@", matches);
 		//run through the array to get the departments
-		for (int i = 0; i< [matches count]; i++){
+		for (int i = 0; i < ([matches count]-1); i++){
 			NSString *departmentName = [htmlCheck substringWithRange:[[matches objectAtIndex:i] rangeAtIndex:1]];
 			NSRange departmentNameRange = [[matches objectAtIndex:i] rangeAtIndex:1];
 			NSRange nextDepartmentNameRange = [[matches objectAtIndex:i+1] rangeAtIndex:1];
 			
 			NSRange departmentRange = NSMakeRange(departmentNameRange.location, departmentNameRange.location - nextDepartmentNameRange.location);
-			NSLog(@"%@", departmentRange);
+			
+			Department *currentDepartment = [[Department alloc] initWithName:departmentName];
+			
+			[departments addObject:currentDepartment];
+			
+			NSLog(@"%d", departmentRange.location);
+			
 			
 		}
+		
+		
 		
 		
 		//find teacher names from their email addresses by looking for @mchschool.org in the html
