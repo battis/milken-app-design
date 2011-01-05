@@ -13,17 +13,20 @@
 @interface Department : NSObject {
 	NSString *name;
 	NSMutableArray *teachers;
-	NSRange *rangeInHtml;
+	NSRange range;
 }
 
 @property (copy) NSString *name;
 @property (readonly) NSMutableArray *teachers;
-@property (retain) NSRange *rangeInHtml;
+
 
 + (Department *)randomDepartment;
 
 - (id)initWithName:(NSString *)aName
 		  teachers:(NSMutableArray *)someTeachers;
+- (id)initWithName:(NSString *)aName;
+			 range:(NSRange)someRange;
+
 - (id)initWithName:(NSString *)aName;
 
 - (void)addTeacher:(Teacher *)teacher;
