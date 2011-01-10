@@ -15,7 +15,7 @@
 
 - (id)initWithName:(NSString *)aName
 	  memberOfDept:(Department *) aDept
-	coursesTaught:(NSMutableArray *) someCourses
+	 coursesTaught:(NSMutableArray *) someCourses
 {
 	[self initWithName:aName memberOfDept:aDept];
 	[courses addObjectsFromArray:someCourses];

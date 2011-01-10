@@ -25,7 +25,7 @@
 
 - (id)initWithName:(NSString *)aName
 	  memberOfDept:(Department *)aDept
-	coursesTaught:(NSMutableArray *)someCourses;
+	 coursesTaught:(NSMutableArray *)someCourses;
 - (id)initWithName:(NSString *)aName
 	  memberOfDept:(Department *)aDept;
 - (id)initWithName:(NSString *)aName;

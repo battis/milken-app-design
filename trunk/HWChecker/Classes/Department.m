@@ -11,13 +11,22 @@
 
 @implementation Department
 
-@synthesize name, teachers, rangeInHtml;
+@synthesize name, teachers;
 
 - (id)initWithName:(NSString *)aName teachers:(NSMutableArray *)someTeachers
 {
 	[super init];
 	[self initWithName:aName];
 	[teachers addObjectsFromArray:someTeachers];
+	return self;
+}
+
+- (id)initWithName:(NSString *)aName range:(NSRange)someRange
+{
+	[super init];
+	range = someRange;
+	[self setName:aName];
+	teachers = [[NSMutableArray alloc] init];
 	return self;
 }
 
