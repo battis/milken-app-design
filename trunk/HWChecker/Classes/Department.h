@@ -24,7 +24,7 @@
 
 - (id)initWithName:(NSString *)aName
 		  teachers:(NSMutableArray *)someTeachers;
-- (id)initWithName:(NSString *)aName;
+- (id)initWithName:(NSString *)aName
 range:(NSRange)someRange;
 
 - (id)initWithName:(NSString *)aName;
