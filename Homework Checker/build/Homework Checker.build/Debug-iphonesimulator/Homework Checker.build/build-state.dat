@@ -1,0 +1,750 @@
+THomework Checker
+v7
+r0
+t316395460.544795
+cCheck dependencies
+cProcessInfoPlistFile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Info.plist" Homework_Checker-Info.plist
+cCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/CourseView.xib"
+cCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/DepartmentView.xib"
+cCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/TeacherView.xib"
+cCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/MainWindow.xib"
+cCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/AssignmentView.xib"
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/AssignmentViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Course.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Department.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Department.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Teacher.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/CourseViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/CourseViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/DepartmentViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/TeacherViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/main.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Parser.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker" normal i386
+cGenerateDSYMFile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"
+cTouch "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C494D410000000000000132
+t1279872321
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004BFDFEA8000000000000046B
+t1274937000
+s1131
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
+c000000004C6C30170000000000000110
+t1282158615
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004C5A4DB60000000000295900
+t1280986550
+s2709760
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C5A4DB0000000000029D580
+t1280986544
+s2741632
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C5A4DA10000000000001466
+t1280986529
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C6241ED00000000000009CD
+t1281507821
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C6242840000000001E228C0
+t1281507972
+s31598784
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/AssignmentView.xib
+c000000004D2B8FF20000000000005D4E
+t1294700530
+s23886
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/AssignmentViewController.xib
+c000000004D093F8C0000000000001C93
+t1292451724
+s7315
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentView.xib
+c000000004D2B87830000000000005C9B
+t1294698371
+s23707
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.h
+c000000004D24F1500000000000000191
+t1294266704
+s401
+i<UIKit/UIKit.h>
+i"Course.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m
+c000000004D24F1500000000000001B27
+t1294266704
+s6951
+i"AssignmentViewController.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Course.h
+c000000004D06912E0000000000000234
+t1292276014
+s564
+i<Foundation/Foundation.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Course.m
+c000000004D2B829F000000000000046C
+t1294697119
+s1132
+i"Course.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/CourseViewController.h
+c000000004D24F1500000000000000185
+t1294266704
+s389
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/CourseViewController.m
+c000000004D24F1500000000000001B23
+t1294266704
+s6947
+i"CourseViewController.h"
+i"Course.h"
+i"AssignmentViewController.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Department.h
+c000000004D2B982800000000000002C0
+t1294702632
+s704
+i<Foundation/Foundation.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Department.m
+c000000004D2B984300000000000005C3
+t1294702659
+s1475
+i"Department.h"
+i"Teacher.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.h
+c000000004D2B94E200000000000001B3
+t1294701794
+s435
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m
+c000000004D2B94210000000000001ADD
+t1294701601
+s6877
+i"DepartmentViewController.h"
+i"Department.h"
+i"TeacherViewController.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/FinalProjectTableViewController.h
+c000000004D24F13700000000000001F9
+t1294266679
+s505
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/FinalProjectTableViewController.m
+c000000004D24F13700000000000017E7
+t1294266679
+s6119
+i"FinalProjectTableViewController.h"
+i"Department.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Final_projectAppDelegate.h
+c000000004CF6C30A000000000000039A
+t1291240202
+s922
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+i"FinalProjectTableViewController.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Final_projectAppDelegate.m
+c000000004CF6C30A0000000000001E48
+t1291240202
+s7752
+i"Final_projectAppDelegate.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HWCheckerAppDelegate.h
+c000000004CF6C53E000000000000015E
+t1291240766
+s350
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HWCheckerAppDelegate.m
+c000000004D224E440000000000000AFF
+t1294093892
+s2815
+i"HWCheckerAppDelegate.h"
+i"DepartmentViewController.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.h
+c000000004D2B8FAD0000000000000164
+t1294700461
+s356
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m
+c000000004D2B94510000000000000B47
+t1294701649
+s2887
+i"HomeworkCheckerAppDelegate.h"
+i"DepartmentViewController.h"
+i"Parser.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Homework_CheckerAppDelegate.h
+c000000004CF68D65000000000000016C
+t1291226469
+s364
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Homework_CheckerAppDelegate.m
+c000000004CFFAF730000000000000C34
+t1291825011
+s3124
+i"Homework_CheckerAppDelegate.h"
+i"Models/Department.h"
+i"Models/Teacher.h"
+i"Models/Course.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Models/Course.h
+c000000004CFFAE5D0000000000000234
+t1291824733
+s564
+i<Foundation/Foundation.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Models/Course.m
+c000000004CFFAE4F0000000000000467
+t1291824719
+s1127
+i"Course.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Models/Department.h
+c000000004CFFAE3E0000000000000252
+t1291824702
+s594
+i<Foundation/Foundation.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Models/Department.m
+c000000004CFFAE130000000000000506
+t1291824659
+s1286
+i"Department.h"
+i"Teacher.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Models/Teacher.h
+c000000004CFFADFC0000000000000320
+t1291824636
+s800
+i<Foundation/Foundation.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Models/Teacher.m
+c000000004CFFAE2800000000000006B8
+t1291824680
+s1720
+i"Teacher.h"
+i"Course.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.h
+c000000004D2B92F300000000000001FC
+t1294701299
+s508
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m
+c000000004D2B95AE0000000000001762
+t1294701998
+s5986
+i"Parser.h"
+i"Department.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.h
+c000000004D2B829F0000000000000321
+t1294697119
+s801
+i<Foundation/Foundation.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.m
+c000000004D2B829F00000000000006B9
+t1294697119
+s1721
+i"Teacher.h"
+i"Course.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.h
+c000000004D093F8C000000000000017C
+t1292451724
+s380
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m
+c000000004D24F15000000000000019D9
+t1294266704
+s6617
+i"TeacherViewController.h"
+i"Teacher.h"
+i"AssignmentViewController.h"
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/CourseView.xib
+c000000004CFFB4500000000000004A96
+t1291826256
+s19094
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/DepartmentView.xib
+c000000004CFFB4500000000000004B3F
+t1291826256
+s19263
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch
+c000000004CF68AD800000000000000C9
+t1291225816
+s201
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/MainWindow.xib
+c000000004D2B926A00000000000043D0
+t1294701162
+s17360
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/TeacherView.xib
+c000000004CFFB4500000000000004B5C
+t1291826256
+s19292
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app
+t1294702660
+s340
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM
+t1294702660
+s102
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/AssignmentView.nib
+t1294701853
+s1453
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/AssignmentViewController.nib
+t2
+s0
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/CourseView.nib
+t1294701852
+s1303
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/DepartmentView.nib
+t1294701852
+s1331
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker
+t1294702660
+s67264
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Info.plist
+t1294701851
+s633
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/MainWindow.nib
+t1294701852
+s992
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/PkgInfo
+t1294701851
+s8
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/TeacherView.nib
+t1294701852
+s1328
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/AssignmentViewController.o
+t1294701853
+s39880
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o
+t1294701853
+s13956
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/CourseViewController.o
+t1294701854
+s53884
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Department.o
+t1294702660
+s16464
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/DepartmentViewController.o
+t1294702634
+s51932
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/FinalProjectTableViewController.o
+t2
+s0
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Final_projectAppDelegate.o
+t2
+s0
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/HWCheckerAppDelegate.o
+t2
+s0
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Homework Checker.LinkFileList
+c000000004D2B951B0000000000000788
+t1294701851
+s1928
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o
+t1294701854
+s50668
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Homework_CheckerAppDelegate.o
+t2
+s0
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Parser.o
+t1294702635
+s25064
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Teacher.o
+t1294701854
+s17384
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/TeacherViewController.o
+t1294701854
+s50740
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/main.o
+t1294701855
+s6388
+
+N/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/main.m
+c000000004D2B90D7000000000000017E
+t1294700759
+s382
+i<UIKit/UIKit.h>
+
+NHomework_Checker-Info.plist
+c000000004CF68AD8000000000000038D
+t1291225816
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies316395460#316395460#0(0"0(0#1#0"8635295040#0"0#
+
+CCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/AssignmentView.xib"
+s316394652.729367
+e316394653.290058
+r1
+xCompileXIB
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/AssignmentView.xib
+lSLF07#2@29"CompileXIB AssignmentView.xib316394652#316394653#0(0"0(0#0#99"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/AssignmentView.xib8618753952#719"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/AssignmentView.nib" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/AssignmentView.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/AssignmentViewController.xib"
+r0
+
+CCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentView.xib"
+r0
+
+CCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/CourseView.xib"
+s316394651.409253
+e316394652.089079
+r1
+xCompileXIB
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/CourseView.xib
+lSLF07#2@25"CompileXIB CourseView.xib316394651#316394652#0(0"0(0#0#95"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/CourseView.xib8618817856#711"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/CourseView.nib" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/CourseView.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/DepartmentView.xib"
+s316394651.410353
+e316394652.094919
+r1
+xCompileXIB
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/DepartmentView.xib
+lSLF07#2@29"CompileXIB DepartmentView.xib316394651#316394652#0(0"0(0#0#99"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/DepartmentView.xib8618642016#719"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/DepartmentView.nib" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/DepartmentView.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/MainWindow.xib"
+s316394652.095042
+e316394652.729239
+r1
+xCompileXIB
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib316394652#316394652#0(0"0(0#0#95"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/MainWindow.xib8619833792#711"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/MainWindow.nib" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/TeacherView.xib"
+s316394652.089226
+e316394653.006924
+r1
+xCompileXIB
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/TeacherView.xib
+lSLF07#2@26"CompileXIB TeacherView.xib316394652#316394653#0(0"0(0#0#96"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/TeacherView.xib8620091392#713"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/TeacherView.nib" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/TeacherView.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/AssignmentViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316394653.290219
+e316394653.654531
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/AssignmentViewController.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[7357] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m:217: warning: property 'webView' requires method '-webView' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m:217: warning: property 'webView' requires the method 'setWebView:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@141"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m316394653#316394653#0(746"distcc[7357] (dcc_build_somewhere) Warning: failed to distribute, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m:217: warning: property 'webView' requires method '-webView' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m:217: warning: property 'webView' requires the method 'setWebView:' to be defined - use @synthesize, @dynamic or provide a method implementation2(22@122"Property 'webView' requires method '-webView' to be defined - use @synthesize, @dynamic or provide a method implementation316394653#233#253#0(6@115"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m315959504#217#0#217#0#0"0(22@129"Property 'webView' requires the method 'setWebView:' to be defined - use @synthesize, @dynamic or provide a method implementation316394653#486#260#0(6@115"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m315959504#217#0#217#0#0"0(0#0#115"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m8620297888#2805"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/AssignmentViewController.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/AssignmentViewController.o"0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Course.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316394653.293310
+e316394653.705217
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Course.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[7358] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+lSLF07#2@123"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Course.m316394653#316394653#0(233"distcc[7358] (dcc_build_somewhere) Warning: failed to distribute, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition0(0#0#97"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Course.m8618673728#2769"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Course.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o"0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Models/Course.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/CourseViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/CourseViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316394654.064157
+e316394654.518461
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/CourseViewController.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/CourseViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[7394] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+lSLF07#2@137"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/CourseViewController.m316394654#316394654#0(233"distcc[7394] (dcc_build_somewhere) Warning: failed to distribute, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition0(0#0#111"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/CourseViewController.m8617526784#2797"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/CourseViewController.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/CourseViewController.o"0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Department.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Department.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316395460.072866
+e316395460.465530
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Department.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Department.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[11188] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+lSLF07#2@127"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Department.m316395460#316395460#0(234"distcc[11188] (dcc_build_somewhere) Warning: failed to distribute, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition0(0#0#101"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Department.m8643398816#2777"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Department.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Department.o"0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Department.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Models/Department.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/DepartmentViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316395434.227602
+e316395435.005586
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/DepartmentViewController.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[10960] ERROR: nonblocking connect to 127.0.0.1:3632 failed: Connection refused
+odistcc[10960] Warning: failed to distribute /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m to localhost:3632/2, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m:209: warning: property 'departments' requires method '-departments' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m:209: warning: property 'departments' requires the method 'setDepartments:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@141"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m316395434#316395435#0(1106"distcc[10960] ERROR: nonblocking connect to 127.0.0.1:3632 failed: Connection refuseddistcc[10960] Warning: failed to distribute /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m to localhost:3632/2, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m:209: warning: property 'departments' requires method '-departments' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m:209: warning: property 'departments' requires the method 'setDepartments:' to be defined - use @synthesize, @dynamic or provide a method implementation2(22@130"Property 'departments' requires method '-departments' to be defined - use @synthesize, @dynamic or provide a method implementation316395434#577#261#0(6@115"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m316394401#209#0#209#0#0"0(22@137"Property 'departments' requires the method 'setDepartments:' to be defined - use @synthesize, @dynamic or provide a method implementation316395434#838#268#0(6@115"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m316394401#209#0#209#0#0"0(0#0#115"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m8611270400#2805"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/DepartmentViewController.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/DepartmentViewController.o"0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/FinalProjectTableViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/FinalProjectTableViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Final_projectAppDelegate.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Final_projectAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/HWCheckerAppDelegate.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HWCheckerAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316394653.705411
+e316394654.029542
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[7384] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m: In function '-[HomeworkCheckerAppDelegate application:didFinishLaunchingWithOptions:]':
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m:33: warning: unused variable 'parser'
+lSLF07#2@143"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m316394653#316394654#0(596"distcc[7384] (dcc_build_somewhere) Warning: failed to distribute, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m: In function '-[HomeworkCheckerAppDelegate application:didFinishLaunchingWithOptions:]':/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m:33: warning: unused variable 'parser'1(22@24"Unused variable 'parser'316394654#440#156#0(6@117"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m316394449#33#0#33#0#19"unused variable '*'0(0#0#117"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m8611524928#2809"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/HomeworkCheckerAppDelegate.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o"0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Homework_CheckerAppDelegate.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Homework_CheckerAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Parser.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316395434.929613
+e316395435.269491
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Parser.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[10979] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m: In function '-[Parser connectionDidFinishLoading:]':
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m:162: warning: unused variable 'teacherRange'
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m:161: warning: unused variable 'teacherName'
+lSLF07#2@123"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m316395434#316395435#0(671"distcc[10979] (dcc_build_somewhere) Warning: failed to distribute, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m: In function '-[Parser connectionDidFinishLoading:]':/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m:162: warning: unused variable 'teacherRange'/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m:161: warning: unused variable 'teacherName'2(22@30"Unused variable 'teacherRange'316395435#386#143#0(6@97"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m316394798#162#0#162#0#19"unused variable '*'0(22@29"Unused variable 'teacherName'316395435#529#142#0(6@97"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m316394798#161#0#161#0#19"unused variable '*'0(0#0#97"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m8620064800#2769"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Parser.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Parser.o"0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Teacher.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Models/Teacher.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Teacher.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316394654.029672
+e316394654.514181
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Teacher.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[7390] ERROR: nonblocking connect to 127.0.0.1:3632 failed: Connection refused
+odistcc[7390] Warning: failed to distribute /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.m to localhost:3632/2, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+lSLF07#2@124"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.m316394654#316394654#0(558"distcc[7390] ERROR: nonblocking connect to 127.0.0.1:3632 failed: Connection refuseddistcc[7390] Warning: failed to distribute /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.m to localhost:3632/2, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition0(0#0#98"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.m8618864768#2771"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/Teacher.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Teacher.o"0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/TeacherViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316394654.518590
+e316394654.879143
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/TeacherViewController.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[7406] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m: In function '-[TeacherViewController tableView:didSelectRowAtIndexPath:]':
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:89: warning: receiver 'CourseViewController' is a forward class and corresponding @interface may not exist
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:92: warning: no '-setCourses:' method found
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:92: warning: (Messages without a matching method signature
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:92: warning: will be assumed to return 'id' and accept
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:92: warning: '...' as arguments.)
+o/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:96: warning: incompatible Objective-C types 'struct CourseViewController *', expected 'struct UIViewController *' when passing argument 1 of 'pushViewController:animated:' from distinct Objective-C type
+lSLF07#2@138"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m316394654#316394654#0(1602"distcc[7406] (dcc_build_somewhere) Warning: failed to distribute, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m: In function '-[TeacherViewController tableView:didSelectRowAtIndexPath:]':/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:89: warning: receiver 'CourseViewController' is a forward class and corresponding @interface may not exist/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:92: warning: no '-setCourses:' method found/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:92: warning: (Messages without a matching method signature/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:92: warning: will be assumed to return 'id' and accept/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:92: warning: '...' as arguments.)/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m:96: warning: incompatible Objective-C types 'struct CourseViewController *', expected 'struct UIViewController *' when passing argument 1 of 'pushViewController:animated:' from distinct Objective-C type4(22@93"Receiver 'CourseViewController' is a forward class and corresponding @interface may not exist316394654#422#220#0(6@112"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m315959504#89#0#89#0#0"0(22@30"No '-setCourses:' method found316394654#642#157#0(6@112"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m315959504#92#0#92#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)316394654#799#172#0(6@112"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m315959504#92#0#92#0#0"0(22@189"Incompatible Objective-C types 'struct CourseViewController *', expected 'struct UIViewController *' when passing argument 1 of 'pushViewController:animated:' from distinct Objective-C type316394654#1286#316#0(6@112"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m315959504#96#0#96#0#0"0(0#0#112"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m8612944672#2799"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/TeacherViewController.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/TeacherViewController.o"0#
+
+CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/main.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s316394654.879268
+e316394655.244081
+r1
+xDistributed-CompileC
+xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/main.o
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[7419] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
+o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
+o<command-line>: warning: this is the location of the previous definition
+lSLF07#2@113"Distribute compilation of /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/main.m316394654#316394655#0(233"distcc[7419] (dcc_build_somewhere) Warning: failed to distribute, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition0(0#0#87"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/main.m8617503744#2757"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/main.m" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/main.o"0#
+
+CGenerateDSYMFile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"
+s316395460.505615
+e316395460.540231
+r1
+xGenerateDSYMFile
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker
+lSLF07#2@140"GenerateDSYMFile "build/Debug-iphonesimulator/Homework Checker.app.dSYM" "build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"316395460#316395460#0(0"0(0#0#146"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker8634759168#542"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM"0#
+
+CLd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker" normal i386
+s316395460.465643
+e316395460.505487
+r1
+xLd
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker
+xnormal
+xi386
+lSLF07#2@151"Link /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker316395460#316395460#0(0"0(0#0#0"8635134592#1165"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk "-L/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" -filelist "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Homework Checker.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"0#
+
+CProcessInfoPlistFile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Info.plist" Homework_Checker-Info.plist
+s316394651.386884
+e316394651.409136
+r1
+xProcessInfoPlistFile
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Info.plist
+xHomework_Checker-Info.plist
+lSLF07#2@35"Process Homework_Checker-Info.plist316394651#316394651#0(0"0(0#0#108"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Homework_Checker-Info.plist8619873312#638"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Homework_Checker-Info.plist -genpkginfo "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Info.plist"0#
+
+CTouch "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app"
+s316395460.540344
+e316395460.544741
+r1
+xTouch
+x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app
+lSLF07#2@135"Touch /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app316395460#316395460#0(0"0(0#0#0"8634588224#375"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app"0#
+
