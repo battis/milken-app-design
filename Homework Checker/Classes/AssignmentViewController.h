@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Course.h"
 
-@interface AssignmentViewController : UIViewController {
+@interface AssignmentViewController : UIViewController <UIApplicationDelegate> {
 
 	Course *course;
 	IBOutlet UIWebView *webView;	
