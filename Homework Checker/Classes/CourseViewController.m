@@ -23,6 +23,9 @@
 	
 	// Set the title of the nav bar to Courses when CourseViewController
 	// is on top of the stack
+	
+	// TODO change this to the name of the teacher
+	
 	[[self navigationItem] setTitle:@"Courses"];
 	
 	return self;

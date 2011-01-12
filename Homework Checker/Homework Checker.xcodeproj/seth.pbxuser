@@ -149,6 +149,20 @@
 			5D7A486112DE5ABE00A1CD33 /* PBXTextBookmark */ = 5D7A486112DE5ABE00A1CD33 /* PBXTextBookmark */;
 			5D7A486212DE5ABE00A1CD33 /* PBXTextBookmark */ = 5D7A486212DE5ABE00A1CD33 /* PBXTextBookmark */;
 			5D7A486312DE5ABE00A1CD33 /* PBXTextBookmark */ = 5D7A486312DE5ABE00A1CD33 /* PBXTextBookmark */;
+			5D7A486A12DE5C7B00A1CD33 /* PBXTextBookmark */ = 5D7A486A12DE5C7B00A1CD33 /* PBXTextBookmark */;
+			5D7A486B12DE5C7B00A1CD33 /* PBXTextBookmark */ = 5D7A486B12DE5C7B00A1CD33 /* PBXTextBookmark */;
+			5D7A486C12DE5C7B00A1CD33 /* PBXTextBookmark */ = 5D7A486C12DE5C7B00A1CD33 /* PBXTextBookmark */;
+			5D7A486D12DE5C7B00A1CD33 /* PBXTextBookmark */ = 5D7A486D12DE5C7B00A1CD33 /* PBXTextBookmark */;
+			5D7A486E12DE5C7B00A1CD33 /* PBXTextBookmark */ = 5D7A486E12DE5C7B00A1CD33 /* PBXTextBookmark */;
+			5D7A486F12DE5C7B00A1CD33 /* PBXTextBookmark */ = 5D7A486F12DE5C7B00A1CD33 /* PBXTextBookmark */;
+			5D7A487012DE5C7B00A1CD33 /* PBXTextBookmark */ = 5D7A487012DE5C7B00A1CD33 /* PBXTextBookmark */;
+			5D7A487112DE5E0400A1CD33 /* PBXTextBookmark */ = 5D7A487112DE5E0400A1CD33 /* PBXTextBookmark */;
+			5D7A487412DE5E9600A1CD33 /* PBXTextBookmark */ = 5D7A487412DE5E9600A1CD33 /* PBXTextBookmark */;
+			5D7A487512DE5E9600A1CD33 /* PBXTextBookmark */ = 5D7A487512DE5E9600A1CD33 /* PBXTextBookmark */;
+			5D7A487612DE5E9600A1CD33 /* PBXTextBookmark */ = 5D7A487612DE5E9600A1CD33 /* PBXTextBookmark */;
+			5D7A487712DE5E9600A1CD33 /* PBXTextBookmark */ = 5D7A487712DE5E9600A1CD33 /* PBXTextBookmark */;
+			5D7A487812DE5E9600A1CD33 /* PBXTextBookmark */ = 5D7A487812DE5E9600A1CD33 /* PBXTextBookmark */;
+			5D7A487912DE5E9600A1CD33 /* PBXTextBookmark */ = 5D7A487912DE5E9600A1CD33 /* PBXTextBookmark */;
 			5DC575AE12DBCF44005000F8 = 5DC575AE12DBCF44005000F8 /* PBXTextBookmark */;
 			5DC575B512DBCFAC005000F8 = 5DC575B512DBCFAC005000F8 /* PBXTextBookmark */;
 			5DC575BE12DBCFC5005000F8 = 5DC575BE12DBCFC5005000F8 /* PBXTextBookmark */;
@@ -238,7 +252,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 217;
+		rLoc = 215;
 		rType = 1;
 	};
 	5D7A482912DE56D000A1CD33 /* PBXTextBookmark */ = {
@@ -246,7 +260,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 217";
 		rLen = 0;
-		rLoc = 6998;
+		rLoc = 6945;
 		rType = 0;
 		vrLen = 113;
 		vrLoc = 6882;
@@ -276,7 +290,7 @@
 		fRef = 5DC574D812DBC64E005000F8 /* TeacherViewController.m */;
 		name = "TeacherViewController.m: 89";
 		rLen = 61;
-		rLoc = 2631;
+		rLoc = 2686;
 		rType = 0;
 		vrLen = 632;
 		vrLoc = 2538;
@@ -306,7 +320,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 217";
 		rLen = 0;
-		rLoc = 6998;
+		rLoc = 6945;
 		rType = 0;
 		vrLen = 310;
 		vrLoc = 6685;
@@ -326,7 +340,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 33";
 		rLen = 0;
-		rLoc = 708;
+		rLoc = 604;
 		rType = 0;
 		vrLen = 500;
 		vrLoc = 323;
@@ -336,7 +350,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 33";
 		rLen = 0;
-		rLoc = 708;
+		rLoc = 604;
 		rType = 0;
 		vrLen = 500;
 		vrLoc = 323;
@@ -356,7 +370,7 @@
 		fRef = 5DC574D412DBC64E005000F8 /* CourseViewController.m */;
 		name = "CourseViewController.m: 199";
 		rLen = 0;
-		rLoc = 6604;
+		rLoc = 6656;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 6448;
@@ -366,7 +380,7 @@
 		fRef = 5DC574D812DBC64E005000F8 /* TeacherViewController.m */;
 		name = "TeacherViewController.m: 84";
 		rLen = 96;
-		rLoc = 2439;
+		rLoc = 2494;
 		rType = 0;
 		vrLen = 506;
 		vrLoc = 2280;
@@ -376,7 +390,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 33";
 		rLen = 0;
-		rLoc = 708;
+		rLoc = 604;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 559;
@@ -386,7 +400,7 @@
 		fRef = 5DC574D412DBC64E005000F8 /* CourseViewController.m */;
 		name = "CourseViewController.m: 199";
 		rLen = 0;
-		rLoc = 6604;
+		rLoc = 6656;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 6448;
@@ -396,7 +410,7 @@
 		fRef = 5DC574D412DBC64E005000F8 /* CourseViewController.m */;
 		name = "CourseViewController.m: 197";
 		rLen = 0;
-		rLoc = 6499;
+		rLoc = 6551;
 		rType = 0;
 		vrLen = 488;
 		vrLoc = 6448;
@@ -406,7 +420,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 217";
 		rLen = 0;
-		rLoc = 6998;
+		rLoc = 6945;
 		rType = 0;
 		vrLen = 115;
 		vrLoc = 6885;
@@ -416,7 +430,7 @@
 		fRef = 5DC574D412DBC64E005000F8 /* CourseViewController.m */;
 		name = "CourseViewController.m: 197";
 		rLen = 0;
-		rLoc = 6499;
+		rLoc = 6551;
 		rType = 0;
 		vrLen = 488;
 		vrLoc = 6448;
@@ -426,7 +440,7 @@
 		fRef = 5DC574D812DBC64E005000F8 /* TeacherViewController.m */;
 		name = "TeacherViewController.m: 84";
 		rLen = 96;
-		rLoc = 2439;
+		rLoc = 2494;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 2439;
@@ -436,7 +450,7 @@
 		fRef = 5DC574D412DBC64E005000F8 /* CourseViewController.m */;
 		name = "CourseViewController.m: 32";
 		rLen = 37;
-		rLoc = 769;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 501;
 		vrLoc = 268;
@@ -446,7 +460,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 33";
 		rLen = 0;
-		rLoc = 708;
+		rLoc = 604;
 		rType = 0;
 		vrLen = 583;
 		vrLoc = 559;
@@ -456,7 +470,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 41";
 		rLen = 0;
-		rLoc = 1124;
+		rLoc = 1071;
 		rType = 0;
 		vrLen = 586;
 		vrLoc = 559;
@@ -466,7 +480,7 @@
 		fRef = 5DC574D412DBC64E005000F8 /* CourseViewController.m */;
 		name = "CourseViewController.m: 191";
 		rLen = 0;
-		rLoc = 6401;
+		rLoc = 6453;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 6205;
@@ -476,7 +490,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 41";
 		rLen = 0;
-		rLoc = 1124;
+		rLoc = 1071;
 		rType = 0;
 		vrLen = 586;
 		vrLoc = 559;
@@ -486,7 +500,7 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 18";
 		rLen = 0;
-		rLoc = 273;
+		rLoc = 295;
 		rType = 0;
 		vrLen = 423;
 		vrLoc = 179;
@@ -516,30 +530,177 @@
 		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
 		name = "AssignmentViewController.m: 28";
 		rLen = 0;
-		rLoc = 557;
+		rLoc = 453;
 		rType = 0;
 		vrLen = 855;
 		vrLoc = 273;
 	};
+	5D7A486A12DE5C7B00A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574D312DBC64E005000F8 /* CourseViewController.h */;
+		name = "CourseViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 389;
+		vrLoc = 0;
+	};
+	5D7A486B12DE5C7B00A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574D412DBC64E005000F8 /* CourseViewController.m */;
+		name = "CourseViewController.m: 200";
+		rLen = 0;
+		rLoc = 6737;
+		rType = 0;
+		vrLen = 620;
+		vrLoc = 6263;
+	};
+	5D7A486C12DE5C7B00A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C112DBC635005000F8 /* AssignmentViewController.h */;
+		name = "AssignmentViewController.h: 18";
+		rLen = 49;
+		rLoc = 311;
+		rType = 0;
+		vrLen = 401;
+		vrLoc = 0;
+	};
+	5D7A486D12DE5C7B00A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C312DBC635005000F8 /* Course.h */;
+		name = "Course.h: 30";
+		rLen = 0;
+		rLoc = 564;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 16;
+	};
+	5D7A486E12DE5C7B00A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C412DBC635005000F8 /* Course.m */;
+		name = "Course.m: 14";
+		rLen = 0;
+		rLoc = 239;
+		rType = 0;
+		vrLen = 489;
+		vrLoc = 0;
+	};
+	5D7A486F12DE5C7B00A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
+		name = "AssignmentViewController.m: 19";
+		rLen = 0;
+		rLoc = 375;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 179;
+	};
+	5D7A487012DE5C7B00A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
+		name = "AssignmentViewController.m: 23";
+		rLen = 0;
+		rLoc = 454;
+		rType = 0;
+		vrLen = 731;
+		vrLoc = 720;
+	};
+	5D7A487112DE5E0400A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
+		name = "AssignmentViewController.m: 213";
+		rLen = 0;
+		rLoc = 6945;
+		rType = 0;
+		vrLen = 115;
+		vrLoc = 6785;
+	};
+	5D7A487412DE5E9600A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C112DBC635005000F8 /* AssignmentViewController.h */;
+		name = "AssignmentViewController.h: 12";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 401;
+		vrLoc = 0;
+	};
+	5D7A487512DE5E9600A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574D712DBC64E005000F8 /* TeacherViewController.h */;
+		name = "TeacherViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 380;
+		vrLoc = 0;
+	};
+	5D7A487612DE5E9600A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574D812DBC64E005000F8 /* TeacherViewController.m */;
+		name = "TeacherViewController.m: 27";
+		rLen = 0;
+		rLoc = 762;
+		rType = 0;
+		vrLen = 723;
+		vrLoc = 407;
+	};
+	5D7A487712DE5E9600A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574D412DBC64E005000F8 /* CourseViewController.m */;
+		name = "CourseViewController.m: 27";
+		rLen = 0;
+		rLoc = 752;
+		rType = 0;
+		vrLen = 751;
+		vrLoc = 303;
+	};
+	5D7A487812DE5E9600A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
+		name = "AssignmentViewController.m: 23";
+		rLen = 0;
+		rLoc = 454;
+		rType = 0;
+		vrLen = 731;
+		vrLoc = 720;
+	};
+	5D7A487912DE5E9600A1CD33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C212DBC635005000F8 /* AssignmentViewController.m */;
+		name = "AssignmentViewController.m: 38";
+		rLen = 0;
+		rLoc = 1022;
+		rType = 0;
+		vrLen = 676;
+		vrLoc = 720;
+	};
 	5DC574C112DBC635005000F8 /* AssignmentViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {912, 462}}";
-			sepNavSelRange = "{311, 49}";
-			sepNavVisRange = "{48, 353}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 552}}";
+			sepNavSelRange = "{256, 0}";
+			sepNavVisRange = "{0, 401}";
 		};
 	};
 	5DC574C212DBC635005000F8 /* AssignmentViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {912, 4851}}";
-			sepNavSelRange = "{557, 0}";
-			sepNavVisRange = "{273, 855}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 5019}}";
+			sepNavSelRange = "{1022, 0}";
+			sepNavVisRange = "{720, 676}";
+		};
+	};
+	5DC574C312DBC635005000F8 /* Course.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {912, 630}}";
+			sepNavSelRange = "{564, 0}";
+			sepNavVisRange = "{16, 548}";
 		};
 	};
 	5DC574C412DBC635005000F8 /* Course.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 793}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 728}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 1239}}";
+			sepNavSelRange = "{239, 0}";
+			sepNavVisRange = "{0, 489}";
 		};
 	};
 	5DC574C512DBC635005000F8 /* Department.h */ = {
@@ -587,16 +748,16 @@
 	};
 	5DC574D312DBC64E005000F8 /* CourseViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 488}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 552}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 389}";
 		};
 	};
 	5DC574D412DBC64E005000F8 /* CourseViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {912, 4599}}";
-			sepNavSelRange = "{6401, 0}";
-			sepNavVisRange = "{6205, 573}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 4914}}";
+			sepNavSelRange = "{752, 0}";
+			sepNavVisRange = "{303, 751}";
 		};
 	};
 	5DC574D512DBC64E005000F8 /* DepartmentViewController.h */ = {
@@ -615,16 +776,16 @@
 	};
 	5DC574D712DBC64E005000F8 /* TeacherViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 488}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 552}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 380}";
 		};
 	};
 	5DC574D812DBC64E005000F8 /* TeacherViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {912, 4494}}";
-			sepNavSelRange = "{2439, 96}";
-			sepNavVisRange = "{2439, 573}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 4767}}";
+			sepNavSelRange = "{762, 0}";
+			sepNavVisRange = "{407, 723}";
 		};
 	};
 	5DC574E512DBC68C005000F8 /* main.m */ = {
