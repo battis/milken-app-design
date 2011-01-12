@@ -38,7 +38,8 @@
 	// TODO change this to the name of the course
 	
 	[[self navigationItem] setTitle:@"Assignments"];
-	
+	[webView setDelegate:self];
+
 	return self;
 }
 
@@ -204,6 +205,10 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 	return betterIndexPath;
 }
  */
+
+#pragma mark -
+#pragma mark WebView
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 
 
 - (void)dealloc {
