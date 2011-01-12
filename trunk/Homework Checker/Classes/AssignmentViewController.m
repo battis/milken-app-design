@@ -11,10 +11,10 @@
 
 @implementation AssignmentViewController
 
-@synthesize course;
+@synthesize course, webView;
 
--(void)viewDidLoad{
-	
+- (void)viewDidLoad
+{
 	NSString *urlAddress = @"http://www.google.com";
 	
 	//Create a URL object.
@@ -29,8 +29,9 @@
 	// Override point for customization after app launch
 	//[AssignmentView makeKeyAndVisible];
 }
+
 - (id)init {
-	[super init];
+	[super initWithNibName:@"AssignmentView" bundle:nil];
 	
 	// Set the nav bar to have the back button when 
 	// TeacherViewController is on top of the stack
@@ -38,7 +39,7 @@
 	
 	// Set the title of the nav bar to Teachers when TeacherViewController
 	// is on top of the stack
-	[[self navigationItem] setTitle:@"Teachers"];
+	[[self navigationItem] setTitle:@"Assignments"];
 	
 	return self;
 }
