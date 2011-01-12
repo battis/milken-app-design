@@ -189,10 +189,10 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 	return betterIndexPath;
 }
 
-#pragma mark Link to AssignmentViewController
+- (void)tableView:(UITableView *)aTableView 
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{	
 
-- (void)didSelectRowAtIndexPath:(UIApplication *)application  didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	
 	if(!assignmentViewController)
 	{
 		assignmentViewController = [[AssignmentViewController alloc] init];
