@@ -15,13 +15,8 @@
 
 - (void)viewDidLoad
 {
-	NSString *urlAddress = @"http://www.google.com";
-	
-	//Create a URL object.
-	NSURL *url=[NSURL URLWithString:urlAddress];
-	
 	//URL Request Object
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:[course assignmentPage]];
 	
 	//Load the request in the UIWebView.
 	[webView loadRequest:requestObj];
@@ -39,6 +34,9 @@
 	
 	// Set the title of the nav bar to Teachers when TeacherViewController
 	// is on top of the stack
+	
+	// TODO change this to the name of the course
+	
 	[[self navigationItem] setTitle:@"Assignments"];
 	
 	return self;

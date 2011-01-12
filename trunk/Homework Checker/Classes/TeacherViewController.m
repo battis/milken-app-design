@@ -23,6 +23,9 @@
 	
 	// Set the title of the nav bar to Teachers when TeacherViewController
 	// is on top of the stack
+	
+	// TODO change this to the name of the department
+	
 	[[self navigationItem] setTitle:@"Teachers"];
 	
 	return self;
