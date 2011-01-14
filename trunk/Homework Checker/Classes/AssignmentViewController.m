@@ -210,7 +210,9 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 #pragma mark WebView
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 
-
+{
+	
+}
 - (void)dealloc {
 	//[detailViewController release];
 	//[teachers release];
