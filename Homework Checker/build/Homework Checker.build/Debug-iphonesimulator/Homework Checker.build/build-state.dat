@@ -1,7 +1,7 @@
 THomework Checker
 v7
 r0
-t317167965.508783
+t317168261.104609
 cCheck dependencies
 cProcessInfoPlistFile "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Info.plist" Homework_Checker-Info.plist
 cCompileXIB "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/CourseView.xib"
@@ -479,9 +479,9 @@ s564
 i<Foundation/Foundation.h>
 
 N/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m
-c000000004D2E24E4000000000000046C
-t1294869732
-s1132
+c000000004D37630400000000000004CC
+t1295475460
+s1228
 i"Course.h"
 
 N/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/CourseViewController.h
@@ -608,11 +608,11 @@ t1294702801
 s19292
 
 N/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app
-t1295475165
+t1295475461
 s374
 
 N/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM
-t1295475165
+t1295475461
 s136
 
 N/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/AssignmentView.nib
@@ -628,7 +628,7 @@ t1294868230
 s1331
 
 N/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker
-t1295475165
+t1295475461
 s68296
 
 N/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Info.plist
@@ -652,8 +652,8 @@ t1295475165
 s48856
 
 N/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o
-t1294869754
-s14004
+t1295475460
+s14372
 
 N/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/CourseViewController.o
 t1295474437
@@ -705,7 +705,7 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies317167964#317167964#0(0"0(0#1#0"8630766752#0"0#
+lSLF07#2@18"Check dependencies317168260#317168260#0(0"0(0#1#0"8638748544#0"0#
 
 CCompileXIB "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/AssignmentView.xib"
 s316394652.729367
@@ -850,8 +850,8 @@ CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homewo
 r0
 
 CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o" "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s316562553.586223
-e316562554.365372
+s317168260.448767
+e317168260.993693
 r1
 xDistributed-CompileC
 xbuild/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o
@@ -860,13 +860,10 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-odistcc[5651] ERROR: nonblocking connect to 127.0.0.1:3632 failed: Connection refused
-odistcc[5651] Warning: failed to distribute /Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m to localhost:3632/2, running locally instead
+odistcc[54423] (dcc_build_somewhere) Warning: failed to distribute, running locally instead
 o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
 o<command-line>: warning: this is the location of the previous definition
-o<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
-o<command-line>: warning: this is the location of the previous definition
-lSLF07#2@148"Distribute compilation of /Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m316562553#316562554#0(582"distcc[5651] ERROR: nonblocking connect to 127.0.0.1:3632 failed: Connection refuseddistcc[5651] Warning: failed to distribute /Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m to localhost:3632/2, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition0(0#0#122"/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m8606418976#3069"    cd "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m" -o "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o"0#
+lSLF07#2@148"Distribute compilation of /Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m317168260#317168260#0(234"distcc[54423] (dcc_build_somewhere) Warning: failed to distribute, running locally instead<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined<command-line>: warning: this is the location of the previous definition0(0#0#122"/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m8608453888#3069"    cd "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker"    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "localhost:3632/2"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-generated-files.hmap" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-own-target-headers.hmap" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-all-target-headers.hmap" -iquote "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker-project-headers.hmap" -fpch-preprocess "-F/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/include" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources/i386" "-I/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/DerivedSources" -include "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Homework_Checker_Prefix.pch" -c "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Classes/Course.m" -o "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Course.o"0#
 
 CDistributed-CompileC "build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/CourseViewController.o" "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/Classes/CourseViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s316394654.064157
@@ -1185,13 +1182,13 @@ x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checke
 lSLF07#2@140"GenerateDSYMFile "build/Debug-iphonesimulator/Homework Checker.app.dSYM" "build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"316395460#316395460#0(0"0(0#0#146"/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker8634759168#542"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker" -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM"0#
 
 CGenerateDSYMFile "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM" "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"
-s317167965.462671
-e317167965.504498
+s317168261.067983
+e317168261.099557
 r1
 xGenerateDSYMFile
 x/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM
 x/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker
-lSLF07#2@140"GenerateDSYMFile "build/Debug-iphonesimulator/Homework Checker.app.dSYM" "build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"317167965#317167965#0(0"0(0#0#171"/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker8620411296#617"    cd "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker" -o "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM"0#
+lSLF07#2@140"GenerateDSYMFile "build/Debug-iphonesimulator/Homework Checker.app.dSYM" "build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"317168261#317168261#0(0"0(0#0#171"/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker8638706720#617"    cd "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker" -o "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app.dSYM"0#
 
 CLd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker" normal i386
 s316395460.465643
@@ -1204,14 +1201,14 @@ xi386
 lSLF07#2@151"Link /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker316395460#316395460#0(0"0(0#0#0"8635134592#1165"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk "-L/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" "-F/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator" -filelist "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Homework Checker.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"0#
 
 CLd "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker" normal i386
-s317167965.416296
-e317167965.462518
+s317168260.995433
+e317168261.067850
 r1
 xLd
 x/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker
 xnormal
 xi386
-lSLF07#2@176"Link /Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker317167965#317167965#0(0"0(0#0#0"8631764736#1290"    cd "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk "-L/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator" "-F/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator" -filelist "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Homework Checker.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"0#
+lSLF07#2@176"Link /Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker317168260#317168261#0(0"0(0#0#0"8632585696#1290"    cd "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk "-L/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator" "-F/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator" -filelist "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/Homework Checker.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Homework Checker"0#
 
 CProcessInfoPlistFile "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app/Info.plist" Homework_Checker-Info.plist
 s316394651.386884
@@ -1240,10 +1237,10 @@ x/Users/seth/Desktop/Computer Application Design and Programming/Homework Checke
 lSLF07#2@135"Touch /Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app316395460#316395460#0(0"0(0#0#0"8634588224#375"    cd "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/seth/Desktop/Computer Application Design and Programming/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app"0#
 
 CTouch "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app"
-s317167965.504612
-e317167965.508720
+s317168261.099672
+e317168261.104544
 r1
 xTouch
 x/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app
-lSLF07#2@160"Touch /Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app317167965#317167965#0(0"0(0#0#0"8632495008#425"    cd "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app"0#
+lSLF07#2@160"Touch /Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app317168261#317168261#0(0"0(0#0#0"8634766688#425"    cd "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Debug-iphonesimulator/Homework Checker.app"0#
 
