@@ -15,6 +15,7 @@
 	NSString *regularEx;
 	NSMutableString *titleString;
 	NSMutableArray *departments;
+	NSMutableArray *teachers;
 	NSMutableData *milkenSiteData;
 	NSURLConnection *connectionInProgress;
 
@@ -22,5 +23,6 @@
 }
 
 @property (readonly) NSMutableArray *departments;
+@property (readonly) NSMutableArray *teachers;
 
 @end
