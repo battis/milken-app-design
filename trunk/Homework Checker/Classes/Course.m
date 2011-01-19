@@ -43,9 +43,15 @@
 		@""
 	};
 	
+	NSURL *urls[3] = {
+		[NSURL URLWithString:@"http://www.google.com"],
+		[NSURL URLWithString:@"http://www.bing.com"],
+		[NSURL URLWithString:@"http://www.yahoo.com"]
+	};
+	
 	Course *randomCourse = [[Course alloc] initWithName:[NSString stringWithFormat:@"%@%@", levels[rand() %3], titles[rand() % 3]]
 											   taughtBy:aTeacher
-										 assignmentPage:[NSURL URLWithString:@"http://faculty.milkenschool.org/sbattis/appdesign/assignments/index"]]; 
+										 assignmentPage:urls[rand() % 3]]; 
 	[randomCourse autorelease];
 	return randomCourse;
 }
