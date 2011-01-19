@@ -9,6 +9,7 @@
 #import "TeacherViewController.h"
 #import "Teacher.h"
 #import "AssignmentViewController.h"
+#import "CourseViewController.h"
 
 @implementation TeacherViewController
 

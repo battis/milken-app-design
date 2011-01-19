@@ -13,18 +13,6 @@
 
 @synthesize course, webView;
 
-- (void)viewDidLoad
-{
-	//URL Request Object
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:[course assignmentPage]];
-	
-	//Load the request in the UIWebView.
-	[webView loadRequest:requestObj];
-	
-	// Override point for customization after app launch
-	//[AssignmentView makeKeyAndVisible];
-}
-
 - (id)init {
 	[super initWithNibName:@"AssignmentView" bundle:nil];
 	
@@ -38,11 +26,23 @@
 	// TODO change this to the name of the course
 	
 	[[self navigationItem] setTitle:@"Assignments"];
-	[webView setDelegate:self];
-
+	
 	return self;
 }
 
+
+- (void)viewDidLoad
+{
+	//URL Request Object
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:[course assignmentPage]];
+	
+	//Load the request in the UIWebView.
+	[webView loadRequest:requestObj];
+	[webView setDelegate:self];
+	
+	// Override point for customization after app launch
+	//[AssignmentView makeKeyAndVisible];
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -208,15 +208,16 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 
 #pragma mark -
 #pragma mark WebView
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
+	NSLog(@"shouldStartLoadWithRequest");
     if (navigationType == UIWebViewNavigationTypeLinkClicked) {
         [[UIApplication sharedApplication] openURL:request.URL];
-        return YES;
+        return NO;
     }
     return YES;
 }
-}
+
 
 
 	
