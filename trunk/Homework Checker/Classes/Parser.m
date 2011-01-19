@@ -8,11 +8,12 @@
 
 #import "Parser.h"
 #import "Department.h"
+#import "Teacher.h"
 
 
 @implementation Parser
 
-@synthesize departments;
+@synthesize departments, teachers;
 
 - (id)init {
 	NSURL *milkenSite;
@@ -48,6 +49,7 @@
 	
 	//use department names we already know to deduce the regular expression for finding the departments
 	NSString *mathString = @"Mathematics";
+	//I changed englishString to Athletics because Athletics was abnormal and had to be accounted for.
 	NSString *englishString = @"English";
 	
 	
@@ -67,9 +69,11 @@
 	//run through each letter to the left of the department as long as the characters are equal
 	for (int i=1; [htmlCheck characterAtIndex:englishLocation-i] == [htmlCheck characterAtIndex:mathLocation-i]; i++){
 		counter = i;
+		if(counter == 17){
+			break;}
 	}
 	
-	NSLog(@"%d",counter);
+	NSLog(@"left counter is %d",counter);
 	
 	NSLog(@"we want a range from %d to %d", englishLocation-counter, englishLocation-1);
 	
@@ -83,9 +87,12 @@
 	//run through each letter to the right of the department as long as the characters are equal
 	for(int i=1; [htmlCheck characterAtIndex:englishLocation+englishLength+i] == [htmlCheck characterAtIndex:mathLocation+mathLength+i];i++){
 		counter = i;
+		if(counter == 16){
+			break;}
+		
 	}
 	
-	NSLog(@"%d",counter);
+	NSLog(@"right counter is %d",counter);
 	
 	NSRange rightRange = NSMakeRange(englishLocation+englishLength, counter);
 	
@@ -112,7 +119,7 @@
 		NSRange departmentNameRange = [[matches objectAtIndex:i] rangeAtIndex:1];
 		NSRange nextDepartmentNameRange = [[matches objectAtIndex:i+1] rangeAtIndex:1];
 		
-		NSRange departmentRange = NSMakeRange(departmentNameRange.location, departmentNameRange.location - nextDepartmentNameRange.location);
+		NSRange departmentRange = NSMakeRange(departmentNameRange.location, nextDepartmentNameRange.location-departmentNameRange.location);
 		
 		Department *currentDepartment = [[Department alloc] initWithName:departmentName range:departmentRange];
 		
@@ -146,13 +153,15 @@
 	//create the regular expression
 	
 	NSRegularExpression *regexTeachers = [[NSRegularExpression alloc] initWithPattern:regexString
-																			  options:0
-																				error:&error];
-	
+																			  options:NSRegularExpressionCaseInsensitive
+																	          error:&error];
+
 	
 	NSArray *matchesTeachers = [regexTeachers matchesInString:htmlCheck 
 													  options:0
 														range:NSMakeRange(0,[htmlCheck length])];
+	
+	NSMutableArray *teachers = [[NSMutableArray alloc] init];
 	
 	//run through the array to get the departments
 	for (NSTextCheckingResult *matchTeachers in matchesTeachers){
@@ -161,16 +170,38 @@
 		NSString *teacherName = [[NSString alloc]initWithFormat:@"name:%@. %@", [firstInitial capitalizedString], [lastName capitalizedString]];
 		NSRange teacherRange = [htmlCheck rangeOfString:lastName];
 		
+		Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
+		[teachers addObject:currentTeacher];
+		
+		for (int i=0; i<[departments count]; i++) {
+			if (teacherRange.location>[[departments objectAtIndex:i] range].location && teacherRange.location<[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location) {
+				NSLog(@"found one %@ in %@",teacherName, [[departments objectAtIndex:i] name]);
+				[currentTeacher setDepartment:[departments objectAtIndex:i]];
+				[[departments objectAtIndex:i] addTeacher:currentTeacher];
+				break;
+			}
+			NSLog(@"%@ with range %d is not in %@ with range from %d to %d", teacherName,teacherRange.location,[[departments objectAtIndex:i] name],[[departments objectAtIndex:i]range].location ,[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location);
+		}
+		
 	}
 	
-	NSLog(@"%@", [htmlCheck substringWithRange:NSMakeRange(emailFormatRange.location-counter, counter)]);
+	NSLog(@"Teachers:");
+	for (int i=0; i<[departments count]; i++) {
+		
+		NSLog(@"teachers in %@: %@", [[departments objectAtIndex:i] name], [[departments objectAtIndex:i] teachers]);
+	}
 	
+	NSLog(@"the list of teachers: %@", teachers);
 	//Use the regular expression "(\w)(\w*)\d*@milkenschool.org" to find teacher names and first initial.
 	
-	/*to do list: 1) load ranges into departments
-	 2) find teacher names and put them into their 
-	 3) corresponding departments based on their ranges*/
-	
+	/*to do list: 1) load teacher pages
+	 2) run through teacher html looking for text that is between /index"> and </A>
+	 then navigate after the quote and keep reading the text to the left until you hit another quote.
+	 
+	 example :<A HREF="/ljames/precalchon/index">Pre Calculus Honors</A>
+
+	 
+	 */
 	
 	
 }
