@@ -13,7 +13,7 @@
 
 @implementation TeacherViewController
 
-@synthesize teachers;
+@synthesize department;
 
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
@@ -24,10 +24,7 @@
 	
 	// Set the title of the nav bar to Teachers when TeacherViewController
 	// is on top of the stack
-	
-	// TODO change this to the name of the department
-	
-	[[self navigationItem] setTitle:@"Teachers"];
+		
 	
 	return self;
 }
@@ -36,6 +33,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
+	[[self navigationItem] setTitle:[department name]];
 	[[self tableView] reloadData];
 }
 - (void)didReceiveMemoryWarning {
@@ -59,7 +57,7 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	int numberOfRows = [teachers count];
+	int numberOfRows = [[department teachers] count];
 	// If we are editing, we will have one more row than we have possessions
 	if ([self isEditing])
 		numberOfRows++;
@@ -76,8 +74,8 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"] autorelease];	
 	
 	// If the table view is filling a row with a possession in it, do as normal 
-	if ([indexPath row] < [teachers count])
-		[[cell textLabel] setText:[[teachers objectAtIndex:[indexPath row]] description]];
+	if ([indexPath row] < [[department teachers] count])
+		[[cell textLabel] setText:[[[department teachers] objectAtIndex:[indexPath row]] description]];
 	else // Otherwise, if we are editing we have one extra row - place this text in that row
 		[[cell textLabel] setText:@"Add New Item..."];
 	
@@ -93,7 +91,7 @@ if (!courseViewController) {
  courseViewController = [[CourseViewController alloc] init];
  }
  
-	 [courseViewController setCourses:[[teachers objectAtIndex: [indexPath row]] courses]];
+	 [courseViewController setCourses:[[[department teachers] objectAtIndex: [indexPath row]] courses]];
  
  // Push it onto the top of the navigation controller's stack
  [[self navigationController] pushViewController:courseViewController 
@@ -105,7 +103,7 @@ if (!courseViewController) {
 - (UITableViewCellEditingStyle)tableView:(UITableView *)aTableView 
            editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath 
 {		
-	if ([self isEditing] && [indexPath row] == [teachers count]) {
+	if ([self isEditing] && [indexPath row] == [[department teachers] count]) {
 		// During editing...
 		// The last row during editing will show an insert style button
 		return UITableViewCellEditingStyleInsert;
@@ -120,7 +118,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 	// If the table view is asking to commit a delete command...
 	if (editingStyle == UITableViewCellEditingStyleDelete) {
 		// We remove the row being deleted from the possessions array
-		[teachers removeObjectAtIndex:[indexPath row]];
+		[[department teachers] removeObjectAtIndex:[indexPath row]];
 		// We also remove that row from the table view with an animation
 		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
 						 withRowAnimation:UITableViewRowAnimationFade];
@@ -134,16 +132,16 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 	  toIndexPath:(NSIndexPath *)toIndexPath 
 {
 	// Get pointer to object being moved
-	Teacher * p = [teachers objectAtIndex:[fromIndexPath row]];
+	Teacher * p = [[department teachers] objectAtIndex:[fromIndexPath row]];
 	
 	// Retain it... (retain count = 2, 1 for scope of this method, 1 for being inside array)
 	[p retain];
 	
 	// Remove p from our array, it is automatically sent release (retain count of p = 1)
-	[teachers removeObjectAtIndex:[fromIndexPath row]];
+	[[department teachers] removeObjectAtIndex:[fromIndexPath row]];
 	
 	// Re-insert p into array at new location, it is automatically retained (retain count of p = 2)
-	[teachers insertObject:p atIndex:[toIndexPath row]];
+	[[department teachers] insertObject:p atIndex:[toIndexPath row]];
 	
 	// Release p (retain count = 1, only owner is now array)
 	[p release];
@@ -156,13 +154,13 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 	// We need to insert/remove a new row in to table view to say "Add New Item..."
 	if (flag) {
 		// If entering edit mode, we add another row to our table view
-		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[teachers count] 
+		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[[department teachers] count] 
 													inSection:0];
 		[[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
 								withRowAnimation:UITableViewRowAnimationLeft];	
 	} else {
 		// If leaving edit mode, we remove last row from table view
-		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[teachers count] 
+		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[[department teachers] count] 
 													inSection:0];
 		[[self tableView] deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
 								withRowAnimation:UITableViewRowAnimationFade];
@@ -173,7 +171,7 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 canMoveRowAtIndexPath:(NSIndexPath *)indexPath 
 {
 	// Only allow rows showing possessions to move
-	if ([indexPath row] < [teachers count])
+	if ([indexPath row] < [[department teachers] count])
 		return YES;
 	return NO;
 }
@@ -182,14 +180,14 @@ canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath 
 	   toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
 {
-	if ([proposedDestinationIndexPath row] < [teachers count]) {
+	if ([proposedDestinationIndexPath row] < [[department teachers] count]) {
 		// If we are moving to a row that currently is showing a possession,
 		// then we return the row the user wanted to move to
 		return proposedDestinationIndexPath;
 	}
 	// Execution gets here if we are trying to move a row to underneath the "Add New Item..."
 	// row, have the moving row go one row above it instead.
-	NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[teachers count] - 1 
+	NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[[department teachers] count] - 1 
 													  inSection:0];
 	return betterIndexPath;
 }
@@ -198,7 +196,7 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 
 - (void)dealloc {
 	//[detailViewController release];
-	[teachers release];
+	[department release];
     [super dealloc];
 }
 

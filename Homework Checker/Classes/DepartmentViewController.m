@@ -97,7 +97,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 		teacherViewController = [[TeacherViewController alloc] init];
 	}
 	
-	[teacherViewController setTeachers:[[departments objectAtIndex:[indexPath row]] teachers]];
+	[teacherViewController setDepartment:[departments objectAtIndex:[indexPath row]]];
 		
 	// Push it onto the top of the navigation controller's stack
 	[[self navigationController] pushViewController:teacherViewController 
