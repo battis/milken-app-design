@@ -148,16 +148,15 @@
 		counter = i;
 	}
 	
-	regexString= @"(\\w)(\\w+)\\d*@milkenschool.org";
+
+	regexString = @"(\\w)(\\w+)\\d*@milkenschool.org";
 	
 	//create the regular expression
 	
-	NSRegularExpression *regexTeachers = [[NSRegularExpression alloc] initWithPattern:regexString
+	NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
 																			  options:NSRegularExpressionCaseInsensitive
 																	          error:&error];
-
-	
-	NSArray *matchesTeachers = [regexTeachers matchesInString:htmlCheck 
+	NSArray *matchesTeachers = [regexTeachersEmail matchesInString:htmlCheck 
 													  options:0
 														range:NSMakeRange(0,[htmlCheck length])];
 	
@@ -169,8 +168,26 @@
 		NSString *firstInitial = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:1]];
 		NSString *teacherName = [[NSString alloc]initWithFormat:@"name:%@. %@", [firstInitial capitalizedString], [lastName capitalizedString]];
 		NSRange teacherRange = [htmlCheck rangeOfString:lastName];
+		NSString *fullName = [[NSString alloc]init];
 		
-		Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
+		regexString = @"(<td[^>]*[/>])([^<]*)";
+				
+		NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
+																					   options:NSRegularExpressionCaseInsensitive
+																						error:&error];
+								  
+		NSArray *matchesTeachersNames = [regexTeachersEmail matchesInString:htmlCheck 
+															   options:0
+																range:NSMakeRange(teacherRange.location-200, 200+teacherRange.length)];
+										 
+		NSLog(@"WRAH!!!%@",matchesTeachersNames);
+		for (NSTextCheckingResult *matchTeachersNames in matchesTeachersNames){
+			
+		NSString *fullName = [htmlCheck substringWithRange:[matchTeachersNames rangeAtIndex:2]];
+			NSLog(@"REGULAR EXPRESSION FOUND %@", fullName);
+}
+									
+		Teacher *currentTeacher = [[Teacher alloc] initWithName:fullName];
 		[teachers addObject:currentTeacher];
 		
 		for (int i=0; i<[departments count]; i++) {
