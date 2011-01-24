@@ -156,11 +156,13 @@
 	NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
 																			  options:NSRegularExpressionCaseInsensitive
 																	          error:&error];
+	[regexString release];
+	
 	NSArray *matchesTeachers = [regexTeachersEmail matchesInString:htmlCheck 
 													  options:0
 														range:NSMakeRange(0,[htmlCheck length])];
 	
-	NSMutableArray *teachers = [[NSMutableArray alloc] init];
+	teachers = [[NSMutableArray alloc] init];
 	
 	//run through the array to get the departments
 	for (NSTextCheckingResult *matchTeachers in matchesTeachers){
@@ -170,15 +172,22 @@
 		NSRange teacherRange = [htmlCheck rangeOfString:lastName];
 		NSString *fullName = [[NSString alloc]init];
 		
-		regexString = @"(<td[^>]*[/>])([^<]*)";
-				
+		NSString *regexString = [[NSString alloc] initWithFormat:@"<tr>\n<td[^>]*>([^<]*)</td>\n<td[^>]*>.*%@%@@milkenschool.org.*</td>", firstInitial, lastName];
+		
+		NSLog(@"%@", regexString);
+		
+		
+		
 		NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
 																					   options:NSRegularExpressionCaseInsensitive
 																						error:&error];
 								  
 		NSArray *matchesTeachersNames = [regexTeachersEmail matchesInString:htmlCheck 
 															   options:0
-																range:NSMakeRange(teacherRange.location-200, 200+teacherRange.length)];
+																	  range:NSMakeRange(0, htmlCheck.length)];
+										 
+										//replace regular expression range with this one 
+										 //NSMakeRange(teacherRange.location-200, 200+teacherRange.length)];
 										 
 		NSLog(@"WRAH!!!%@",matchesTeachersNames);
 		for (NSTextCheckingResult *matchTeachersNames in matchesTeachersNames){
