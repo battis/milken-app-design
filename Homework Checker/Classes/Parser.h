@@ -19,11 +19,11 @@
 	NSMutableData *milkenSiteData;
 	NSURLConnection *connectionInProgress;
 
-	id<ParserDelegate> *delegate;
+	id<ParserDelegate> delegate;
 }
 
 @property (readonly) NSMutableArray *departments;
 @property (readonly) NSMutableArray *teachers;
-@property (retain) id<ParserDelegate> *delegate;
+@property (retain) id<ParserDelegate> delegate;
 
 @end

@@ -9,6 +9,7 @@
 #import "DepartmentViewController.h"
 #import "Department.h"
 #import "TeacherViewController.h"
+#import "Parser.h"
 
 
 @implementation DepartmentViewController
