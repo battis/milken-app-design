@@ -14,7 +14,7 @@
 @implementation DepartmentViewController
 
 @synthesize teachers;
-
+@synthesize departments;
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
 	
