@@ -211,7 +211,7 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 
 -(void)parser:(Parser *) theParser didFinishParsingDepartments:(NSMutableArray *) theDepartments
 {
-	NSLog(@"%@", theDepartments);
+	NSLog(@"DepartmentViewController received the following departments:\n%@", theDepartments);
 	[self setDepartments:theDepartments];
 	[[self tableView] reloadData];
 	[activityIndicator stopAnimating];
