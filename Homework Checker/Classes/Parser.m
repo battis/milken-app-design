@@ -13,7 +13,7 @@
 
 @implementation Parser
 
-@synthesize departments, teachers;
+@synthesize departments, teachers, delegate;
 
 - (id)init {
 	NSURL *milkenSite;
@@ -220,7 +220,10 @@
 	 
 	 */
 	
-	
+	if(delegate)
+	{
+		[delegate parser:self didFinishParsingDepartments:departments];
+	}
 }
 
 

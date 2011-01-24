@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ParserDelegate.h"
 
 @interface Parser : NSObject <NSXMLParserDelegate>{
 	
@@ -19,10 +19,11 @@
 	NSMutableData *milkenSiteData;
 	NSURLConnection *connectionInProgress;
 
-	
+	id<ParserDelegate> *delegate;
 }
 
 @property (readonly) NSMutableArray *departments;
 @property (readonly) NSMutableArray *teachers;
+@property (retain) id<ParserDelegate> *delegate;
 
 @end

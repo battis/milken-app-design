@@ -19,7 +19,8 @@
 	[super initWithStyle:UITableViewStyleGrouped];
 	
 	// Create an array of 10 departments
-	departments = [parser departments];
+	parser = [[Parser alloc] init];
+	[parser setDelegate:self];
 	
 	
 	// Set the nav bar to have the back button when 
@@ -201,6 +202,22 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 	[teacherViewController release];
 	[departments release];
     [super dealloc];
+}
+
+#pragma mark -
+#pragma mark ParserDelegate
+
+-(void)parser:(Parser *) theParser didFinishParsingDepartments:(NSMutableArray *) theDepartments
+{
+	NSLog(@"%@", theDepartments);
+	departments = theDepartments;
+	[departments retain];
+	[[self tableView] reloadData];
+}
+
+-(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
+{
+	
 }
 
 
