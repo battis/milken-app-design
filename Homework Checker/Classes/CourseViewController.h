@@ -13,6 +13,8 @@
 @interface CourseViewController : UITableViewController {
 	AssignmentViewController *assignmentViewController;
 	NSMutableArray *courses;
+	
+	IBOutlet UIActivityIndicatorView *activityIndicator;
 }
 
 @property (copy) NSMutableArray *courses;

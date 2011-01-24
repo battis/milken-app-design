@@ -23,6 +23,7 @@
 	[parser setDelegate:self];
 	
 	
+	
 	// Set the nav bar to have the back button when 
 	// departmentViewController is on top of the stack
 	//[[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil]];
@@ -39,6 +40,7 @@
 {
 	[super viewWillAppear:animated];
 	[[self tableView] reloadData];
+	[activityIndicator startAnimating];
 }
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -212,6 +214,7 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 	NSLog(@"%@", theDepartments);
 	[self setDepartments:theDepartments];
 	[[self tableView] reloadData];
+	
 }
 
 -(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher

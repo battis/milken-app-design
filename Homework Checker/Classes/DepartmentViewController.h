@@ -15,6 +15,8 @@
 	TeacherViewController *teacherViewController;
 	NSMutableArray *departments;
 	Parser *parser;
+	
+	IBOutlet UIActivityIndicatorView *activityIndicator;
 }
 
 @property (copy) NSMutableArray *teachers;
