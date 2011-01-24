@@ -30,7 +30,6 @@
 	
     [window makeKeyAndVisible];
 	
-	Parser *parser = [[Parser alloc] init];
 	return YES;
 }
 
