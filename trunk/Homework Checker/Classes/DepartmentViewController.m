@@ -210,8 +210,7 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 -(void)parser:(Parser *) theParser didFinishParsingDepartments:(NSMutableArray *) theDepartments
 {
 	NSLog(@"%@", theDepartments);
-	departments = theDepartments;
-	[departments retain];
+	[self setDepartments:theDepartments];
 	[[self tableView] reloadData];
 }
 
