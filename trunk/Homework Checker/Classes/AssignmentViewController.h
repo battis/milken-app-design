@@ -12,7 +12,8 @@
 @interface AssignmentViewController : UIViewController <UIApplicationDelegate, UIWebViewDelegate> {
 
 	Course *course;
-	IBOutlet UIWebView *webView;	
+	IBOutlet UIWebView *webView;
+	IBOutlet UIActivityIndicatorView *activityIndicator;
 }
 
 @property (nonatomic,retain) UIWebView *webView;
