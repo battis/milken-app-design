@@ -268,6 +268,7 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>5DC574E812DBC6D9005000F8</string>
+								<string>5DC574E712DBC6CC005000F8</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -275,7 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>2</integer>
+									<integer>9</integer>
+									<integer>5</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -320,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Parser.h</string>
+								<string>TeacherViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,27 +330,27 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Parser.h</string>
+										<string>TeacherViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5D2CADB212EE36F300A15053</string>
+										<string>5D2CADD112EE392600A15053</string>
 										<key>history</key>
 										<array>
-											<string>5DC575BE12DBCFC5005000F8</string>
 											<string>5DC575D612DBD302005000F8</string>
 											<string>5D7A486A12DE5C7B00A1CD33</string>
 											<string>5D7A486D12DE5C7B00A1CD33</string>
 											<string>5D50595C12E797D00019B634</string>
 											<string>5D2CAD5212EE2B3B00A15053</string>
 											<string>5D2CAD5D12EE2C8600A15053</string>
-											<string>5D2CAD5E12EE2C8600A15053</string>
-											<string>5D2CAD5F12EE2C8600A15053</string>
 											<string>5D2CAD6012EE2C8600A15053</string>
-											<string>5D2CADA512EE36B700A15053</string>
 											<string>5D2CADA612EE36B700A15053</string>
 											<string>5D2CADB012EE36F300A15053</string>
-											<string>5D2CADB112EE36F300A15053</string>
+											<string>5D2CADC012EE38C900A15053</string>
+											<string>5D2CADCA12EE391300A15053</string>
+											<string>5D2CADCB12EE391300A15053</string>
+											<string>5D2CADCC12EE391300A15053</string>
+											<string>5D2CADCD12EE391300A15053</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

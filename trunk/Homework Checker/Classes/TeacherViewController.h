@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Department.h"
 
 @class CourseViewController;
 
 @interface TeacherViewController : UITableViewController {
 	CourseViewController *courseViewController;
-	NSMutableArray *teachers;
+	Department *department;
 }
 
-@property (copy) NSMutableArray *teachers;
+@property (retain) Department *department;
 
 @end
