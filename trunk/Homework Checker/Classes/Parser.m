@@ -163,6 +163,7 @@
 														range:NSMakeRange(0,[htmlCheck length])];
 	
 	teachers = [[NSMutableArray alloc] init];
+	NSString *fullName;
 	
 	//run through the array to get the departments
 	for (NSTextCheckingResult *matchTeachers in matchesTeachers){
@@ -172,7 +173,7 @@
 		NSRange teacherRange = [htmlCheck rangeOfString:lastName];
 		NSString *fullName = [[NSString alloc]init];
 		
-		NSString *regexString = [[NSString alloc] initWithFormat:@"<tr>\n<td[^>]*>([^<]*)</td>\n<td[^>]*>.*%@%@@milkenschool.org.*</td>", firstInitial, lastName];
+		NSString *regexString = [NSString stringWithFormat:@"<td[^>]*>(%@.+%@.*)</td>", firstInitial, lastName];
 		
 		NSLog(@"%@", regexString);
 		
@@ -192,12 +193,12 @@
 		NSLog(@"WRAH!!!%@",matchesTeachersNames);
 		for (NSTextCheckingResult *matchTeachersNames in matchesTeachersNames){
 			
-		NSString *fullName = [htmlCheck substringWithRange:[matchTeachersNames rangeAtIndex:2]];
+		fullName = [htmlCheck substringWithRange:[matchTeachersNames rangeAtIndex:1]];
 			NSLog(@"REGULAR EXPRESSION FOUND %@", fullName);
 }
-									
 		Teacher *currentTeacher = [[Teacher alloc] initWithName:fullName];
 		[teachers addObject:currentTeacher];
+									
 		
 		for (int i=0; i<[departments count]; i++) {
 			if (teacherRange.location>[[departments objectAtIndex:i] range].location && teacherRange.location<[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location) {
