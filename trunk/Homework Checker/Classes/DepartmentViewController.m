@@ -19,10 +19,8 @@
 	[super initWithStyle:UITableViewStyleGrouped];
 	
 	// Create an array of 10 departments
-	departments = [[NSMutableArray alloc] init];
-	for (int i = 0; i < 10; i++) {
-		[departments addObject:[Department randomDepartment]];
-	}
+	departments = [parser departments];
+	
 	
 	// Set the nav bar to have the back button when 
 	// departmentViewController is on top of the stack
