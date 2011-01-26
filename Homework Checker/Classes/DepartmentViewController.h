@@ -16,7 +16,7 @@
 	NSMutableArray *departments;
 	Parser *parser;
 	
-	IBOutlet UIActivityIndicatorView *activityIndicator;
+	UIActivityIndicatorView *activityIndicator;
 }
 
 @property (copy) NSMutableArray *teachers;
