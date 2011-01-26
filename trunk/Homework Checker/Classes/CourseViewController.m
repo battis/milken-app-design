@@ -11,6 +11,7 @@
 #import "AssignmentViewController.h"
 
 @implementation CourseViewController
+@synthesize activityIndicator;
 
 @synthesize courses;
 
@@ -27,7 +28,10 @@
 	// TODO change this to the name of the teacher
 	
 	[[self navigationItem] setTitle:@"Courses"];
+	[self setActivityIndicator:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray]];
+	[activityIndicator setCenter:CGPointMake([self view].frame.size.width/2,self.view.frame.size.height/2)];
 	
+	[self.view addSubview:activityIndicator];
 	return self;
 }
 
