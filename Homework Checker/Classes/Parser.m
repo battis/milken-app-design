@@ -238,6 +238,8 @@
 	{
 		[delegate parser:self didFinishParsingDepartments:departments];
 	}
+	
+	
 }
 
 
