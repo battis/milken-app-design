@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Teacher.h"
 
 @class AssignmentViewController;
 
@@ -19,5 +20,6 @@
 
 @property (copy) NSMutableArray *courses;
 @property (retain) UIActivityIndicatorView *activityIndicator;
+@property (retain) Teacher *teacher;
 
 @end
