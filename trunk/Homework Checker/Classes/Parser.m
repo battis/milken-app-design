@@ -178,7 +178,7 @@
 		NSRange teacherRange = [htmlCheck rangeOfString:lastName];
 		NSString *fullName = [[NSString alloc]init];
 		
-		NSString *regexString = [NSString stringWithFormat:@"<td[^>]*>(%@.+%@.*)</td>", firstInitial, lastName];
+		NSString *regexString = [NSString stringWithFormat:@"<td[^>]*>(.*)</td>", firstInitial, lastName];
 		
 		NSLog(@"%@", regexString);
 		
@@ -190,10 +190,9 @@
 								  
 		NSArray *matchesTeachersNames = [regexTeachersEmail matchesInString:htmlCheck 
 															   options:0
-																	  range:NSMakeRange(0, htmlCheck.length)];
+																	  range:NSMakeRange(teacherRange.location-200, 200+teacherRange.length)];
 										 
-										//replace regular expression range with this one 
-										 //NSMakeRange(teacherRange.location-200, 200+teacherRange.length)];
+				
 										 
 		NSLog(@"WRAH!!!%@",matchesTeachersNames);
 		for (NSTextCheckingResult *matchTeachersNames in matchesTeachersNames){
@@ -201,7 +200,7 @@
 		fullName = [htmlCheck substringWithRange:[matchTeachersNames rangeAtIndex:1]];
 			NSLog(@"REGULAR EXPRESSION FOUND %@", fullName);
 }
-		Teacher *currentTeacher = [[Teacher alloc] initWithName:fullName];
+		Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
 		[teachers addObject:currentTeacher];
 									
 		
