@@ -18,9 +18,6 @@
 		5DC574D912DBC64E005000F8 /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC574D412DBC64E005000F8 /* CourseViewController.m */; };
 		5DC574DA12DBC64E005000F8 /* DepartmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC574D612DBC64E005000F8 /* DepartmentViewController.m */; };
 		5DC574DB12DBC64E005000F8 /* TeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC574D812DBC64E005000F8 /* TeacherViewController.m */; };
-		5DC574DF12DBC65A005000F8 /* CourseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC574DC12DBC65A005000F8 /* CourseView.xib */; };
-		5DC574E012DBC65A005000F8 /* DepartmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC574DD12DBC65A005000F8 /* DepartmentView.xib */; };
-		5DC574E112DBC65A005000F8 /* TeacherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC574DE12DBC65A005000F8 /* TeacherView.xib */; };
 		5DC574E312DBC65E005000F8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC574E212DBC65E005000F8 /* MainWindow.xib */; };
 		5DC574E612DBC68C005000F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC574E512DBC68C005000F8 /* main.m */; };
 		5DC574F912DBC6F4005000F8 /* AssignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC574F812DBC6F4005000F8 /* AssignmentView.xib */; };
@@ -50,9 +47,6 @@
 		5DC574D612DBC64E005000F8 /* DepartmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentViewController.m; sourceTree = "<group>"; };
 		5DC574D712DBC64E005000F8 /* TeacherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherViewController.h; sourceTree = "<group>"; };
 		5DC574D812DBC64E005000F8 /* TeacherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherViewController.m; sourceTree = "<group>"; };
-		5DC574DC12DBC65A005000F8 /* CourseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseView.xib; sourceTree = "<group>"; };
-		5DC574DD12DBC65A005000F8 /* DepartmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartmentView.xib; sourceTree = "<group>"; };
-		5DC574DE12DBC65A005000F8 /* TeacherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherView.xib; sourceTree = "<group>"; };
 		5DC574E212DBC65E005000F8 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		5DC574E512DBC68C005000F8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DC574F812DBC6F4005000F8 /* AssignmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentView.xib; sourceTree = "<group>"; };
@@ -123,9 +117,6 @@
 			children = (
 				5DC574F812DBC6F4005000F8 /* AssignmentView.xib */,
 				5DC574E212DBC65E005000F8 /* MainWindow.xib */,
-				5DC574DC12DBC65A005000F8 /* CourseView.xib */,
-				5DC574DD12DBC65A005000F8 /* DepartmentView.xib */,
-				5DC574DE12DBC65A005000F8 /* TeacherView.xib */,
 				8D1107310486CEB800E47090 /* Homework_Checker-Info.plist */,
 			);
 			name = Resources;
@@ -221,9 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DC574DF12DBC65A005000F8 /* CourseView.xib in Resources */,
-				5DC574E012DBC65A005000F8 /* DepartmentView.xib in Resources */,
-				5DC574E112DBC65A005000F8 /* TeacherView.xib in Resources */,
 				5DC574E312DBC65E005000F8 /* MainWindow.xib in Resources */,
 				5DC574F912DBC6F4005000F8 /* AssignmentView.xib in Resources */,
 			);
