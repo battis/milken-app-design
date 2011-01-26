@@ -21,5 +21,6 @@
 
 @property (copy) NSMutableArray *teachers;
 @property (retain) NSMutableArray *departments;
+@property (retain) UIActivityIndicatorView *activityIndicator;
 
 @end

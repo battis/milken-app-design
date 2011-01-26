@@ -16,6 +16,8 @@
 
 @synthesize teachers;
 @synthesize departments;
+@synthesize activityIndicator;
+
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
 	
@@ -30,7 +32,12 @@
 	// Set the title of the nav bar to Departments when DepartmentViewController
 	// is on top of the stack
 	[[self navigationItem] setTitle:@"Departments"];
-		
+	
+	[self setActivityIndicator:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray]];
+	[activityIndicator setCenter:CGPointMake([self view].frame.size.width/2,self.view.frame.size.height/2)];
+											
+	[self.view addSubview:activityIndicator];
+
 	return self;
 }
 
