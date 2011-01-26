@@ -91,7 +91,7 @@ if (!courseViewController) {
  courseViewController = [[CourseViewController alloc] init];
  }
  
-	 [courseViewController setCourses:[[[department teachers] objectAtIndex: [indexPath row]] courses]];
+	 [courseViewController setTeacher:[[department teachers] objectAtIndex: [indexPath row]]];
  
  // Push it onto the top of the navigation controller's stack
  [[self navigationController] pushViewController:courseViewController 
