@@ -27,5 +27,6 @@
 @property (retain) id<ParserDelegate> delegate;
 
 -(void)parseDepartments;
+-(void)parseCourses(Teacher *)teacherToBeParsed;
 
 @end
