@@ -16,6 +16,13 @@
 @synthesize departments, teachers, delegate;
 
 - (id)init {
+	[super init];
+	return self;
+	
+}
+
+-(void)parseDepartments
+{
 	NSURL *milkenSite;
 	milkenSite = [[NSURL alloc]initWithString:@"http://www.milkenschool.org/usfaculty/"];
 	NSURLRequest *request = [NSURLRequest requestWithURL:milkenSite
@@ -33,8 +40,6 @@
 														   delegate:self
 												   startImmediately:YES];
 	NSLog(@"%@", milkenSite);
-	return self;
-	
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
