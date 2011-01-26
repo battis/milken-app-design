@@ -26,4 +26,6 @@
 @property (readonly) NSMutableArray *teachers;
 @property (retain) id<ParserDelegate> delegate;
 
+-(void)parseDepartments;
+
 @end
