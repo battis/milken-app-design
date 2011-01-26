@@ -14,9 +14,10 @@
 	AssignmentViewController *assignmentViewController;
 	NSMutableArray *courses;
 	
-	IBOutlet UIActivityIndicatorView *activityIndicator;
+	UIActivityIndicatorView *activityIndicator;
 }
 
 @property (copy) NSMutableArray *courses;
+@property (retain) UIActivityIndicatorView *activityIndicator;
 
 @end
