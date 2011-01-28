@@ -39,7 +39,7 @@
 	connectionInProgress = [[NSURLConnection alloc] initWithRequest:request
 														   delegate:self
 												   startImmediately:YES];
-	NSLog(@"%@", milkenSite);
+	
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
@@ -61,7 +61,7 @@
 	NSRange mathStringRange = [htmlCheck rangeOfString:mathString];
 	NSRange englishStringRange = [htmlCheck rangeOfString:englishString];
 	
-	NSLog(@"location: %d, length: %d", mathStringRange.location, mathStringRange.length);
+	//NSLog(@"location: %d, length: %d", mathStringRange.location, mathStringRange.length);
 	
 	
 	int mathLocation = mathStringRange.location;
@@ -78,9 +78,9 @@
 			break;}
 	}
 	
-	NSLog(@"left counter is %d",counter);
+	//NSLog(@"left counter is %d",counter);
 	
-	NSLog(@"we want a range from %d to %d", englishLocation-counter, englishLocation-1);
+	//NSLog(@"we want a range from %d to %d", englishLocation-counter, englishLocation-1);
 	
 	NSRange leftRange = NSMakeRange(englishLocation-counter, counter);
 	
@@ -97,7 +97,7 @@
 		
 	}
 	
-	NSLog(@"right counter is %d",counter);
+	//NSLog(@"right counter is %d",counter);
 	
 	NSRange rightRange = NSMakeRange(englishLocation+englishLength, counter);
 	
@@ -137,7 +137,7 @@
 	
 	
 	for(int i=0;i< [departments count]; i++){
-		NSLog(@"Department: %@ with range %d", [[departments objectAtIndex:i] name], [[departments objectAtIndex:i] range].location);
+		//NSLog(@"Department: %@ with range %d", [[departments objectAtIndex:i] name], [[departments objectAtIndex:i] range].location);
 		
 	}
 	
@@ -146,7 +146,7 @@
 	NSString *emailFormat =@"@milkenschool.org";
 	NSRange emailFormatRange = [htmlCheck rangeOfString:emailFormat];
 	
-	NSLog(@"range is: %d",emailFormatRange.location);
+	//NSLog(@"range is: %d",emailFormatRange.location);
 	counter = 0;
 	
 	for(int i=1; [htmlCheck characterAtIndex:emailFormatRange.location-i] != ':'; i++){
@@ -180,7 +180,7 @@
 		
 		NSString *regexString = [NSString stringWithFormat:@"<td[^>]*>(.*)</td>", firstInitial, lastName];
 		
-		NSLog(@"%@", regexString);
+		//NSLog(@"%@", regexString);
 		
 		
 		
@@ -198,7 +198,7 @@
 		for (NSTextCheckingResult *matchTeachersNames in matchesTeachersNames){
 			
 		fullName = [htmlCheck substringWithRange:[matchTeachersNames rangeAtIndex:1]];
-			NSLog(@"REGULAR EXPRESSION FOUND %@", fullName);
+			//NSLog(@"REGULAR EXPRESSION FOUND %@", fullName);
 }
 		Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
 		[teachers addObject:currentTeacher];
@@ -211,7 +211,7 @@
 				[[departments objectAtIndex:i] addTeacher:currentTeacher];
 				break;
 			}
-			NSLog(@"%@ with range %d is not in %@ with range from %d to %d", teacherName,teacherRange.location,[[departments objectAtIndex:i] name],[[departments objectAtIndex:i]range].location ,[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location);
+			//NSLog(@"%@ with range %d is not in %@ with range from %d to %d", teacherName,teacherRange.location,[[departments objectAtIndex:i] name],[[departments objectAtIndex:i]range].location ,[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location);
 		}
 		
 	}
@@ -219,7 +219,7 @@
 	NSLog(@"Teachers:");
 	for (int i=0; i<[departments count]; i++) {
 		
-		NSLog(@"teachers in %@: %@", [[departments objectAtIndex:i] name], [[departments objectAtIndex:i] teachers]);
+		//NSLog(@"teachers in %@: %@", [[departments objectAtIndex:i] name], [[departments objectAtIndex:i] teachers]);
 	}
 	
 	NSLog(@"the list of teachers: %@", teachers);
@@ -238,9 +238,37 @@
 	{
 		[delegate parser:self didFinishParsingDepartments:departments];
 	}
-	
-	
 }
+	-(void)parseCourses:(Teacher *)teacherToBeParsed{
+		NSURL *teacherSite;
+		//Take out the period and space in the teachers name
+		NSString *firstInitial = [[NSString alloc] initWithString:[[teacherToBeParsed name] substringWithRange:NSMakeRange(0, 1)]];
+		
+		NSString *lastName = [[NSString alloc] initWithString:[[teacherToBeParsed name] 
+							substringWithRange:NSMakeRange(3, [[teacherToBeParsed name] length])]];
+		NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@%@/index", firstInitial, lastName];
+		teacherSite = [[NSURL alloc]initWithString:url];
+		NSURLRequest *request = [NSURLRequest requestWithURL:teacherSite
+												 cachePolicy:NSURLRequestReloadIgnoringCacheData
+											 timeoutInterval:30];
+		
+		if (connectionInProgress)
+		{
+			[connectionInProgress cancel];
+			[connectionInProgress release];
+		}
+		
+		milkenSiteData = [[NSMutableData alloc] init];
+		connectionInProgress = [[NSURLConnection alloc] initWithRequest:request
+															   delegate:self
+													   startImmediately:YES];
+		NSLog(@"%@", teacherSite);
+		
+	}
+
+	
+	
+
 
 
 
