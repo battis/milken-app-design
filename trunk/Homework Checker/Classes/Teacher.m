@@ -61,7 +61,7 @@
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat:@"%@ (%d courses)", name, [self courseCount]];
+	return [NSString stringWithFormat:@"%@", name];
 }
 
 + (Teacher *)randomTeacher:(Department *)aDepartment
