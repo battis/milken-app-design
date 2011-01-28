@@ -49,7 +49,7 @@
 - (void)viewDidLoad;
 {
 	[activityIndicator startAnimating];
-	[parser parseDepartments];
+	[parser parseCourses:teacher];
 	
 }
 
@@ -229,19 +229,14 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 #pragma mark ParserDelegate
 
--(void)parser:(Parser *) theParser didFinishParsingDepartments:(NSMutableArray *) theDepartments
-{
-	NSLog(@"DepartmentViewController received the following departments:\n%@", theDepartments);
-	[[self tableView] reloadData];
-	
-	
-}
-
 -(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
 {
+	NSLog(@"CourseViewController received the following departments:\n%@", theTeacher);
+	[[self tableView] reloadData];
 	[parser release];
 	
 }
+
 
 @end
 
