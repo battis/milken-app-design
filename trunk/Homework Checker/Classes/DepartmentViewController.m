@@ -45,8 +45,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
+	
+}
+	- (void)viewDidLoad;
+{
 	[activityIndicator startAnimating];
 	[parser parseDepartments];
+	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -99,7 +104,7 @@
 - (void)tableView:(UITableView *)aTableView 
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	// Do I need to create the instance of TeacherDetailController?
+	// Do I need to create the instance of TeacherViewController?
 	if (!teacherViewController) {
 		teacherViewController = [[TeacherViewController alloc] init];
 	}
