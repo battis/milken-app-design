@@ -232,6 +232,7 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 
 -(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
 {
+	[parser release];
 	
 }
 

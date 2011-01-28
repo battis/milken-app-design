@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "Teacher.h"
+#import "ParserDelegate.h"
 
 @class AssignmentViewController;
 
-@interface CourseViewController : UITableViewController {
+@interface CourseViewController : UITableViewController <ParserDelegate> {
 	AssignmentViewController *assignmentViewController;
 	Teacher *teacher;
+	Parser *parser;
+	NSMutableArray *Courses;
 	
 	UIActivityIndicatorView *activityIndicator;
 }
@@ -22,3 +25,4 @@
 @property (retain) Teacher *teacher;
 
 @end
+

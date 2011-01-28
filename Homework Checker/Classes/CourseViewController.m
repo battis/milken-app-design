@@ -9,6 +9,7 @@
 #import "CourseViewController.h"
 #import "Course.h"
 #import "AssignmentViewController.h"
+#import "Parser.h"
 
 @implementation CourseViewController
 
@@ -17,6 +18,8 @@
 
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
+	parser = [[Parser alloc] init];
+	[parser setDelegate:self];
 	
 	// Set the nav bar to have the back button when 
 	// CourseViewController is on top of the stack
@@ -42,6 +45,14 @@
 	[[self navigationItem] setTitle:[teacher name]];
 	[[self tableView] reloadData];
 }
+
+- (void)viewDidLoad;
+{
+	[activityIndicator startAnimating];
+	[parser parseDepartments];
+	
+}
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -216,6 +227,21 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     [super dealloc];
 }
 
+#pragma mark ParserDelegate
+
+-(void)parser:(Parser *) theParser didFinishParsingDepartments:(NSMutableArray *) theDepartments
+{
+	NSLog(@"DepartmentViewController received the following departments:\n%@", theDepartments);
+	[[self tableView] reloadData];
+	
+	
+}
+
+-(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
+{
+	[parser release];
+	
+}
 
 @end
 
