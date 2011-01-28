@@ -69,16 +69,11 @@
 
 #pragma mark Table view methods
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 1;
-}
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	int numberOfRows = [departments count];
-	// If we are editing, we will have one more row than we have possessions
-	if ([self isEditing])
-		numberOfRows++;
+	
 	
 	return numberOfRows;
 }
