@@ -48,8 +48,6 @@
 
 - (void)viewDidLoad;
 {
-	[activityIndicator startAnimating];
-	[parser parseCourses:teacher];
 	
 }
 
@@ -206,6 +204,15 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 	NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[[teacher courses] count] - 1 
 													  inSection:0];
 	return betterIndexPath;
+}
+
+-(id)setTeacher:(Teacher *) theTeacher
+{
+	teacher = theTeacher;
+	[teacher retain];
+	[activityIndicator startAnimating];
+	[parser parseCourses:teacher];
+	return teacher;
 }
 
 - (void)tableView:(UITableView *)aTableView 
