@@ -238,7 +238,10 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 -(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
 {
-	NSLog(@"CourseViewController received the following departments:\n%@", theTeacher);
+	NSLog(@"CourseViewController received the following courses:\n%@", [theTeacher courses]);
+	teacher = theTeacher;
+	[teacher retain];
+	[activityIndicator stopAnimating];
 	[[self tableView] reloadData];
 	[parser release];
 	
