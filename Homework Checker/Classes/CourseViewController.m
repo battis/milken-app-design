@@ -15,14 +15,22 @@
 
 @synthesize activityIndicator;
 
-
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
 	parser = [[Parser alloc] init];
 	[parser setDelegate:self];
 	needToParseTeacher = NO;
 	
-//Set Size, Color, and Location of Activity Indicator
+	// Set the nav bar to have the back button when 
+	// CourseViewController is on top of the stack
+	//[[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil]];
+	
+	// Set the title of the nav bar to Courses when CourseViewController
+	// is on top of the stack
+	
+	// TODO change this to the name of the teacher
+	
+	
 	[self setActivityIndicator:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray]];
 	[activityIndicator setCenter:CGPointMake([self view].frame.size.width/2,self.view.frame.size.height/2)];
 	
@@ -38,6 +46,7 @@
 	[[self tableView] reloadData];
 	if (needToParseTeacher)
 	{
+		needToParseTeacher = NO;
 		[activityIndicator startAnimating];
 		[parser parseCourses:teacher];
 	}
@@ -211,10 +220,15 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 	return teacher;
 }
 
+-(id)teacher
+{
+	return teacher;
+}
+
 - (void)tableView:(UITableView *)aTableView 
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {	
-
+	
 	if(!assignmentViewController)
 	{
 		assignmentViewController = [[AssignmentViewController alloc] init];
@@ -226,7 +240,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (void)dealloc {
 	//[detailViewController release];
-	[[teacher courses] release];
+	[parser release];
     [super dealloc];
 }
 
@@ -237,10 +251,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 	NSLog(@"CourseViewController received the following courses:\n%@", [theTeacher courses]);
 	[teacher autorelease];
 	teacher = [theTeacher retain];
-	needToParseTeacher = NO;
 	[activityIndicator stopAnimating];
 	[[self tableView] reloadData];
-	[parser release];
 	
 }
 
