@@ -153,19 +153,19 @@
 		counter = i;
 	}
 	
-
+	
 	regexString = @"(\\w)(\\w+)\\d*@milkenschool.org";
 	
 	//create the regular expression
 	
 	NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
-																			  options:NSRegularExpressionCaseInsensitive
-																	          error:&error];
+																				   options:NSRegularExpressionCaseInsensitive
+																					 error:&error];
 	[regexString release];
 	
 	NSArray *matchesTeachers = [regexTeachersEmail matchesInString:htmlCheck 
-													  options:0
-														range:NSMakeRange(0,[htmlCheck length])];
+														   options:0
+															 range:NSMakeRange(0,[htmlCheck length])];
 	
 	teachers = [[NSMutableArray alloc] init];
 	NSString *fullName;
@@ -186,23 +186,23 @@
 		
 		NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
 																					   options:NSRegularExpressionCaseInsensitive
-																						error:&error];
-								  
+																						 error:&error];
+		
 		NSArray *matchesTeachersNames = [regexTeachersEmail matchesInString:htmlCheck 
-															   options:0
+																	options:0
 																	  range:NSMakeRange(teacherRange.location-200, 200+teacherRange.length)];
-										 
-				
-										 
+		
+		
+		
 		NSLog(@"WRAH!!!%@",matchesTeachersNames);
 		for (NSTextCheckingResult *matchTeachersNames in matchesTeachersNames){
 			
-		fullName = [htmlCheck substringWithRange:[matchTeachersNames rangeAtIndex:1]];
+			fullName = [htmlCheck substringWithRange:[matchTeachersNames rangeAtIndex:1]];
 			//NSLog(@"REGULAR EXPRESSION FOUND %@", fullName);
-}
+		}
 		Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
 		[teachers addObject:currentTeacher];
-									
+		
 		
 		for (int i=0; i<[departments count]; i++) {
 			if (teacherRange.location>[[departments objectAtIndex:i] range].location && teacherRange.location<[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location) {
@@ -230,7 +230,7 @@
 	 then navigate after the quote and keep reading the text to the left until you hit another quote.
 	 
 	 example :<A HREF="/ljames/precalchon/index">Pre Calculus Honors</A>
-
+	 
 	 
 	 */
 	
@@ -240,45 +240,45 @@
 	}
 }
 -(void)parseCourses:(Teacher *)teacherToBeParsed{
-		NSURL *teacherSite;
-		//Take out the period and space in the teachers name
-		NSString *teacherOfCourseName = [teacherToBeParsed name];
-		NSLog(@"parseCourses teacher is %@",teacherOfCourseName);
+	NSURL *teacherSite;
+	//Take out the period and space in the teachers name
+	NSString *teacherOfCourseName = [teacherToBeParsed name];
+	NSLog(@"parseCourses teacher is %@",teacherOfCourseName);
 	
 	// THIS IS FAKE CODE -- DELETE IT
 	/*Teacher *fakeTeach = [Teacher randomTeacher:[teacherToBeParsed department]];
-	if(delegate)
+	 if(delegate)
+	 {
+	 [delegate parser:self didFinishParsingCourses:fakeTeach];
+	 }*/
+	NSString *firstInitial = [[NSString alloc] initWithString:[teacherOfCourseName substringWithRange:NSMakeRange(0, 1)]];
+	NSLog(@"%@",firstInitial);
+	NSString *lastName = [[NSString alloc] initWithString:[teacherOfCourseName 
+														   substringWithRange:NSMakeRange(3, [teacherOfCourseName length]-3)]];
+	NSLog(@"%@", lastName);
+	NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@%@/index", firstInitial, lastName];
+	teacherSite = [[NSURL alloc]initWithString:url];
+	
+	NSURLRequest *request = [NSURLRequest requestWithURL:teacherSite
+											 cachePolicy:NSURLRequestReloadIgnoringCacheData
+										 timeoutInterval:30];
+	
+	if (connectionInProgress)
 	{
-		[delegate parser:self didFinishParsingCourses:fakeTeach];
-	}*/
-		NSString *firstInitial = [[NSString alloc] initWithString:[teacherOfCourseName substringWithRange:NSMakeRange(0, 1)]];
-		NSLog(@"%@",firstInitial);
-		NSString *lastName = [[NSString alloc] initWithString:[teacherOfCourseName 
-							substringWithRange:NSMakeRange(3, [teacherOfCourseName length]-3)]];
-		NSLog(@"%@", lastName);
-		NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@%@/index", firstInitial, lastName];
-		teacherSite = [[NSURL alloc]initWithString:url];
-		
-		NSURLRequest *request = [NSURLRequest requestWithURL:teacherSite
-												 cachePolicy:NSURLRequestReloadIgnoringCacheData
-											 timeoutInterval:30];
-		
-		if (connectionInProgress)
-		{
-			[connectionInProgress cancel];
-			[connectionInProgress release];
-		}
-		
-		milkenSiteData = [[NSMutableData alloc] init];
-		connectionInProgress = [[NSURLConnection alloc] initWithRequest:request
-															   delegate:self
-													   startImmediately:YES];
-		NSLog(@"%@", teacherSite);
-		
+		[connectionInProgress cancel];
+		[connectionInProgress release];
 	}
+	
+	milkenSiteData = [[NSMutableData alloc] init];
+	connectionInProgress = [[NSURLConnection alloc] initWithRequest:request
+														   delegate:self
+												   startImmediately:YES];
+	NSLog(@"%@", teacherSite);
+	
+}
 
-	
-	
+
+
 
 
 

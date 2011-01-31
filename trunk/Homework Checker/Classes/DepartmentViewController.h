@@ -11,7 +11,6 @@
 	TeacherViewController *teacherViewController;
 	NSMutableArray *departments;
 	Parser *parser;
-	
 	UIActivityIndicatorView *activityIndicator;
 }
 

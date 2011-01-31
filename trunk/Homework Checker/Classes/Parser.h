@@ -18,7 +18,6 @@
 	NSMutableArray *teachers;
 	NSMutableData *milkenSiteData;
 	NSURLConnection *connectionInProgress;
-
 	id<ParserDelegate> delegate;
 }
 
