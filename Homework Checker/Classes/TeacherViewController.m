@@ -58,10 +58,6 @@
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	int numberOfRows = [[department teachers] count];
-	// If we are editing, we will have one more row than we have possessions
-	if ([self isEditing])
-		numberOfRows++;
-	
 	return numberOfRows;
 }
 
@@ -76,8 +72,7 @@
 	// If the table view is filling a row with a possession in it, do as normal 
 	if ([indexPath row] < [[department teachers] count])
 		[[cell textLabel] setText:[[[department teachers] objectAtIndex:[indexPath row]] description]];
-	else // Otherwise, if we are editing we have one extra row - place this text in that row
-		[[cell textLabel] setText:@"Add New Item..."];
+	
 	
 	return cell;
 }
@@ -100,97 +95,9 @@ if (!courseViewController) {
  
 
 
-- (UITableViewCellEditingStyle)tableView:(UITableView *)aTableView 
-           editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath 
-{		
-	if ([self isEditing] && [indexPath row] == [[department teachers] count]) {
-		// During editing...
-		// The last row during editing will show an insert style button
-		return UITableViewCellEditingStyleInsert;
-	}
-	return UITableViewCellEditingStyleDelete;
-}
 
-- (void)tableView:(UITableView *)tableView 
-commitEditingStyle:(UITableViewCellEditingStyle)editingStyle 
-forRowAtIndexPath:(NSIndexPath *)indexPath 
-{
-	// If the table view is asking to commit a delete command...
-	if (editingStyle == UITableViewCellEditingStyleDelete) {
-		// We remove the row being deleted from the possessions array
-		[[department teachers] removeObjectAtIndex:[indexPath row]];
-		// We also remove that row from the table view with an animation
-		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
-						 withRowAnimation:UITableViewRowAnimationFade];
-	} else if (editingStyle == UITableViewCellEditingStyleInsert) {
-		
-	}
-}
 
-- (void)tableView:(UITableView *)tableView 
-moveRowAtIndexPath:(NSIndexPath *)fromIndexPath 
-	  toIndexPath:(NSIndexPath *)toIndexPath 
-{
-	// Get pointer to object being moved
-	Teacher * p = [[department teachers] objectAtIndex:[fromIndexPath row]];
-	
-	// Retain it... (retain count = 2, 1 for scope of this method, 1 for being inside array)
-	[p retain];
-	
-	// Remove p from our array, it is automatically sent release (retain count of p = 1)
-	[[department teachers] removeObjectAtIndex:[fromIndexPath row]];
-	
-	// Re-insert p into array at new location, it is automatically retained (retain count of p = 2)
-	[[department teachers] insertObject:p atIndex:[toIndexPath row]];
-	
-	// Release p (retain count = 1, only owner is now array)
-	[p release];
-}
 
-- (void)setEditing:(BOOL)flag animated:(BOOL)animated
-{
-	// Always call super implementation of this method, it needs to do some work
-	[super setEditing:flag animated:animated];
-	// We need to insert/remove a new row in to table view to say "Add New Item..."
-	if (flag) {
-		// If entering edit mode, we add another row to our table view
-		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[[department teachers] count] 
-													inSection:0];
-		[[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
-								withRowAnimation:UITableViewRowAnimationLeft];	
-	} else {
-		// If leaving edit mode, we remove last row from table view
-		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[[department teachers] count] 
-													inSection:0];
-		[[self tableView] deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
-								withRowAnimation:UITableViewRowAnimationFade];
-	}
-}
-
-- (BOOL)tableView:(UITableView *)tableView 
-canMoveRowAtIndexPath:(NSIndexPath *)indexPath 
-{
-	// Only allow rows showing possessions to move
-	if ([indexPath row] < [[department teachers] count])
-		return YES;
-	return NO;
-}
-
-- (NSIndexPath *)tableView:(UITableView *)tableView 
-targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath 
-	   toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
-{
-	if ([proposedDestinationIndexPath row] < [[department teachers] count]) {
-		// If we are moving to a row that currently is showing a possession,
-		// then we return the row the user wanted to move to
-		return proposedDestinationIndexPath;
-	}
-	// Execution gets here if we are trying to move a row to underneath the "Add New Item..."
-	// row, have the moving row go one row above it instead.
-	NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[[department teachers] count] - 1 
-													  inSection:0];
-	return betterIndexPath;
-}
 
 
 
