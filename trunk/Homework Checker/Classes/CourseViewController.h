@@ -23,7 +23,7 @@
 }
 
 @property (retain) UIActivityIndicatorView *activityIndicator;
-@property (retain) Teacher *teacher;
+
 
 @end
 
