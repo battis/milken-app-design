@@ -14,7 +14,7 @@
 @implementation CourseViewController
 
 @synthesize activityIndicator;
-@synthesize teacher;
+
 
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
@@ -22,16 +22,7 @@
 	[parser setDelegate:self];
 	needToParseTeacher = NO;
 	
-	// Set the nav bar to have the back button when 
-	// CourseViewController is on top of the stack
-	//[[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil]];
-	
-	// Set the title of the nav bar to Courses when CourseViewController
-	// is on top of the stack
-	
-	// TODO change this to the name of the teacher
-	
-	
+//Set Size, Color, and Location of Activity Indicator
 	[self setActivityIndicator:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray]];
 	[activityIndicator setCenter:CGPointMake([self view].frame.size.width/2,self.view.frame.size.height/2)];
 	

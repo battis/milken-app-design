@@ -17,15 +17,6 @@
 
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
-	
-	// Set the nav bar to have the back button when 
-	// TeacherViewController is on top of the stack
-	//[[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil]];
-	
-	// Set the title of the nav bar to Teachers when TeacherViewController
-	// is on top of the stack
-		
-	
 	return self;
 }
 
