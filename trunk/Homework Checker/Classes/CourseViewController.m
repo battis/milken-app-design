@@ -20,6 +20,7 @@
 	[super initWithStyle:UITableViewStyleGrouped];
 	parser = [[Parser alloc] init];
 	[parser setDelegate:self];
+	needToParseTeacher = NO;
 	
 	// Set the nav bar to have the back button when 
 	// CourseViewController is on top of the stack
@@ -44,6 +45,11 @@
 	[super viewWillAppear:animated];
 	[[self navigationItem] setTitle:[teacher name]];
 	[[self tableView] reloadData];
+	if (needToParseTeacher)
+	{
+		[activityIndicator startAnimating];
+		[parser parseCourses:teacher];
+	}
 }
 
 - (void)viewDidLoad;
@@ -208,10 +214,9 @@ targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 
 -(id)setTeacher:(Teacher *) theTeacher
 {
-	teacher = theTeacher;
-	[teacher retain];
-	[activityIndicator startAnimating];
-	[parser parseCourses:teacher];
+	[teacher autorelease];
+	teacher = [theTeacher retain];
+	needToParseTeacher = YES;
 	return teacher;
 }
 
@@ -239,8 +244,9 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 -(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
 {
 	NSLog(@"CourseViewController received the following courses:\n%@", [theTeacher courses]);
-	teacher = theTeacher;
-	[teacher retain];
+	[teacher autorelease];
+	teacher = [theTeacher retain];
+	needToParseTeacher = NO;
 	[activityIndicator stopAnimating];
 	[[self tableView] reloadData];
 	[parser release];
