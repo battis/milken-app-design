@@ -18,7 +18,6 @@
 	Parser *parser;
 	Boolean needToParseTeacher;
 	NSMutableArray *Courses;
-	
 	UIActivityIndicatorView *activityIndicator;
 }
 

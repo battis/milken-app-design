@@ -28,9 +28,9 @@
 	
 	[self setActivityIndicator:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray]];
 	[activityIndicator setCenter:CGPointMake([self view].frame.size.width/2,self.view.frame.size.height/2)];
-											
+	
 	[self.view addSubview:activityIndicator];
-
+	
 	return self;
 }
 
@@ -40,7 +40,7 @@
 	[super viewWillAppear:animated];
 	
 }
-	- (void)viewDidLoad;
+- (void)viewDidLoad;
 //Start the activity indicator and tell the parser to parse the departments web page and give out the array.
 {
 	[activityIndicator startAnimating];
@@ -98,7 +98,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 	}
 	
 	[teacherViewController setDepartment:[departments objectAtIndex:[indexPath row]]];
-		
+	
 	// Push it onto the top of the navigation controller's stack
 	[[self navigationController] pushViewController:teacherViewController 
 										   animated:YES];

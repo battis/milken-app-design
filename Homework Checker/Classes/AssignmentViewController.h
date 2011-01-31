@@ -10,7 +10,7 @@
 #import "Course.h"
 
 @interface AssignmentViewController : UIViewController <UIApplicationDelegate, UIWebViewDelegate> {
-
+	
 	Course *course;
 	IBOutlet UIWebView *webView;
 	IBOutlet UIActivityIndicatorView *activityIndicator;

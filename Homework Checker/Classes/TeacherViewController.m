@@ -69,21 +69,21 @@
 }
 
 
- - (void)tableView:(UITableView *)aTableView 
- didSelectRowAtIndexPath:(NSIndexPath *)indexPath
- {
-  //Do I need to create the instance of CourseDetailController?
-if (!courseViewController) {
- courseViewController = [[CourseViewController alloc] init];
- }
- 
-	 [courseViewController setTeacher:[[department teachers] objectAtIndex: [indexPath row]]];
- 
- // Push it onto the top of the navigation controller's stack
- [[self navigationController] pushViewController:courseViewController 
- animated:YES];
- }
- 
+- (void)tableView:(UITableView *)aTableView 
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	//Do I need to create the instance of CourseDetailController?
+	if (!courseViewController) {
+		courseViewController = [[CourseViewController alloc] init];
+	}
+	
+	[courseViewController setTeacher:[[department teachers] objectAtIndex: [indexPath row]]];
+	
+	// Push it onto the top of the navigation controller's stack
+	[[self navigationController] pushViewController:courseViewController 
+										   animated:YES];
+}
+
 
 - (void)dealloc {
 	//[detailViewController release];
