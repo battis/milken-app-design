@@ -174,7 +174,7 @@
 	for (NSTextCheckingResult *matchTeachers in matchesTeachers){
 		NSString *lastName = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:2]];
 		NSString *firstInitial = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:1]];
-		NSString *teacherName = [[NSString alloc]initWithFormat:@"name:%@. %@", [firstInitial capitalizedString], [lastName capitalizedString]];
+		NSString *teacherName = [[NSString alloc]initWithFormat:@"%@. %@", [firstInitial capitalizedString], [lastName capitalizedString]];
 		NSRange teacherRange = [htmlCheck rangeOfString:lastName];
 		NSString *fullName = [[NSString alloc]init];
 		
@@ -246,16 +246,16 @@
 		NSLog(@"parseCourses teacher is %@",teacherOfCourseName);
 	
 	// THIS IS FAKE CODE -- DELETE IT
-	Teacher *fakeTeach = [Teacher randomTeacher:[teacherToBeParsed department]];
+	/*Teacher *fakeTeach = [Teacher randomTeacher:[teacherToBeParsed department]];
 	if(delegate)
 	{
 		[delegate parser:self didFinishParsingCourses:fakeTeach];
-	}
+	}*/
 		NSString *firstInitial = [[NSString alloc] initWithString:[teacherOfCourseName substringWithRange:NSMakeRange(0, 1)]];
 		NSLog(@"%@",firstInitial);
 		NSString *lastName = [[NSString alloc] initWithString:[teacherOfCourseName 
 							substringWithRange:NSMakeRange(3, [teacherOfCourseName length]-3)]];
-	NSLog(@"%@", lastName);
+		NSLog(@"%@", lastName);
 		NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@%@/index", firstInitial, lastName];
 		teacherSite = [[NSURL alloc]initWithString:url];
 		
