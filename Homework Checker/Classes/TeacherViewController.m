@@ -94,13 +94,6 @@ if (!courseViewController) {
  }
  
 
-
-
-
-
-
-
-
 - (void)dealloc {
 	//[detailViewController release];
 	[department release];
