@@ -239,15 +239,26 @@
 		[delegate parser:self didFinishParsingDepartments:departments];
 	}
 }
-	-(void)parseCourses:(Teacher *)teacherToBeParsed{
+-(void)parseCourses:(Teacher *)teacherToBeParsed{
 		NSURL *teacherSite;
 		//Take out the period and space in the teachers name
-		NSString *firstInitial = [[NSString alloc] initWithString:[[teacherToBeParsed name] substringWithRange:NSMakeRange(0, 1)]];
-		
-		NSString *lastName = [[NSString alloc] initWithString:[[teacherToBeParsed name] 
-							substringWithRange:NSMakeRange(3, [[teacherToBeParsed name] length])]];
+		NSString *teacherOfCourseName = [teacherToBeParsed name];
+		NSLog(@"parseCourses teacher is %@",teacherOfCourseName);
+	
+	// THIS IS FAKE CODE -- DELETE IT
+	Teacher *fakeTeach = [Teacher randomTeacher:[teacherToBeParsed department]];
+	if(delegate)
+	{
+		[delegate parser:self didFinishParsingCourses:fakeTeach];
+	}
+		NSString *firstInitial = [[NSString alloc] initWithString:[teacherOfCourseName substringWithRange:NSMakeRange(0, 1)]];
+		NSLog(@"%@",firstInitial);
+		NSString *lastName = [[NSString alloc] initWithString:[teacherOfCourseName 
+							substringWithRange:NSMakeRange(3, [teacherOfCourseName length]-3)]];
+	NSLog(@"%@", lastName);
 		NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@%@/index", firstInitial, lastName];
 		teacherSite = [[NSURL alloc]initWithString:url];
+		
 		NSURLRequest *request = [NSURLRequest requestWithURL:teacherSite
 												 cachePolicy:NSURLRequestReloadIgnoringCacheData
 											 timeoutInterval:30];
