@@ -61,7 +61,7 @@
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat:@"%@", name];
+	return name;
 }
 
 + (Teacher *)randomTeacher:(Department *)aDepartment
