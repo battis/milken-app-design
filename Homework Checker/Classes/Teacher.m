@@ -11,7 +11,7 @@
 
 @implementation Teacher
 
-@synthesize name, department, courses;
+@synthesize name, userid, department, courses;
 
 - (id)initWithName:(NSString *)aName
 	  memberOfDept:(Department *) aDept
