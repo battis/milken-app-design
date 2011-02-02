@@ -246,12 +246,13 @@
 	NSLog(@"parseCourses teacher is %@",teacherOfCourseName);
 	
 	// THIS IS FAKE CODE -- DELETE IT
-	/*Teacher *fakeTeach = [Teacher randomTeacher:[teacherToBeParsed department]];
-	 if(delegate)
-	 {
-	 [delegate parser:self didFinishParsingCourses:fakeTeach];
-	 }*/
-	NSString *firstInitial = [[NSString alloc] initWithString:[teacherOfCourseName substringWithRange:NSMakeRange(0, 1)]];
+	Teacher *fakeTeach = [Teacher randomTeacher:[teacherToBeParsed department]];
+	if(delegate)
+	{
+		[fakeTeach setName:[teacherToBeParsed name]];
+		[delegate parser:self didFinishParsingCourses:fakeTeach];
+	}
+	/* NSString *firstInitial = [[NSString alloc] initWithString:[teacherOfCourseName substringWithRange:NSMakeRange(0, 1)]];
 	NSLog(@"%@",firstInitial);
 	NSString *lastName = [[NSString alloc] initWithString:[teacherOfCourseName 
 														   substringWithRange:NSMakeRange(3, [teacherOfCourseName length]-3)]];
@@ -273,7 +274,7 @@
 	connectionInProgress = [[NSURLConnection alloc] initWithRequest:request
 														   delegate:self
 												   startImmediately:YES];
-	NSLog(@"%@", teacherSite);
+	NSLog(@"%@", teacherSite);*/
 	
 }
 
