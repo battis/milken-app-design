@@ -21,8 +21,12 @@
 	
 }
 
+/*Goes through the html of the milken faculty page and then pulls out the
+	departments and teachers, and assigns teachers to departments based on their place in the html
+ */
 -(void)parseDepartments
 {
+	parsingDepartments = YES;
 	NSURL *milkenSite;
 	milkenSite = [[NSURL alloc]initWithString:@"http://www.milkenschool.org/usfaculty/"];
 	NSURLRequest *request = [NSURLRequest requestWithURL:milkenSite
@@ -33,6 +37,11 @@
 	{
 		[connectionInProgress cancel];
 		[connectionInProgress release];
+	}
+	
+	//clear milkensite data, to load it up with html
+	if (milkenSiteData) {
+		[milkenSiteData release];
 	}
 	
 	milkenSiteData = [[NSMutableData alloc] init];
@@ -49,27 +58,24 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
+	if (parsingDepartments) {
+	
+	
 	NSError *error = NULL;
 	NSString *htmlCheck = [[[NSString alloc] initWithData:milkenSiteData encoding:NSUTF8StringEncoding] autorelease];
 	
 	//use department names we already know to deduce the regular expression for finding the departments
 	NSString *mathString = @"Mathematics";
-	//I changed englishString to Athletics because Athletics was abnormal and had to be accounted for.
 	NSString *englishString = @"English";
-	
 	
 	NSRange mathStringRange = [htmlCheck rangeOfString:mathString];
 	NSRange englishStringRange = [htmlCheck rangeOfString:englishString];
-	
-	//NSLog(@"location: %d, length: %d", mathStringRange.location, mathStringRange.length);
-	
 	
 	int mathLocation = mathStringRange.location;
 	int mathLength = mathStringRange.length;
 	
 	int englishLocation = englishStringRange.location;
 	int englishLength = englishStringRange.length;
-	
 	int counter = 0;
 	//run through each letter to the left of the department as long as the characters are equal
 	for (int i=1; [htmlCheck characterAtIndex:englishLocation-i] == [htmlCheck characterAtIndex:mathLocation-i]; i++){
@@ -78,18 +84,13 @@
 			break;}
 	}
 	
-	//NSLog(@"left counter is %d",counter);
 	
-	//NSLog(@"we want a range from %d to %d", englishLocation-counter, englishLocation-1);
-	
+	//assign left range
 	NSRange leftRange = NSMakeRange(englishLocation-counter, counter);
-	
-	NSString *leftString = [htmlCheck substringWithRange:leftRange]	;	
-	
-	
+	NSString *leftString = [htmlCheck substringWithRange:leftRange];	
 	counter = 0;
 	
-	//run through each letter to the right of the department as long as the characters are equal
+	//run through each letter to the right of the department as long as the characters are equal to ensure an accurate regular expression
 	for(int i=1; [htmlCheck characterAtIndex:englishLocation+englishLength+i] == [htmlCheck characterAtIndex:mathLocation+mathLength+i];i++){
 		counter = i;
 		if(counter == 16){
@@ -97,10 +98,8 @@
 		
 	}
 	
-	//NSLog(@"right counter is %d",counter);
-	
+	//assign right range
 	NSRange rightRange = NSMakeRange(englishLocation+englishLength, counter);
-	
 	NSString *rightString = [htmlCheck substringWithRange:rightRange];
 	
 	
@@ -115,10 +114,11 @@
 	NSArray *matches = [regex matchesInString:htmlCheck 
 									  options:0
 										range:NSMakeRange(0,[htmlCheck length])];
-	//NSLog(@"%@", matches);
-	//run through the array to get the departments
+
+	//create an array to package the departments to send to departmentViewController	
 	departments = [[NSMutableArray alloc] init];
-	
+		
+	//run through the departments array to get the departments	
 	for (int i = 0; i < ([matches count]-1); i++){
 		NSString *departmentName = [htmlCheck substringWithRange:[[matches objectAtIndex:i] rangeAtIndex:1]];
 		NSRange departmentNameRange = [[matches objectAtIndex:i] rangeAtIndex:1];
@@ -129,20 +129,10 @@
 		Department *currentDepartment = [[Department alloc] initWithName:departmentName range:departmentRange];
 		
 		[departments addObject:currentDepartment];
-		
-		//NSLog(@"%@", departmentName);
-		
-		
 	}
 	
-	
-	for(int i=0;i< [departments count]; i++){
-		//NSLog(@"Department: %@ with range %d", [[departments objectAtIndex:i] name], [[departments objectAtIndex:i] range].location);
 		
-	}
-	
 	//find teacher names from their email addresses by looking for @mchschool.org in the html
-	
 	NSString *emailFormat =@"@milkenschool.org";
 	NSRange emailFormatRange = [htmlCheck rangeOfString:emailFormat];
 	
@@ -157,7 +147,6 @@
 	regexString = @"((\\w)(\\w+)\\d*)@milkenschool.org";
 	
 	//create the regular expression
-	
 	NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
 																				   options:NSRegularExpressionCaseInsensitive
 																					 error:&error];
@@ -241,6 +230,10 @@
 	if(delegate)
 	{
 		[delegate parser:self didFinishParsingDepartments:departments];
+	}}
+	
+	if (!parsingDepartments) {
+		NSLog(@"Look at me! I'm parsing courses");
 	}
 }
 -(void)parseCourses:(Teacher *)teacherToBeParsed{
@@ -256,15 +249,10 @@
 		[fakeTeach setName:[teacherToBeParsed name]];
 		[delegate parser:self didFinishParsingCourses:fakeTeach];
 	}
-	/* NSString *firstInitial = [[NSString alloc] initWithString:[teacherOfCourseName substringWithRange:NSMakeRange(0, 1)]];
-	NSLog(@"%@",firstInitial);
-	NSString *lastName = [[NSString alloc] initWithString:[teacherOfCourseName 
-														   substringWithRange:NSMakeRange(3, [teacherOfCourseName length]-3)]];
-	NSLog(@"%@", lastName);
-	NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@%@/index", firstInitial, lastName];
+		NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@/index", [teacherToBeParsed userid]];
 	teacherSite = [[NSURL alloc]initWithString:url];
 	
-	NSURLRequest *request = [NSURLRequest requestWithURL:teacherSite
+	NSURLRequest *courseRequest = [NSURLRequest requestWithURL:teacherSite
 											 cachePolicy:NSURLRequestReloadIgnoringCacheData
 										 timeoutInterval:30];
 	
@@ -274,11 +262,14 @@
 		[connectionInProgress release];
 	}
 	
+	if (milkenSiteData) {
+		[milkenSiteData release];
+	}
 	milkenSiteData = [[NSMutableData alloc] init];
-	connectionInProgress = [[NSURLConnection alloc] initWithRequest:request
+	connectionInProgress = [[NSURLConnection alloc] initWithRequest:courseRequest
 														   delegate:self
 												   startImmediately:YES];
-	NSLog(@"%@", teacherSite);*/
+	NSLog(@"%@", teacherSite);
 	
 }
 
