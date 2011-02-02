@@ -12,6 +12,7 @@
 @interface Parser : NSObject <NSXMLParserDelegate>{
 	
 	BOOL waitingForEntryTitle;
+	BOOL parsingDepartments;
 	NSString *regularEx;
 	NSMutableString *titleString;
 	NSMutableArray *departments;
