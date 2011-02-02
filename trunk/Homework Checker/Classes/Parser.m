@@ -154,7 +154,7 @@
 	}
 	
 	
-	regexString = @"(\\w)(\\w+)\\d*@milkenschool.org";
+	regexString = @"((\\w)(\\w+)\\d*)@milkenschool.org";
 	
 	//create the regular expression
 	
@@ -169,14 +169,17 @@
 	
 	teachers = [[NSMutableArray alloc] init];
 	NSString *fullName;
+	NSString *userid;
 	
 	//run through the array to get the departments
 	for (NSTextCheckingResult *matchTeachers in matchesTeachers){
-		NSString *lastName = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:2]];
-		NSString *firstInitial = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:1]];
+		NSString *lastName = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:3]];
+		NSString *firstInitial = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:2]];
 		NSString *teacherName = [[NSString alloc]initWithFormat:@"%@. %@", [firstInitial capitalizedString], [lastName capitalizedString]];
 		NSRange teacherRange = [htmlCheck rangeOfString:lastName];
 		NSString *fullName = [[NSString alloc]init];
+		NSString *userid = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:1]];
+		NSLog(@"userid = %@", userid);
 		
 		NSString *regexString = [NSString stringWithFormat:@"<td[^>]*>(.*)</td>", firstInitial, lastName];
 		
@@ -201,6 +204,7 @@
 			//NSLog(@"REGULAR EXPRESSION FOUND %@", fullName);
 		}
 		Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
+		[currentTeacher setUserid:userid];
 		[teachers addObject:currentTeacher];
 		
 		
