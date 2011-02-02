@@ -247,7 +247,7 @@
 	NSURL *teacherSite;
 	//Take out the period and space in the teachers name
 	NSString *teacherOfCourseName = [teacherToBeParsed name];
-	NSLog(@"parseCourses teacher is %@",teacherOfCourseName);
+	NSLog(@"parseCourses teacher is %@ (%@)",teacherOfCourseName, [teacherToBeParsed userid]);
 	
 	// THIS IS FAKE CODE -- DELETE IT
 	Teacher *fakeTeach = [Teacher randomTeacher:[teacherToBeParsed department]];
