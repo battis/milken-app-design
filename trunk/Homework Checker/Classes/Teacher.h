@@ -19,7 +19,7 @@
 }
 
 @property (copy) NSString *name;
-@property (copy) NSSTring *userid;
+@property (copy) NSString *userid;
 @property (retain) Department *department;
 @property (retain) NSMutableArray *courses;
 
