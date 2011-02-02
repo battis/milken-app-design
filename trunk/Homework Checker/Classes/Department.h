@@ -17,7 +17,7 @@
 }
 
 @property (copy) NSString *name;
-@property (readonly) NSMutableArray *teachers;
+@property (retain) NSMutableArray *teachers;
 @property NSRange range;
 
 
