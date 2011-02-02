@@ -1,5 +1,6 @@
 //
 //  Copyright Milken Community High School All rights reserved.
+//  Based on the "Homepwer" application created by bhardy.
 //
 
 #import "DepartmentViewController.h"
