@@ -1,9 +1,6 @@
 //
-//  TeacherViewController.h
-//  Homepwner
-//
-//  Created by bhardy on 7/30/09.
-//  Copyright 2009 Big Nerd Ranch. All rights reserved.
+//  Copyright Milken Community High School All rights reserved.
+//  Based on the "Homepwer" application created by bhardy.
 //
 
 #import <UIKit/UIKit.h>
