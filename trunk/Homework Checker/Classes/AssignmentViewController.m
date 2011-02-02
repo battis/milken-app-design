@@ -59,6 +59,7 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+
 }
 
 
@@ -205,6 +206,10 @@
  return betterIndexPath;
  }
  */
+-(void)webViewDidFinishLoad: (UIWebView *)webView
+{
+	[activityIndicator stopAnimating];
+}
 
 #pragma mark -
 #pragma mark WebView
