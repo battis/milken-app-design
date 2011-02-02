@@ -87,8 +87,7 @@
 	{
 		[randomTeacher addCourse:[Course randomCourse:randomTeacher]];
 	}
-	[randomTeacher autorelease];
-	return randomTeacher;
+	return [randomTeacher autorelease];
 }
 
 @end

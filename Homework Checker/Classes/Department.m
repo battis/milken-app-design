@@ -73,8 +73,8 @@
 	{
 		[randomDept addTeacher:[Teacher randomTeacher:randomDept]];
 	}
-	[randomDept autorelease];
-	return randomDept;
+
+	return [randomDept autorelease];
 }
 
 @end
