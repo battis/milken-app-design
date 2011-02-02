@@ -51,9 +51,14 @@
 	
 	Course *randomCourse = [[Course alloc] initWithName:[NSString stringWithFormat:@"%@%@", levels[rand() %3], titles[rand() % 3]]
 											   taughtBy:aTeacher
-										 assignmentPage:urls[rand() % 3]]; 
-	[randomCourse autorelease];
-	return randomCourse;
+										 assignmentPage:urls[rand() % 3]];
+	NSLog([aTeacher userid]);
+	if ([[aTeacher userid] length] > 0)
+	{
+		[randomCourse setAssignmentPage:[NSURL URLWithString:[NSString stringWithFormat:@"http://faculty.milkenschool.org/%@/index", [aTeacher userid]]]];
+	}
+
+	return [randomCourse autorelease];
 }
 
 @end
