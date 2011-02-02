@@ -13,13 +13,15 @@
 
 @interface Teacher : NSObject {
 	NSString *name;
+	NSString *userid;
 	Department *department;
 	NSMutableArray *courses;
 }
 
 @property (copy) NSString *name;
+@property (copy) NSSTring *userid;
 @property (retain) Department *department;
-@property (readonly) NSMutableArray *courses;
+@property (retain) NSMutableArray *courses;
 
 + (Teacher *)randomTeacher:(Department *)aDepartment;
 
