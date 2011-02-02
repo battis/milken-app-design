@@ -26,7 +26,7 @@
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat:@"%@ ()", name, [assignmentPage absoluteString]];
+	return name;
 }
 
 + (Course *)randomCourse:(Teacher *)aTeacher
@@ -44,9 +44,9 @@
 	};
 	
 	NSURL *urls[3] = {
-		[NSURL URLWithString:@"http://www.google.com"],
-		[NSURL URLWithString:@"http://www.bing.com"],
-		[NSURL URLWithString:@"http://www.yahoo.com"]
+		[NSURL URLWithString:@"http://faculty.milkenschool.org/sbattis/companim2/assignments/index"],
+		[NSURL URLWithString:@"http://faculty.milkenschool.org/sbattis/appdesign/assignments/index"],
+		[NSURL URLWithString:@"http://faculty.milkenschool.org/rshaltiel/hebbas1/assignments/index"]
 	};
 	
 	Course *randomCourse = [[Course alloc] initWithName:[NSString stringWithFormat:@"%@%@", levels[rand() %3], titles[rand() % 3]]
