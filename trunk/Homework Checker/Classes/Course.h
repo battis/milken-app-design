@@ -1,10 +1,8 @@
 //
-//  Course.h
-//  Homework Checker
+//  Copyright Milken Community High School All rights reserved.
+//  Based on the "Homepwer" application created by bhardy.
 //
-//  Created by Seth Battis on 12/7/10.
-//  Copyright 2010 Milken Community High School. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 
