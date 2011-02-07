@@ -13,6 +13,7 @@
 	
 	BOOL waitingForEntryTitle;
 	BOOL parsingDepartments;
+	Teacher *teacherBeingParsed;
 	NSString *regularEx;
 	NSMutableString *titleString;
 	NSMutableArray *departments;
@@ -24,6 +25,7 @@
 
 @property (readonly) NSMutableArray *departments;
 @property (readonly) NSMutableArray *teachers;
+@property (retain) Teacher *teacherBeingParsed;
 @property (retain) id<ParserDelegate> delegate;
 
 -(void)parseDepartments;

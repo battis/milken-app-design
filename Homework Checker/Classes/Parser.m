@@ -13,7 +13,7 @@
 
 @implementation Parser
 
-@synthesize departments, teachers, delegate;
+@synthesize departments, teachers, delegate, teacherBeingParsed;
 
 - (id)init {
 	[super init];
@@ -245,8 +245,9 @@
 
 	
 	if (!parsingDepartments) {
-		NSLog(@"Look at me! I'm parsing courses");
-		
+		NSLog(@"Look at me! I'm parsing courses for %@", [teacherBeingParsed name]);
+		NSError *error = NULL;
+		NSString *htmlCheck = [[[NSString alloc] initWithData:milkenSiteData encoding:NSUTF8StringEncoding] autorelease];
 		
 		
 		
@@ -266,14 +267,8 @@
 	//Take out the period and space in the teachers name
 	NSString *teacherOfCourseName = [teacherToBeParsed name];
 	NSLog(@"parseCourses teacher is %@ (%@)",teacherOfCourseName, [teacherToBeParsed userid]);
+	teacherBeingParsed = teacherToBeParsed;
 	
-	// THIS IS FAKE CODE -- DELETE IT
-	Teacher *fakeTeach = [Teacher randomTeacher:[teacherToBeParsed department]];
-	if(delegate)
-	{
-		[fakeTeach setName:[teacherToBeParsed name]];
-		[delegate parser:self didFinishParsingCourses:fakeTeach];
-	}
 		NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@/index", [teacherToBeParsed userid]];
 	teacherSite = [[NSURL alloc]initWithString:url];
 	
