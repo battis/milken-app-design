@@ -110,6 +110,8 @@
 	NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:regexString
 																	  options:0
 																		error:&error];
+		[regexString release];	
+		
 	//run the regular expression and place the results into matches
 	NSArray *matches = [regex matchesInString:htmlCheck 
 									  options:0
@@ -130,6 +132,9 @@
 		
 		[departments addObject:currentDepartment];
 	}
+		
+		
+		[regex release];
 	
 		
 	//find teacher names from their email addresses by looking for @mchschool.org in the html
@@ -144,7 +149,7 @@
 	}
 	
 	
-	regexString = @"((\\w)(\\w+)\\d*)@milkenschool.org";
+		regexString = @"((\\w)(\\w+)\\d*)@milkenschool.org";
 	
 	//create the regular expression
 	NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
@@ -170,7 +175,9 @@
 		NSString *userid = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:1]];
 		NSLog(@"userid = %@", userid);
 		
-		NSString *regexString = [NSString stringWithFormat:@"<td[^>]*>(.*)</td>", firstInitial, lastName];
+		[regexString release];
+		
+		NSString *regexString = [[NSString alloc] initWithFormat:@"<td[^>]*>(.*)</td>", firstInitial, lastName];
 		
 		//NSLog(@"%@", regexString);
 		
@@ -186,12 +193,13 @@
 		
 		
 		
-		NSLog(@"WRAH!!!%@",matchesTeachersNames);
+		//NSLog(@"WRAH!!!%@",matchesTeachersNames);
 		for (NSTextCheckingResult *matchTeachersNames in matchesTeachersNames){
 			
 			fullName = [htmlCheck substringWithRange:[matchTeachersNames rangeAtIndex:1]];
-			//NSLog(@"REGULAR EXPRESSION FOUND %@", fullName);
 		}
+		
+		[regexTeachersEmail release];
 		Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
 		[currentTeacher setUserid:userid];
 		[teachers addObject:currentTeacher];
@@ -204,10 +212,17 @@
 				[[departments objectAtIndex:i] addTeacher:currentTeacher];
 				break;
 			}
+			
 			//NSLog(@"%@ with range %d is not in %@ with range from %d to %d", teacherName,teacherRange.location,[[departments objectAtIndex:i] name],[[departments objectAtIndex:i]range].location ,[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location);
 		}
 		
+		[regexString release];
+		
 	}
+		
+		
+		
+		[regexTeachersEmail release];
 	
 	NSLog(@"Teachers:");
 	for (int i=0; i<[departments count]; i++) {
@@ -218,22 +233,32 @@
 	NSLog(@"the list of teachers: %@", teachers);
 	//Use the regular expression "(\w)(\w*)\d*@milkenschool.org" to find teacher names and first initial.
 	
-	/*to do list: 1) load teacher pages
-	 2) run through teacher html looking for text that is between /index"> and </A>
-	 then navigate after the quote and keep reading the text to the left until you hit another quote.
-	 
-	 example :<A HREF="/ljames/precalchon/index">Pre Calculus Honors</A>
+
 	 
 	 
-	 */
 	
 	if(delegate)
 	{
 		[delegate parser:self didFinishParsingDepartments:departments];
-	}}
+	}
+}
+
 	
 	if (!parsingDepartments) {
 		NSLog(@"Look at me! I'm parsing courses");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 -(void)parseCourses:(Teacher *)teacherToBeParsed{
@@ -272,6 +297,13 @@
 	NSLog(@"%@", teacherSite);
 	
 }
+
+- (void)dealloc 
+{
+    [super dealloc];
+}
+
+
 
 
 
