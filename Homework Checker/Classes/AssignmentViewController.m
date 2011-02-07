@@ -29,7 +29,6 @@
 	[webView loadRequest:requestObj];
 	[webView setDelegate:self];
 	
-	// Override point for customization after app launch
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -63,7 +62,6 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
 	//If a link is clicked from the AssignmentViewController, open it in the appropriate application
-	NSLog(@"shouldStartLoadWithRequest");
     if (navigationType == UIWebViewNavigationTypeLinkClicked) {
         [[UIApplication sharedApplication] openURL:request.URL];
         return NO;

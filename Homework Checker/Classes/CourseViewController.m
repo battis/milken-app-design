@@ -57,7 +57,7 @@
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+
 }
 
 
@@ -67,17 +67,15 @@
 	return 1;
 }
 
-// Customize the number of rows in the table view.
+// Dictates number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	int numberOfRows = [[teacher courses] count];
-	// If we are editing, we will have one more row than we have possessions
-	if ([self isEditing])
-		numberOfRows++;
+
 	
 	return numberOfRows;
 }
 
-// Customize the appearance of table view cells.
+// Dictates appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
 	// Check for a reusable cell first, use that if it exists 
@@ -93,17 +91,6 @@
 	return cell;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 -(id)setTeacher:(Teacher *) theTeacher
 {
 	[teacher autorelease];
@@ -116,8 +103,9 @@
 
 - (void)tableView:(UITableView *)aTableView 
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{	
-	
+
+//Do I need to create an instance of assignmentviewcontroller?
+{		
 	if(!assignmentViewController)
 	{
 		assignmentViewController = [[AssignmentViewController alloc] init];
@@ -134,6 +122,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 #pragma mark ParserDelegate
 
+//Tells the app what to do when the parser finishes parsing 
 -(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
 {
 	//NSLog(@"CourseViewController received the following courses:\n%@", [theTeacher courses]);
@@ -143,7 +132,9 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 	[[self tableView] reloadData];
 	
 }
-
+//Tells the parser when it is done parsing departments and what to do (NSMutableArray)
+-(void)parser:(Parser *)theParser didFinishParsingDepartments:(NSMutableArray *) theDepartments
+{}
 
 @end
 

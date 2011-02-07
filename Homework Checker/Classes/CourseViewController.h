@@ -21,6 +21,7 @@
 
 @property (retain) UIActivityIndicatorView *activityIndicator;
 
+- (id)setTeacher:(Teacher *)theTeacher;
 
 @end
 

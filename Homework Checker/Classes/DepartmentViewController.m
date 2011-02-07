@@ -58,14 +58,13 @@
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
 }
 
 
 #pragma mark Table view methods
 
 
-// Tells the table view how many cells (number of rows) it will need to display
+// Tells the table view how many cells (number of rows) it will need to display (# of departments)
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	int numberOfRows = [departments count];
 	
@@ -73,7 +72,7 @@
 	return numberOfRows;
 }
 
-// Customize the appearance of table view cells.
+// Dictates the ppearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
 	// Check for a reusable cell first, use that if it exists 
@@ -105,7 +104,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 										   animated:YES];
 }
 
-
+//deallocate/release the following from memory
 - (void)dealloc {
 	[teacherViewController release];
 	[departments release];
@@ -115,6 +114,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 #pragma mark -
 #pragma mark ParserDelegate
 
+//Tells the app what to do when the parser finishes parsing
 -(void)parser:(Parser *) theParser didFinishParsingDepartments:(NSMutableArray *) theDepartments
 {
 	[self setDepartments:theDepartments];
