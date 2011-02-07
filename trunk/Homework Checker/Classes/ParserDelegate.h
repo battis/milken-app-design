@@ -1,3 +1,8 @@
+//
+//  Created by Seth Battis
+//  Copyright 2010 Milken Community Jewish High School. All rights reserved.
+//
+
 #import "Teacher.h"
 
 @class Parser;
