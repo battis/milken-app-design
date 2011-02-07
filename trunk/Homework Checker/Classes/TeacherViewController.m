@@ -34,7 +34,7 @@
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+
 }
 
 
@@ -44,13 +44,13 @@
 	return 1;
 }
 
-// Customize the number of rows in the table view.
+// Dictates the number of rows in the table view (# of teachers)
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	int numberOfRows = [[department teachers] count];
 	return numberOfRows;
 }
 
-// Customize the appearance of table view cells.
+// Dictates the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
 	// Check for a reusable cell first, use that if it exists 
@@ -70,7 +70,7 @@
 - (void)tableView:(UITableView *)aTableView 
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	//Do I need to create the instance of CourseDetailController?
+	//Do I need to create the instance of CourseViewController?
 	if (!courseViewController) {
 		courseViewController = [[CourseViewController alloc] init];
 	}
@@ -84,7 +84,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 
 - (void)dealloc {
-	//[detailViewController release];
+
 	[department release];
     [super dealloc];
 }
