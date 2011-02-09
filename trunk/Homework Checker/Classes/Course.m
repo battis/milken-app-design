@@ -27,6 +27,12 @@
 	return name;
 }
 
+- (NSURL *)setAssignmentPage:(NSString *) aString
+{
+	[self setName:[NSURL URLWithString: aString]];
+	return [self assignmentPage];
+	 }
+	 
 + (Course *)randomCourse:(Teacher *)aTeacher
 {
 	NSString *titles[3] = {
