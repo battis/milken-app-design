@@ -9,6 +9,7 @@
 #import "Parser.h"
 #import "Department.h"
 #import "Teacher.h"
+#import "Course.h"
 
 
 @implementation Parser
@@ -249,11 +250,42 @@
 		NSError *error = NULL;
 		NSString *htmlCheck = [[[NSString alloc] initWithData:milkenSiteData encoding:NSUTF8StringEncoding] autorelease];
 		
+		NSString *regexString = [[NSString alloc] initWithFormat:@"(http://faculty.milkenschool.org)?((/%@/.*/)|(?!(/%@))/.*/)index[^>]*>([^<]*)</a>", [teacherBeingParsed userid], [teacherBeingParsed userid]];
+		
+		//create the regular expression
+		NSRegularExpression *regexCourses = [[NSRegularExpression alloc] initWithPattern:regexString
+																					   options:NSRegularExpressionCaseInsensitive
+																						 error:&error];
+		//[regexString release];
+		
+		NSArray *matchesCourses = [regexCourses matchesInString:htmlCheck 
+															   options:0
+																 range:NSMakeRange(0,[htmlCheck length])];
+		
+		NSMutableArray *courses = [[NSMutableArray alloc] init];
 		
 		
+		for (NSTextCheckingResult *matchCourses in matchesCourses){
+			
+			NSString *currentCourseUrlName = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org%@assignments/index", [htmlCheck substringWithRange:[matchCourses rangeAtIndex:2]]];
+			NSURL *currentCourseUrl = [[NSURL alloc] initWithString:currentCourseUrlName];
+			//PROBLEM: the range at index is wrong but any value of 1 or 4 crashes it
+			NSString *currentCourseName = [htmlCheck substringWithRange:[matchCourses rangeAtIndex:5]];
+			NSLog(@"Courses %@ with URL %@", currentCourseName, currentCourseUrl);
+			Course *currentCourse = [[Course alloc] initWithName:currentCourseName
+													   taughtBy:teacherBeingParsed
+												 assignmentPage:currentCourseUrl];
+			
+			NSLog(@"%@ teaches %@", [teacherBeingParsed name], [teacherBeingParsed courses]);
+				
+		}		
 		
+		[regexCourses release];
 		
-		
+		if(delegate)
+		{
+			[delegate parser:self didFinishParsingCourses:teacherBeingParsed];
+		}
 		
 		
 		
