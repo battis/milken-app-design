@@ -213,8 +213,8 @@
 		path = "/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Homework Checker.xcodeproj/23203.pbxuser";
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1348, 16432}}";
-			sepNavSelRange = "{21345, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1348, 17524}}";
+			sepNavSelRange = "{39373, 0}";
 			sepNavVisRange = "{16, 950}";
 		};
 	};
@@ -688,6 +688,11 @@
 		name = project.pbxproj;
 		path = "/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Homework Checker.xcodeproj/project.pbxproj";
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1797, 3185}}";
+			sepNavSelRange = "{18586, 0}";
+			sepNavVisRange = "{14, 5271}";
+		};
 	};
 	1356520C13034D9F00EC5F53 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -705,6 +710,92 @@
 		name = "23203.pbxuser: 822";
 		rLen = 0;
 		rLoc = 21345;
+		rType = 0;
+		vrLen = 950;
+		vrLoc = 16;
+	};
+	1356520E13034DAA00EC5F53 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 135651AD130343FB00EC5F53 /* 23203.pbxuser */;
+		name = "23203.pbxuser: 1258";
+		rLen = 0;
+		rLoc = 39373;
+		rType = 0;
+		vrLen = 950;
+		vrLoc = 16;
+	};
+	1356520F13034DAA00EC5F53 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1356520B13034D9F00EC5F53 /* project.pbxproj */;
+		name = "project.pbxproj: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 5271;
+		vrLoc = 14;
+	};
+	1356521013034DEA00EC5F53 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1356520B13034D9F00EC5F53 /* project.pbxproj */;
+		name = "project.pbxproj: 338";
+		rLen = 0;
+		rLoc = 18586;
+		rType = 0;
+		vrLen = 5271;
+		vrLoc = 14;
+	};
+	1356521113034DF300EC5F53 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1356520B13034D9F00EC5F53 /* project.pbxproj */;
+		name = "project.pbxproj: 338";
+		rLen = 0;
+		rLoc = 18586;
+		rType = 0;
+		vrLen = 5271;
+		vrLoc = 14;
+	};
+	1356521413034E0000EC5F53 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1356520B13034D9F00EC5F53 /* project.pbxproj */;
+		name = "project.pbxproj: 338";
+		rLen = 0;
+		rLoc = 18586;
+		rType = 0;
+		vrLen = 5271;
+		vrLoc = 14;
+	};
+	1356521913034E7800EC5F53 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1356520B13034D9F00EC5F53 /* project.pbxproj */;
+		name = "project.pbxproj: 338";
+		rLen = 0;
+		rLoc = 18586;
+		rType = 0;
+		vrLen = 5271;
+		vrLoc = 14;
+	};
+	1356521A13034E7800EC5F53 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1356521B13034E7800EC5F53 /* Homework Checker.dep.r89 */;
+		name = "Homework Checker.dep.r89: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 6914;
+		vrLoc = 0;
+	};
+	1356521B13034E7800EC5F53 /* Homework Checker.dep.r89 */ = {
+		isa = PBXFileReference;
+		name = "Homework Checker.dep.r89";
+		path = "/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Homework Checker.dep.r89";
+		sourceTree = "<absolute>";
+	};
+	1356521C13034E7800EC5F53 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 135651AD130343FB00EC5F53 /* 23203.pbxuser */;
+		name = "23203.pbxuser: 1249";
+		rLen = 0;
+		rLoc = 39373;
 		rType = 0;
 		vrLen = 950;
 		vrLoc = 16;
@@ -1085,6 +1176,14 @@
 			1356520A13034D9F00EC5F53 /* PBXTextBookmark */ = 1356520A13034D9F00EC5F53 /* PBXTextBookmark */;
 			1356520C13034D9F00EC5F53 /* PBXTextBookmark */ = 1356520C13034D9F00EC5F53 /* PBXTextBookmark */;
 			1356520D13034D9F00EC5F53 /* PBXTextBookmark */ = 1356520D13034D9F00EC5F53 /* PBXTextBookmark */;
+			1356520E13034DAA00EC5F53 /* PBXTextBookmark */ = 1356520E13034DAA00EC5F53 /* PBXTextBookmark */;
+			1356520F13034DAA00EC5F53 /* PBXTextBookmark */ = 1356520F13034DAA00EC5F53 /* PBXTextBookmark */;
+			1356521013034DEA00EC5F53 /* PBXTextBookmark */ = 1356521013034DEA00EC5F53 /* PBXTextBookmark */;
+			1356521113034DF300EC5F53 /* PBXTextBookmark */ = 1356521113034DF300EC5F53 /* PBXTextBookmark */;
+			1356521413034E0000EC5F53 /* PBXTextBookmark */ = 1356521413034E0000EC5F53 /* PBXTextBookmark */;
+			1356521913034E7800EC5F53 /* PBXTextBookmark */ = 1356521913034E7800EC5F53 /* PBXTextBookmark */;
+			1356521A13034E7800EC5F53 /* PBXTextBookmark */ = 1356521A13034E7800EC5F53 /* PBXTextBookmark */;
+			1356521C13034E7800EC5F53 /* PBXTextBookmark */ = 1356521C13034E7800EC5F53 /* PBXTextBookmark */;
 			139BBB9A12FA116900F1773B = 139BBB9A12FA116900F1773B /* PBXTextBookmark */;
 			139BBB9C12FA116900F1773B = 139BBB9C12FA116900F1773B /* PBXTextBookmark */;
 			139BBBA012FA116900F1773B = 139BBBA012FA116900F1773B /* PBXTextBookmark */;
