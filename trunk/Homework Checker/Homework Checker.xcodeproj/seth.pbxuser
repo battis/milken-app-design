@@ -23,7 +23,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					200,
 					200,
-					397,
+					536,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXBookmarksDataSource_LocationID,
@@ -37,7 +37,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					22,
 					300,
-					620.58349609375,
+					614,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXExecutablesDataSource_ActiveFlagID,
@@ -67,13 +67,25 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					740,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
 					20,
-					790,
+					702,
 					20,
 					48,
 					43,
@@ -96,7 +108,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					607,
+					686,
 					60,
 					20,
 					48,
@@ -143,6 +155,13 @@
 			5D3A0D9E130344CF00B0E56F /* PBXTextBookmark */ = 5D3A0D9E130344CF00B0E56F /* PBXTextBookmark */;
 			5D3A0DAA130344D500B0E56F /* PBXTextBookmark */ = 5D3A0DAA130344D500B0E56F /* PBXTextBookmark */;
 			5D3A0DAB130344DF00B0E56F /* PBXTextBookmark */ = 5D3A0DAB130344DF00B0E56F /* PBXTextBookmark */;
+			5D3A0DBA130346A000B0E56F /* PBXTextBookmark */ = 5D3A0DBA130346A000B0E56F /* PBXTextBookmark */;
+			5D3A0DBB130346A000B0E56F /* PBXTextBookmark */ = 5D3A0DBB130346A000B0E56F /* PBXTextBookmark */;
+			5D3A0DBD130346A000B0E56F /* PBXBookmark */ = 5D3A0DBD130346A000B0E56F /* PBXBookmark */;
+			5D3A0DBE130346A000B0E56F /* PlistBookmark */ = 5D3A0DBE130346A000B0E56F /* PlistBookmark */;
+			5D3A0DBF130346CB00B0E56F /* PlistBookmark */ = 5D3A0DBF130346CB00B0E56F /* PlistBookmark */;
+			5D3A0DC0130346CB00B0E56F /* PBXTextBookmark */ = 5D3A0DC0130346CB00B0E56F /* PBXTextBookmark */;
+			5D3A0DC1130346CB00B0E56F /* PBXTextBookmark */ = 5D3A0DC1130346CB00B0E56F /* PBXTextBookmark */;
 			5D47D64E13009F55008CB6E8 = 5D47D64E13009F55008CB6E8 /* PBXTextBookmark */;
 			5D47D64F13009F55008CB6E8 = 5D47D64F13009F55008CB6E8 /* PBXTextBookmark */;
 			5D47D6591300A170008CB6E8 = 5D47D6591300A170008CB6E8 /* PBXTextBookmark */;
@@ -309,7 +328,7 @@
 		fRef = 5DC574C412DBC635005000F8 /* Course.m */;
 		name = "Course.m: 30";
 		rLen = 0;
-		rLoc = 505;
+		rLoc = 533;
 		rType = 0;
 		vrLen = 359;
 		vrLoc = 460;
@@ -319,7 +338,7 @@
 		fRef = 5DC574C412DBC635005000F8 /* Course.m */;
 		name = "Course.m: 34";
 		rLen = 0;
-		rLoc = 505;
+		rLoc = 533;
 		rType = 0;
 		vrLen = 357;
 		vrLoc = 460;
@@ -347,7 +366,7 @@
 		fRef = 5DC574C412DBC635005000F8 /* Course.m */;
 		name = "Course.m: 34";
 		rLen = 0;
-		rLoc = 505;
+		rLoc = 533;
 		rType = 0;
 		vrLen = 468;
 		vrLoc = 1140;
@@ -417,7 +436,7 @@
 		fRef = 5DC574C412DBC635005000F8 /* Course.m */;
 		name = "Course.m: 30";
 		rLen = 0;
-		rLoc = 505;
+		rLoc = 533;
 		rType = 0;
 		vrLen = 324;
 		vrLoc = 488;
@@ -461,6 +480,78 @@
 		rType = 0;
 		vrLen = 371;
 		vrLoc = 166;
+	};
+	5D3A0DBA130346A000B0E56F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C312DBC635005000F8 /* Course.h */;
+		name = "Course.h: 27";
+		rLen = 0;
+		rLoc = 537;
+		rType = 0;
+		vrLen = 376;
+		vrLoc = 166;
+	};
+	5D3A0DBB130346A000B0E56F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5D3A0DBC130346A000B0E56F /* HomeworkCheckerAppDelegate.o~> */;
+		name = "HomeworkCheckerAppDelegate.o~>: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1148;
+		vrLoc = 0;
+	};
+	5D3A0DBC130346A000B0E56F /* HomeworkCheckerAppDelegate.o~> */ = {
+		isa = PBXFileReference;
+		name = "HomeworkCheckerAppDelegate.o~>";
+		path = "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/build/Homework Checker.build/Debug-iphonesimulator/Homework Checker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o~>";
+		sourceTree = "<absolute>";
+	};
+	5D3A0DBD130346A000B0E56F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Homework_Checker-Info.plist */;
+	};
+	5D3A0DBE130346A000B0E56F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Homework_Checker-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Homework_Checker-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	5D3A0DBF130346CB00B0E56F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Homework_Checker-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/seth/Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker/Homework_Checker-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	5D3A0DC0130346CB00B0E56F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C312DBC635005000F8 /* Course.h */;
+		name = "Course.h: 27";
+		rLen = 0;
+		rLoc = 537;
+		rType = 0;
+		vrLen = 376;
+		vrLoc = 166;
+	};
+	5D3A0DC1130346CB00B0E56F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5DC574C412DBC635005000F8 /* Course.m */;
+		name = "Course.m: 21";
+		rLen = 29;
+		rLoc = 410;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 130;
 	};
 	5D47D64E13009F55008CB6E8 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -582,15 +673,15 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {904, 588}}";
 			sepNavSelRange = "{537, 0}";
-			sepNavVisRange = "{166, 371}";
+			sepNavVisRange = "{166, 376}";
 			sepNavWindowFrame = "{{15, 4}, {940, 742}}";
 		};
 	};
 	5DC574C412DBC635005000F8 /* Course.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {904, 1449}}";
-			sepNavSelRange = "{505, 0}";
-			sepNavVisRange = "{488, 324}";
+			sepNavIntBoundsRect = "{{0, 0}, {904, 1491}}";
+			sepNavSelRange = "{410, 29}";
+			sepNavVisRange = "{130, 357}";
 		};
 	};
 	5DC574C512DBC635005000F8 /* Department.h */ = {
