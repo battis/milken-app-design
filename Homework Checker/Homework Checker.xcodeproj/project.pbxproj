@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1356519E130343B600EC5F53 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1356519D130343B600EC5F53 /* icon.png */; };
+		135651B91303455000EC5F53 /* SplashScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135651B71303455000EC5F53 /* SplashScreenView.xib */; };
+		135651D113034A5200EC5F53 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 135651D013034A5200EC5F53 /* Splash.png */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -27,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		1356519D130343B600EC5F53 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		135651B51303455000EC5F53 /* SplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashScreenViewController.h; path = ../SplashScreenViewController.h; sourceTree = "<group>"; };
+		135651B61303455000EC5F53 /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashScreenViewController.m; path = ../SplashScreenViewController.m; sourceTree = "<group>"; };
+		135651B71303455000EC5F53 /* SplashScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenView.xib; sourceTree = "<group>"; };
+		135651D013034A5200EC5F53 /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Homework Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -118,8 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				1356519D130343B600EC5F53 /* icon.png */,
+				135651D013034A5200EC5F53 /* Splash.png */,
 				5DC574F812DBC6F4005000F8 /* AssignmentView.xib */,
 				5DC574E212DBC65E005000F8 /* MainWindow.xib */,
+				135651B71303455000EC5F53 /* SplashScreenView.xib */,
 				8D1107310486CEB800E47090 /* Homework_Checker-Info.plist */,
 			);
 			name = Resources;
@@ -155,6 +163,8 @@
 				5DC574D612DBC64E005000F8 /* DepartmentViewController.m */,
 				5DC574D712DBC64E005000F8 /* TeacherViewController.h */,
 				5DC574D812DBC64E005000F8 /* TeacherViewController.m */,
+				135651B51303455000EC5F53 /* SplashScreenViewController.h */,
+				135651B61303455000EC5F53 /* SplashScreenViewController.m */,
 				5DC574D312DBC64E005000F8 /* CourseViewController.h */,
 				5DC574D412DBC64E005000F8 /* CourseViewController.m */,
 				5DC574C112DBC635005000F8 /* AssignmentViewController.h */,
@@ -218,6 +228,8 @@
 				5DC574E312DBC65E005000F8 /* MainWindow.xib in Resources */,
 				5DC574F912DBC6F4005000F8 /* AssignmentView.xib in Resources */,
 				1356519E130343B600EC5F53 /* icon.png in Resources */,
+				135651B91303455000EC5F53 /* SplashScreenView.xib in Resources */,
+				135651D113034A5200EC5F53 /* Splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
