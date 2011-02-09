@@ -256,13 +256,13 @@
 		NSRegularExpression *regexCourses = [[NSRegularExpression alloc] initWithPattern:regexString
 																					   options:NSRegularExpressionCaseInsensitive
 																						 error:&error];
-		//[regexString release];
+		[regexString release];
 		
 		NSArray *matchesCourses = [regexCourses matchesInString:htmlCheck 
 															   options:0
 																 range:NSMakeRange(0,[htmlCheck length])];
 		
-		NSMutableArray *courses = [[NSMutableArray alloc] init];
+
 		
 		
 		for (NSTextCheckingResult *matchCourses in matchesCourses){
@@ -279,6 +279,7 @@
 			NSLog(@"%@ teaches %@", [teacherBeingParsed name], [teacherBeingParsed courses]);
 				
 		}		
+		
 		
 		[regexCourses release];
 		
@@ -322,6 +323,10 @@
 														   delegate:self
 												   startImmediately:YES];
 	NSLog(@"%@", teacherSite);
+	
+	[url release];
+	[teacherSite release];
+	
 	
 }
 
