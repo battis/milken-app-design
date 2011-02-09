@@ -17,6 +17,7 @@
 {
 	[super init];
 	[self setName:aName];
+	[aTeacher addCourse:self];
 	[self setTeacher:aTeacher];
 	[self setAssignmentPage:aUrl];
 	return self;
