@@ -17,7 +17,6 @@
 
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
-	
 	// Activate/declare parser for future use (does not begin parsing)
 	parser = [[Parser alloc] init];
 	[parser setDelegate:self];
