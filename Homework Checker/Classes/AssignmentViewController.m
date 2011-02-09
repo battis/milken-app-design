@@ -22,17 +22,17 @@
 
 - (void)viewDidLoad
 {
-	//URL Request Object
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:[course assignmentPage]];
-	
-	//Load the request in the UIWebView.
-	[webView loadRequest:requestObj];
 	[webView setDelegate:self];
 	
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+	//URL Request Object
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:[course assignmentPage]];
+	
+	//Load the request in the UIWebView.
+	[webView loadRequest:requestObj];
 	[super viewWillAppear:animated];
 	//[[self tableView] reloadData];
 }
