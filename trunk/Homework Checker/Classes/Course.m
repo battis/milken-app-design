@@ -31,7 +31,7 @@
 {
 	[self setName:[NSURL URLWithString: aString]];
 	return [self assignmentPage];
-	 }
+}
 	 
 + (Course *)randomCourse:(Teacher *)aTeacher
 {
