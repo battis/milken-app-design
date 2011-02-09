@@ -61,7 +61,7 @@
 #pragma mark WebView
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-	//If a link is clicked from the AssignmentViewController, open it in the appropriate application
+	//If a link is clicked from the AssignmentViewController, open it in the appropriate application \
     if (navigationType == UIWebViewNavigationTypeLinkClicked) {
         [[UIApplication sharedApplication] openURL:request.URL];
         return NO;
