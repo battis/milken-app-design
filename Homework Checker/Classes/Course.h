@@ -23,5 +23,6 @@
 - (id)initWithName:(NSString *)aName
 		  taughtBy:(Teacher *)aTeacher
 	assignmentPage:(NSURL *)aUrl;
+- (NSURL *)setAssignmentPage:(NSString *)aString;
 
 @end
