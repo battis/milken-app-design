@@ -95,7 +95,10 @@
 {
 	[teacher autorelease];
 	teacher = [theTeacher retain];
-	needToParseTeacher = YES;
+	if ([[teacher courses] count] == 0)
+	{
+		needToParseTeacher = YES;
+	}
 	return teacher;
 }
 
