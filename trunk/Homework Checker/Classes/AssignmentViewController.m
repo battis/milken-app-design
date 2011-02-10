@@ -13,9 +13,6 @@
 
 - (id)init {
 	[super initWithNibName:@"AssignmentView" bundle:nil];
-	//Set Nav bar title to Assignments
-	[[self navigationItem] setTitle:@"Assignments"];
-	
 	return self;
 }
 
@@ -23,7 +20,6 @@
 - (void)viewDidLoad
 {
 	[webView setDelegate:self];
-	
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -31,6 +27,10 @@
 	//URL Request Object
 	NSURLRequest *requestObj = [NSURLRequest requestWithURL:[course assignmentPage]];
 	
+	//Set title to the current course
+	NSString *courseName = [[NSString alloc] initWithFormat:@"%@", [course name]];
+	[[self navigationItem] setTitle:courseName];
+	[courseName release];
 	//Load the request in the UIWebView.
 	[webView loadRequest:requestObj];
 	[super viewWillAppear:animated];
