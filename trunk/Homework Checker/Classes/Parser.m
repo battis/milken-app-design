@@ -166,15 +166,17 @@
 	NSString *fullName;
 	NSString *userid;
 	
-	//run through the array to get the departments
+	//run through the array to get the teachers
 	for (NSTextCheckingResult *matchTeachers in matchesTeachers){
 		NSString *lastName = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:3]];
 		NSString *firstInitial = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:2]];
 		NSString *teacherName = [[NSString alloc]initWithFormat:@"%@. %@", [firstInitial capitalizedString], [lastName capitalizedString]];
-		NSRange teacherRange = [htmlCheck rangeOfString:lastName];
-		NSString *fullName = [[NSString alloc]init];
 		NSString *userid = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:1]];
-		NSLog(@"userid = %@", userid);
+		NSRange teacherRange = [htmlCheck rangeOfString:userid];
+		NSString *fullName = [[NSString alloc]init];
+		
+		
+		NSLog(@"teacher with userid %@ has range %d", userid, teacherRange);
 		
 		[regexString release];
 		
@@ -208,7 +210,6 @@
 		
 		for (int i=0; i<[departments count]; i++) {
 			if (teacherRange.location>[[departments objectAtIndex:i] range].location && teacherRange.location<[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location) {
-				NSLog(@"found one %@ in %@",teacherName, [[departments objectAtIndex:i] name]);
 				[currentTeacher setDepartment:[departments objectAtIndex:i]];
 				[[departments objectAtIndex:i] addTeacher:currentTeacher];
 				break;
