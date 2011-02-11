@@ -7,6 +7,7 @@
 #import "Department.h"
 #import "TeacherViewController.h"
 #import "Parser.h"
+#import "SplashScreenViewController.h"
 
 
 @implementation DepartmentViewController
@@ -16,6 +17,7 @@
 @synthesize activityIndicator;
 
 - (id)init {
+	
 	[super initWithStyle:UITableViewStyleGrouped];
 	// Activate/declare parser for future use (does not begin parsing)
 	parser = [[Parser alloc] init];
@@ -26,10 +28,7 @@
 	// is on top of the stack
 	[[self navigationItem] setTitle:@"Departments"];
 	
-	[self setActivityIndicator:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray]];
-	[activityIndicator setCenter:CGPointMake([self view].frame.size.width/2,self.view.frame.size.height/2)];
 	
-	[self.view addSubview:activityIndicator];
 	
 	return self;
 }
@@ -38,12 +37,22 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
+	if (parsing)
+	{
+		
+			SplashScreenViewController *splash = [[SplashScreenViewController alloc] init];
+			[[self navigationController] pushViewController:splash 
+												   animated:NO];
+		
+	}
 	
 }
-- (void)viewDidLoad;
+
+- (void)viewDidLoad
 //Start the activity indicator and tell the parser to parse the departments web page and give out the array.
 {
-	[activityIndicator startAnimating];
+	
+	parsing = YES;
 	[parser parseDepartments];
 	
 }
@@ -121,6 +130,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 	[[self tableView] reloadData];
 	//stop activity indicator
 	[activityIndicator stopAnimating];
+	parsing =NO;
+	[[self navigationController] popToRootViewControllerAnimated:NO];
 	
 }
 

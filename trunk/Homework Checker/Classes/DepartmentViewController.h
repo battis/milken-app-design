@@ -7,12 +7,14 @@
 #import <UIKit/UIKit.h>
 #import "ParserDelegate.h";
 
+
 @class TeacherViewController;
 
 @interface DepartmentViewController : UITableViewController <ParserDelegate> {
 	TeacherViewController *teacherViewController;
 	NSMutableArray *departments;
 	Parser *parser;
+	bool parsing;
 	UIActivityIndicatorView *activityIndicator;
 }
 
