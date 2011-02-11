@@ -150,7 +150,8 @@
 	}
 	
 	
-		regexString = @"((\\w)(\\w+)\\d*)@milkenschool.org";
+		regexString = @"http://faculty.milkenschool.org/((\\w)([a-z\\-]+)\\d*)/index";
+		//old regular expression "((\\w)([a-z\\-]+)\\d*)@milkenschool.org";
 	
 	//create the regular expression
 	NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
@@ -163,51 +164,33 @@
 															 range:NSMakeRange(0,[htmlCheck length])];
 	
 	teachers = [[NSMutableArray alloc] init];
-	NSString *fullName;
-	NSString *userid;
+	
+
 	
 	//run through the array to get the teachers
 	for (NSTextCheckingResult *matchTeachers in matchesTeachers){
 		NSString *lastName = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:3]];
 		NSString *firstInitial = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:2]];
 		NSString *teacherName = [[NSString alloc]initWithFormat:@"%@. %@", [firstInitial capitalizedString], [lastName capitalizedString]];
+		
+		//Check if the name has a number at the end of it and delete it.
+		char lastCharacter = [teacherName characterAtIndex:[teacherName length]-1];
+		if (lastCharacter >= '2' && lastCharacter <= '9') {
+			teacherName = [teacherName substringToIndex:[teacherName length]-1];
+		} 
+		
 		NSString *userid = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:1]];
-		NSRange teacherRange = [htmlCheck rangeOfString:userid];
-		NSString *fullName = [[NSString alloc]init];
-		
-		
-		NSLog(@"teacher with userid %@ has range %d", userid, teacherRange);
+		NSRange teacherRange = [htmlCheck rangeOfString:[NSString stringWithFormat:@"%@@", userid]];
 		
 		[regexString release];
+	
 		
-		NSString *regexString = [[NSString alloc] initWithFormat:@"<td[^>]*>(.*)</td>", firstInitial, lastName];
-		
-		//NSLog(@"%@", regexString);
-		
-		
-		
-		NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
-																					   options:NSRegularExpressionCaseInsensitive
-																						 error:&error];
-		
-		NSArray *matchesTeachersNames = [regexTeachersEmail matchesInString:htmlCheck 
-																	options:0
-																	  range:NSMakeRange(teacherRange.location-200, 200+teacherRange.length)];
-		
-		
-		
-		//NSLog(@"WRAH!!!%@",matchesTeachersNames);
-		for (NSTextCheckingResult *matchTeachersNames in matchesTeachersNames){
-			
-			fullName = [htmlCheck substringWithRange:[matchTeachersNames rangeAtIndex:1]];
-		}
-		
-		[regexTeachersEmail release];
 		Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
 		[currentTeacher setUserid:userid];
 		[teachers addObject:currentTeacher];
 		
 		
+		//checks the teacher's range and then matches it to a department based on that range
 		for (int i=0; i<[departments count]; i++) {
 			if (teacherRange.location>[[departments objectAtIndex:i] range].location && teacherRange.location<[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location) {
 				[currentTeacher setDepartment:[departments objectAtIndex:i]];
@@ -215,10 +198,9 @@
 				break;
 			}
 			
-			//NSLog(@"%@ with range %d is not in %@ with range from %d to %d", teacherName,teacherRange.location,[[departments objectAtIndex:i] name],[[departments objectAtIndex:i]range].location ,[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location);
+			
 		}
 		
-		[regexString release];
 		
 	}
 		
@@ -226,15 +208,9 @@
 		
 		[regexTeachersEmail release];
 	
-	NSLog(@"Teachers:");
-	for (int i=0; i<[departments count]; i++) {
-		
-		//NSLog(@"teachers in %@: %@", [[departments objectAtIndex:i] name], [[departments objectAtIndex:i] teachers]);
-	}
 	
 	NSLog(@"the list of teachers: %@", teachers);
-	//Use the regular expression "(\w)(\w*)\d*@milkenschool.org" to find teacher names and first initial.
-	
+		
 
 	 
 	 
@@ -245,15 +221,15 @@
 	}
 }
 
-	
+	//if the parser is not parsing departments, parse courses.
 	if (!parsingDepartments) {
 		NSLog(@"Look at me! I'm parsing courses for %@", [teacherBeingParsed name]);
 		NSError *error = NULL;
 		NSString *htmlCheck = [[[NSString alloc] initWithData:milkenSiteData encoding:NSUTF8StringEncoding] autorelease];
 		
+		//Search the teacher page for courses
 		NSString *regexString = [[NSString alloc] initWithFormat:@"(http://faculty.milkenschool.org)?((/%@/.*/)|(?!(/%@))/.*/)index[^>]*>([^<]*)</a>", [teacherBeingParsed userid], [teacherBeingParsed userid]];
-		
-		//create the regular expression
+	
 		NSRegularExpression *regexCourses = [[NSRegularExpression alloc] initWithPattern:regexString
 																					   options:NSRegularExpressionCaseInsensitive
 																						 error:&error];
