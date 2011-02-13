@@ -8,9 +8,9 @@
 
 #import "SplashScreenViewController.h"
 
-@synthesize activityIndicator;
-
 @implementation SplashScreenViewController
+
+@synthesize activityIndicator;
 
 - (id)init {
 	[super initWithNibName:@"SplashScreenView" bundle:nil];
