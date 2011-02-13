@@ -11,12 +11,14 @@
 
 @interface Teacher : NSObject {
 	NSString *name;
+	NSString *email;
 	NSString *userid;
 	Department *department;
 	NSMutableArray *courses;
 }
 
 @property (copy) NSString *name;
+@property (copy) NSString *email;
 @property (copy) NSString *userid;
 @property (retain) Department *department;
 @property (retain) NSMutableArray *courses;

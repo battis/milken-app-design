@@ -9,7 +9,7 @@
 
 @implementation Teacher
 
-@synthesize name, userid, department, courses;
+@synthesize name, email, userid, department, courses;
 
 - (id)initWithName:(NSString *)aName
 	  memberOfDept:(Department *) aDept
