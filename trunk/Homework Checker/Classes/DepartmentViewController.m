@@ -129,17 +129,14 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (void)doneSplashing:(NSTimer *)timer
 {
-	splashing = false;
+	splashing = NO;
 }
 
 - (void)doneParsing:(NSTimer *)timer
 {
 	if (!splashing && !parsing)
 	{
-		if (timer)
-		{
-			[timer invalidate];
-		}
+		[timer invalidate];
 		[[self navigationController] popToRootViewControllerAnimated:YES];
 	}
 }
