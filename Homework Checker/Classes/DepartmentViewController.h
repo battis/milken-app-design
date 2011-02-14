@@ -14,12 +14,15 @@
 	TeacherViewController *teacherViewController;
 	NSMutableArray *departments;
 	Parser *parser;
-	bool parsing;
+	bool parsing, splashing;
 	UIActivityIndicatorView *activityIndicator;
 }
 
 @property (copy) NSMutableArray *teachers;
 @property (retain) NSMutableArray *departments;
 @property (retain) UIActivityIndicatorView *activityIndicator;
+
+-(void)doneSplashing:(NSTimer *)timer;
+-(void)doneParsing:(NSTimer *)timer;
 
 @end

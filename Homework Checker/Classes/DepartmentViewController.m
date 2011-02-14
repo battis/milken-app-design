@@ -39,10 +39,15 @@
 	[super viewWillAppear:animated];
 	if (parsing)
 	{
-		
-			SplashScreenViewController *splash = [[SplashScreenViewController alloc] init];
-			[[self navigationController] pushViewController:splash 
-												   animated:NO];
+		splashing = YES;
+		[NSTimer scheduledTimerWithTimeInterval:3
+										 target:self
+									   selector:@selector(doneSplashing:)
+									   userInfo:nil
+										repeats:NO];
+		SplashScreenViewController *splash = [[SplashScreenViewController alloc] init];
+		[[self navigationController] pushViewController:splash 
+											   animated:NO];
 		
 	}
 	
@@ -120,19 +125,40 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 }
 
 #pragma mark -
+#pragma mark Timer
+
+- (void)doneSplashing:(NSTimer *)timer
+{
+	splashing = false;
+}
+
+- (void)doneParsing:(NSTimer *)timer
+{
+	if (!splashing && !parsing)
+	{
+		if (timer)
+		{
+			[timer invalidate];
+		}
+		[[self navigationController] popToRootViewControllerAnimated:YES];
+	}
+}
+
+#pragma mark -
 #pragma mark ParserDelegate
 
 //Tells the app what to do when the parser finishes parsing
 -(void)parser:(Parser *) theParser didFinishParsingDepartments:(NSMutableArray *) theDepartments
 {
 	[self setDepartments:theDepartments];
-	//load data onto the data table
 	[[self tableView] reloadData];
-	//stop activity indicator
-	[activityIndicator stopAnimating];
-	parsing =NO;
-	[[self navigationController] popToRootViewControllerAnimated:NO];
-	
+	parsing = NO;
+	[NSTimer scheduledTimerWithTimeInterval:0.1
+									 target:self
+								   selector:@selector(doneParsing:)
+								   userInfo:nil
+									repeats: YES];
+
 }
 
 -(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
