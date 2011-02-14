@@ -73,7 +73,14 @@
 	// Release any retained subviews of the main view.
 }
 
+//deallocate/release the following from memory
+- (void)dealloc {
+	[teacherViewController release];
+	[departments release];
+    [super dealloc];
+}
 
+#pragma mark -
 #pragma mark Table view methods
 
 
@@ -117,13 +124,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 										   animated:YES];
 }
 
-//deallocate/release the following from memory
-- (void)dealloc {
-	[teacherViewController release];
-	[departments release];
-    [super dealloc];
-}
-
 #pragma mark -
 #pragma mark Timer
 
@@ -136,7 +136,10 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	if (!splashing && !parsing)
 	{
-		[timer invalidate];
+		if (timer)
+		{
+			[timer invalidate];
+		}
 		[[self navigationController] popToRootViewControllerAnimated:YES];
 	}
 }
@@ -150,20 +153,16 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 	[self setDepartments:theDepartments];
 	[[self tableView] reloadData];
 	parsing = NO;
+	[parser release];
 	[NSTimer scheduledTimerWithTimeInterval:0.1
 									 target:self
 								   selector:@selector(doneParsing:)
 								   userInfo:nil
 									repeats: YES];
-
 }
 
 -(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
-{
-	//realease the parser from memory
-	[parser release];
-	
-}
+{}
 
 
 @end
