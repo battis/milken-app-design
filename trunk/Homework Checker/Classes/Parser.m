@@ -152,6 +152,10 @@
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:7]],
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:8]]);
 		}
+		[facultyInfoPattern release];
+		[facultyInfo release];
+		[matchesFacultyInfo release];
+		
 		
 		//find teacher names from their email addresses by looking for @mchschool.org in the html
 		NSString *emailFormat =@"@milkenschool.org";
