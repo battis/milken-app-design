@@ -25,6 +25,7 @@
 	[[self navigationItem] setTitle:[department name]];
 	[[self tableView] reloadData];
 }
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
