@@ -36,6 +36,9 @@
 	[super viewWillAppear:animated];
 	//[[self tableView] reloadData];
 }
+
+
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -75,6 +78,7 @@ return YES;
 
 - (void)dealloc 
 {
+	[webView release];
     [super dealloc];
 }
 
