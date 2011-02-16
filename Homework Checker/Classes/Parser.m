@@ -329,6 +329,8 @@
 - (void)dealloc 
 {
     [super dealloc];
+	[connectionInProgress release];
+
 }
 
 
