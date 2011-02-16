@@ -40,11 +40,11 @@
 	if (parsing)
 	{
 		splashing = YES;
-		[NSTimer scheduledTimerWithTimeInterval:3
+		/*[NSTimer scheduledTimerWithTimeInterval:3
 										 target:self
 									   selector:@selector(doneSplashing:)
 									   userInfo:nil
-										repeats:NO];
+										repeats:NO];*/
 		SplashScreenViewController *splash = [[SplashScreenViewController alloc] init];
 		[[self navigationController] pushViewController:splash 
 											   animated:NO];
@@ -153,12 +153,13 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 	[self setDepartments:theDepartments];
 	[[self tableView] reloadData];
 	parsing = NO;
-	[parser release];
-	[NSTimer scheduledTimerWithTimeInterval:0.1
+	[[self navigationController] popToRootViewControllerAnimated:YES];
+	//[parser release];
+	/*[NSTimer scheduledTimerWithTimeInterval:0.1
 									 target:self
 								   selector:@selector(doneParsing:)
 								   userInfo:nil
-									repeats: YES];
+									repeats: YES];*/
 }
 
 -(void)parser:(Parser *) theParser didFinishParsingCourses:(Teacher *) theTeacher
