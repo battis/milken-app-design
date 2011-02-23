@@ -28,7 +28,7 @@
 	return self;
 	
 	if (webView) {
-		webView = [webView dealloc];
+		[webView release];
 }
 
 
