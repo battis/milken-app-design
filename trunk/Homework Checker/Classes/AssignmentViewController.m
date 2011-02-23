@@ -73,9 +73,6 @@ return YES;
 }
 
 
-
-
-
 - (void)dealloc 
 {
 	[webView release];
