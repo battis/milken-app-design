@@ -139,95 +139,48 @@
 		
 		/* Mr. Battis' full faculty info regex */
 		NSString *facultyInfoPattern = @"<td[^>]*>(\\s*<span[^>]*>\\s*)?([^<]*)(((</span>)|(<br />))\\s*)?\\s*</td>\\s*<td[^>]*>.*<a.*mailto:([^\"]*)[^>]*>.*</td>\\s*<td[^>]*>.*<a.*faculty.[^\\.]+.org/([a-z0-9]+)";
-		NSLog(facultyInfoPattern);
+		//NSLog(facultyInfoPattern);
 		NSRegularExpression *facultyInfo =[[NSRegularExpression alloc] initWithPattern: facultyInfoPattern options:NSRegularExpressionCaseInsensitive error:&error];
 		NSArray *matchesFacultyInfo = [facultyInfo matchesInString:htmlCheck 
 															   options:0
 																 range:NSMakeRange(0,[htmlCheck length])];
 		NSLog(@"New regex had %d results (should be 91 -- Ken Lasaine has no web site).", [matchesFacultyInfo count]);
+		teachers = [[NSMutableArray alloc] init];
 		for (NSTextCheckingResult *matchFacultyInfo in matchesFacultyInfo)
 		{
 			NSLog(@"Full Name: %@; Email: %@; Username: %@",
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:2]],
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:7]],
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:8]]);
+			
+				NSString *teacherName = [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:2]];
+				NSString *teacherEmail = [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:7]];
+				NSString *userid = [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:8]];
+				NSRange teacherRange = [htmlCheck rangeOfString:[NSString stringWithFormat:@"%@@", userid]];
+				
+				Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
+				[currentTeacher setUserid:userid];
+				[currentTeacher setEmail:teacherEmail];
+				[currentTeacher setName:teacherName];
+				[teachers addObject:currentTeacher];
+				
+				
+				//checks the teacher's range and then matches it to a department based on that range
+				for (int i=0; i<[departments count]; i++) {
+					if (teacherRange.location>[[departments objectAtIndex:i] range].location && teacherRange.location<[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location) {
+						[currentTeacher setDepartment:[departments objectAtIndex:i]];
+						[[departments objectAtIndex:i] addTeacher:currentTeacher];
+						break;
+					}
+					
+					
+				}
+			
 		}
 		[facultyInfoPattern release];
 		[facultyInfo release];
 		[matchesFacultyInfo release];
-		
-		
-		//find teacher names from their email addresses by looking for @mchschool.org in the html
-		NSString *emailFormat =@"@milkenschool.org";
-		NSRange emailFormatRange = [htmlCheck rangeOfString:emailFormat];
-		
-		//NSLog(@"range is: %d",emailFormatRange.location);
-		counter = 0;
-		
-		for(int i=1; [htmlCheck characterAtIndex:emailFormatRange.location-i] != ':'; i++){
-			counter = i;
-		}
-		
-		
-		regexString = @"http://faculty.milkenschool.org/((\\w)([a-z\\-]+)\\d*)/index";
-		//old regular expression "((\\w)([a-z\\-]+)\\d*)@milkenschool.org";
-		
-		//create the regular expression
-		NSRegularExpression *regexTeachersEmail = [[NSRegularExpression alloc] initWithPattern:regexString
-																					   options:NSRegularExpressionCaseInsensitive
-																						 error:&error];
-		[regexString release];
-		
-		NSArray *matchesTeachers = [regexTeachersEmail matchesInString:htmlCheck 
-															   options:0
-																 range:NSMakeRange(0,[htmlCheck length])];
-		
-		teachers = [[NSMutableArray alloc] init];
-		
-		
-		
-		//run through the array to get the teachers
-		for (NSTextCheckingResult *matchTeachers in matchesTeachers){
-			NSString *lastName = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:3]];
-			NSString *firstInitial = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:2]];
-			NSString *teacherName = [[NSString alloc]initWithFormat:@"%@. %@", [firstInitial capitalizedString], [lastName capitalizedString]];
-			
-			//Check if the name has a number at the end of it and delete it.
-			char lastCharacter = [teacherName characterAtIndex:[teacherName length]-1];
-			if (lastCharacter >= '2' && lastCharacter <= '9') {
-				teacherName = [teacherName substringToIndex:[teacherName length]-1];
-			} 
-			
-			NSString *userid = [htmlCheck substringWithRange:[matchTeachers rangeAtIndex:1]];
-			NSRange teacherRange = [htmlCheck rangeOfString:[NSString stringWithFormat:@"%@@", userid]];
-			
-			[regexString release];
-			
-			
-			Teacher *currentTeacher = [[Teacher alloc] initWithName:teacherName];
-			[currentTeacher setUserid:userid];
-			[teachers addObject:currentTeacher];
-			
-			
-			//checks the teacher's range and then matches it to a department based on that range
-			for (int i=0; i<[departments count]; i++) {
-				if (teacherRange.location>[[departments objectAtIndex:i] range].location && teacherRange.location<[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location) {
-					[currentTeacher setDepartment:[departments objectAtIndex:i]];
-					[[departments objectAtIndex:i] addTeacher:currentTeacher];
-					break;
-				}
-				
-				
-			}
-			
-			
-		}
-		
-		
-		
-		[regexTeachersEmail release];
-		
-		
+	
 		NSLog(@"the list of teachers: %@", teachers);
 		
 		
@@ -238,6 +191,8 @@
 		{
 			[delegate parser:self didFinishParsingDepartments:departments];
 		}
+		
+		
 	}
 	
 	//if the parser is not parsing departments, parse courses.
