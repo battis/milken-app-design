@@ -11,7 +11,7 @@
 
 @implementation CourseViewController
 
-@synthesize activityIndicator;
+@synthesize activityIndicator; webView;
 
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
@@ -26,6 +26,9 @@
 	
 	[self.view addSubview:activityIndicator];
 	return self;
+	
+	if (webView) {
+		webView = [webView dealloc];
 }
 
 
