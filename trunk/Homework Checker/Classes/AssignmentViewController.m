@@ -13,6 +13,7 @@
 
 - (id)init {
 	[super initWithNibName:@"AssignmentView" bundle:nil];
+	[self setWebView:[[UIWebView alloc] init]];
 	return self;
 }
 
@@ -72,6 +73,10 @@
 return YES;
 }
 
+//clear the webview
+-(void)clearView:(NSTimer *)timer{
+	[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
+}
 
 - (void)dealloc 
 {

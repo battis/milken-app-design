@@ -11,7 +11,7 @@
 
 @implementation CourseViewController
 
-@synthesize activityIndicator; webView;
+@synthesize activityIndicator;
 
 - (id)init {
 	[super initWithStyle:UITableViewStyleGrouped];
@@ -27,9 +27,8 @@
 	[self.view addSubview:activityIndicator];
 	return self;
 	
-	if (webView) {
-		[webView release];
-}
+	
+}	
 
 
 - (void)viewWillAppear:(BOOL)animated
@@ -44,6 +43,19 @@
 		[activityIndicator startAnimating];
 		[parser parseCourses:teacher];
 	}
+	
+	//if the assignment view exists and has a webview, wait for the view to slide over completely and then clear the webView
+	if (assignmentViewController) {
+		if ([assignmentViewController webView]) {
+			[NSTimer scheduledTimerWithTimeInterval:.35
+											 target:assignmentViewController
+										   selector:@selector(clearView:)
+										   userInfo:nil
+											repeats:NO];
+		}
+	}
+	
+	
 }
 
 - (void)viewDidLoad;
@@ -140,7 +152,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 }
 //Tells the parser when it is done parsing departments and what to do (NSMutableArray)
 -(void)parser:(Parser *)theParser didFinishParsingDepartments:(NSMutableArray *) theDepartments
-{}
+{
+}
 
 @end
 
