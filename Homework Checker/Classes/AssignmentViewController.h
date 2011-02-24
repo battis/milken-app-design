@@ -17,4 +17,6 @@
 @property (nonatomic,retain) UIWebView *webView;
 @property (retain) Course *course;
 
+-(void)clearView:(NSTimer *)timer;
+
 @end
