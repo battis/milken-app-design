@@ -60,7 +60,7 @@
 					<object class="IBUITextView" id="608170781">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{67, 381}, {186, 72}}</string>
+						<string key="NSFrame">{{67, 334}, {186, 72}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -160,7 +160,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABChgAAw+UAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABChgAAw9sAAA</bytes>
 					</object>
 				</object>
 			</object>
