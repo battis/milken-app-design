@@ -219,17 +219,20 @@
 		for (NSTextCheckingResult *matchCourses in matchesCourses){
 			
 			NSString *currentCourseUrlName = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org%@assignments/index", [htmlCheck substringWithRange:[matchCourses rangeAtIndex:2]]];
-			NSURL *currentCourseUrl = [[NSURL alloc] initWithString:currentCourseUrlName];
-			//PROBLEM: the range at index is wrong but any value of 1 or 4 crashes it
+			//added stringByAddingPercentEscapesUsingEncoding to deal with URLs that have spaces in them
+			NSURL *currentCourseUrl = [[NSURL alloc] initWithString:[currentCourseUrlName stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
 			NSString *currentCourseName = [htmlCheck substringWithRange:[matchCourses rangeAtIndex:5]];
 			NSLog(@"Courses %@ with URL %@", currentCourseName, currentCourseUrl);
-			Course *currentCourse = [[Course alloc] initWithName:currentCourseName
+			[[Course alloc] initWithName:currentCourseName
 														taughtBy:teacherBeingParsed
 												  assignmentPage:currentCourseUrl];
 			
-			NSLog(@"%@ teaches %@", [teacherBeingParsed name], [teacherBeingParsed courses]);
+		
 			
 		}		
+		
+		NSLog(@"%@ teaches %@", [teacherBeingParsed name], [teacherBeingParsed courses]);
+		
 		
 		
 		[regexCourses release];
@@ -254,6 +257,7 @@
 	teacherBeingParsed = teacherToBeParsed;
 	
 	NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@/index", [teacherToBeParsed userid]];
+	NSLog(@"THIS TEACHERS ID IS %@",[teacherToBeParsed userid]);
 	teacherSite = [[NSURL alloc]initWithString:url];
 	
 	NSURLRequest *courseRequest = [NSURLRequest requestWithURL:teacherSite
