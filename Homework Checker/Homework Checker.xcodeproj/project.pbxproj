@@ -25,6 +25,7 @@
 		5DC574E612DBC68C005000F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC574E512DBC68C005000F8 /* main.m */; };
 		5DC574F912DBC6F4005000F8 /* AssignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC574F812DBC6F4005000F8 /* AssignmentView.xib */; };
 		5DC5755D12DBC8ED005000F8 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC5755B12DBC8ED005000F8 /* Parser.m */; };
+		5DE9D2EC13088B90006C662B /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135651B61303455000EC5F53 /* SplashScreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -240,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE9D2EC13088B90006C662B /* SplashScreenViewController.m in Sources */,
 				5DC574CC12DBC635005000F8 /* AssignmentViewController.m in Sources */,
 				5DC574CD12DBC635005000F8 /* Course.m in Sources */,
 				5DC574CE12DBC635005000F8 /* Department.m in Sources */,
@@ -292,7 +294,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphoneos4.2;
 			};
 			name = Debug;
 		};
@@ -306,7 +308,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphoneos4.2;
 			};
 			name = Release;
 		};
