@@ -8,11 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@interface SplashScreenViewController : UIViewController
+{}
 
-@interface SplashScreenViewController : UIViewController {
-UIActivityIndicatorView *activityIndicator;
-}
-
-
-@property (retain) UIActivityIndicatorView *activityIndicator;
 @end

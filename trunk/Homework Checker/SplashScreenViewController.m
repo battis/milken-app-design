@@ -10,15 +10,9 @@
 
 @implementation SplashScreenViewController
 
-@synthesize activityIndicator;
-
 - (id)init {
 	[super initWithNibName:@"SplashScreenView" bundle:nil];
 	[[self navigationItem] setTitle:@"Homework Checker"];
-	[self setActivityIndicator:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray]];
-	[activityIndicator setCenter:CGPointMake([self view].frame.size.width/2,self.view.frame.size.height/2)];
-	
-	[self.view addSubview:activityIndicator];
 	return self;
 	
 }
@@ -27,9 +21,9 @@
 {
 	[super viewWillAppear:animated];
 	self.navigationItem.hidesBackButton = YES;
-	[activityIndicator startAnimating];
 	
 }
+
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
