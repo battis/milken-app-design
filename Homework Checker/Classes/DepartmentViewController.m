@@ -77,6 +77,7 @@
 - (void)dealloc {
 	[teacherViewController release];
 	[departments release];
+	[parser release];
     [super dealloc];
 }
 
@@ -154,7 +155,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 	[[self tableView] reloadData];
 	parsing = NO;
 	[[self navigationController] popToRootViewControllerAnimated:YES];
-	//[parser release];
 	/*[NSTimer scheduledTimerWithTimeInterval:0.1
 									 target:self
 								   selector:@selector(doneParsing:)
