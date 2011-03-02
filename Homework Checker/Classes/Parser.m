@@ -139,16 +139,16 @@
 		
 		/* Mr. Battis' full faculty info regex */
 		NSString *facultyInfoPattern = @"<td[^>]*>(\\s*<span[^>]*>\\s*)?([^<]*)(((</span>)|(<br />))\\s*)?\\s*</td>\\s*<td[^>]*>.*<a.*mailto:([^\"]*)[^>]*>.*</td>\\s*<td[^>]*>.*<a.*faculty.[^\\.]+.org/([a-z0-9]+)";
-		//NSLog(facultyInfoPattern);
+		// NSLog(facultyInfoPattern);
 		NSRegularExpression *facultyInfo =[[NSRegularExpression alloc] initWithPattern: facultyInfoPattern options:NSRegularExpressionCaseInsensitive error:&error];
 		NSArray *matchesFacultyInfo = [facultyInfo matchesInString:htmlCheck 
 															   options:0
 																 range:NSMakeRange(0,[htmlCheck length])];
-		NSLog(@"New regex had %d results (should be 91 -- Ken Lasaine has no web site).", [matchesFacultyInfo count]);
+		// NSLog(@"New regex had %d results (should be 91 -- Ken Lasaine has no web site).", [matchesFacultyInfo count]);
 		teachers = [[NSMutableArray alloc] init];
 		for (NSTextCheckingResult *matchFacultyInfo in matchesFacultyInfo)
 		{
-			NSLog(@"Full Name: %@; Email: %@; Username: %@",
+			// NSLog(@"Full Name: %@; Email: %@; Username: %@",
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:2]],
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:7]],
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:8]]);
@@ -181,7 +181,7 @@
 		[facultyInfo release];
 		[matchesFacultyInfo release];
 	
-		NSLog(@"the list of teachers: %@", teachers);
+		// NSLog(@"the list of teachers: %@", teachers);
 		
 		
 		
@@ -197,7 +197,7 @@
 	
 	//if the parser is not parsing departments, parse courses.
 	if (!parsingDepartments) {
-		NSLog(@"Look at me! I'm parsing courses for %@", [teacherBeingParsed name]);
+		// NSLog(@"Look at me! I'm parsing courses for %@", [teacherBeingParsed name]);
 		NSError *error = NULL;
 		NSString *htmlCheck = [[[NSString alloc] initWithData:milkenSiteData encoding:NSUTF8StringEncoding] autorelease];
 		
@@ -222,7 +222,7 @@
 			//added stringByAddingPercentEscapesUsingEncoding to deal with URLs that have spaces in them
 			NSURL *currentCourseUrl = [[NSURL alloc] initWithString:[currentCourseUrlName stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
 			NSString *currentCourseName = [htmlCheck substringWithRange:[matchCourses rangeAtIndex:5]];
-			NSLog(@"Courses %@ with URL %@", currentCourseName, currentCourseUrl);
+			// NSLog(@"Courses %@ with URL %@", currentCourseName, currentCourseUrl);
 			[[Course alloc] initWithName:currentCourseName
 														taughtBy:teacherBeingParsed
 												  assignmentPage:currentCourseUrl];
@@ -231,7 +231,7 @@
 			
 		}		
 		
-		NSLog(@"%@ teaches %@", [teacherBeingParsed name], [teacherBeingParsed courses]);
+		// NSLog(@"%@ teaches %@", [teacherBeingParsed name], [teacherBeingParsed courses]);
 		
 		
 		
@@ -253,11 +253,11 @@
 	NSURL *teacherSite;
 	//Take out the period and space in the teachers name
 	NSString *teacherOfCourseName = [teacherToBeParsed name];
-	NSLog(@"parseCourses teacher is %@ (%@)",teacherOfCourseName, [teacherToBeParsed userid]);
+	// NSLog(@"parseCourses teacher is %@ (%@)",teacherOfCourseName, [teacherToBeParsed userid]);
 	teacherBeingParsed = teacherToBeParsed;
 	
 	NSString *url = [[NSString alloc] initWithFormat:@"http://faculty.milkenschool.org/%@/index", [teacherToBeParsed userid]];
-	NSLog(@"THIS TEACHERS ID IS %@",[teacherToBeParsed userid]);
+	// NSLog(@"THIS TEACHERS ID IS %@",[teacherToBeParsed userid]);
 	teacherSite = [[NSURL alloc]initWithString:url];
 	
 	NSURLRequest *courseRequest = [NSURLRequest requestWithURL:teacherSite
@@ -277,7 +277,7 @@
 	connectionInProgress = [[NSURLConnection alloc] initWithRequest:courseRequest
 														   delegate:self
 												   startImmediately:YES];
-	NSLog(@"%@", teacherSite);
+	// NSLog(@"%@", teacherSite);
 	
 	[url release];
 	[teacherSite release];
