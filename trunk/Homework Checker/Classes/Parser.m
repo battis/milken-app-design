@@ -148,11 +148,11 @@
 		teachers = [[NSMutableArray alloc] init];
 		for (NSTextCheckingResult *matchFacultyInfo in matchesFacultyInfo)
 		{
-			// NSLog(@"Full Name: %@; Email: %@; Username: %@",
+			/* NSLog(@"Full Name: %@; Email: %@; Username: %@",
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:2]],
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:7]],
 				  [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:8]]);
-			
+			*/
 				NSString *teacherName = [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:2]];
 				NSString *teacherEmail = [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:7]];
 				NSString *userid = [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:8]];
