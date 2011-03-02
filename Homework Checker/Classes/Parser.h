@@ -26,7 +26,7 @@
 @property (readonly) NSMutableArray *departments;
 @property (readonly) NSMutableArray *teachers;
 @property (retain) Teacher *teacherBeingParsed;
-@property (retain) id<ParserDelegate> delegate;
+@property (assign) id<ParserDelegate> delegate;
 
 -(void)parseDepartments;
 -(void)parseCourses:(Teacher *)teacherToBeParsed;
