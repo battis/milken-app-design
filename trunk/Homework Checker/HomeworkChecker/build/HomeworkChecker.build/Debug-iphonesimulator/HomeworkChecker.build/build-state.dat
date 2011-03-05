@@ -1,0 +1,623 @@
+THomeworkChecker
+v7
+r0
+t321056354.088838
+cCheck dependencies
+cProcessInfoPlistFile /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/Info.plist HomeworkChecker-Info.plist
+cCompileXIB /Users/seth/Desktop/HomeworkChecker/MainWindow.xib
+cCompileXIB /Users/seth/Desktop/HomeworkChecker/RootViewController.xib
+cCpResource build/Debug-iphonesimulator/HomeworkChecker.app/icon.png icon.png
+cCpResource build/Debug-iphonesimulator/HomeworkChecker.app/Splash.png Splash.png
+cCompileXIB /Users/seth/Desktop/HomeworkChecker/SplashScreenView.xib
+cCompileXIB /Users/seth/Desktop/HomeworkChecker/AssignmentView.xib
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/main.o /Users/seth/Desktop/HomeworkChecker/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o /Users/seth/Desktop/HomeworkChecker/Classes/HomeworkCheckerAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Department.o /Users/seth/Desktop/HomeworkChecker/Classes/Department.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Teacher.o /Users/seth/Desktop/HomeworkChecker/Classes/Teacher.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Course.o /Users/seth/Desktop/HomeworkChecker/Classes/Course.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Parser.o /Users/seth/Desktop/HomeworkChecker/Classes/Parser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/TeacherViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/TeacherViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/CourseViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/CourseViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/AssignmentViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/AssignmentViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/SplashScreenViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/SplashScreenViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/RootViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker normal i386
+cGenerateDSYMFile /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app.dSYM /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker
+cTouch /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Users/seth/Desktop/HomeworkChecker/../../Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker v2/Splash.png
+c000000004D59A9AB0000000000045E34
+t1297721771
+s286260
+
+N/Users/seth/Desktop/HomeworkChecker/../../Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker v2/icon.png
+c000000004D728DDE00000000000030A6
+t1299353054
+s12454
+
+N/Users/seth/Desktop/HomeworkChecker/AssignmentView.xib
+c000000004D5851450000000000004D26
+t1297633605
+s19750
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/AssignmentViewController.h
+c000000004D6C066400000000000001FB
+t1298925156
+s507
+i<UIKit/UIKit.h>
+i"Course.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/AssignmentViewController.m
+c000000004D6C066600000000000007FB
+t1298925158
+s2043
+i"AssignmentViewController.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/Course.h
+c000000004D530D47000000000000021E
+t1297288519
+s542
+i<Foundation/Foundation.h>
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/Course.m
+c000000004D530F4100000000000005DC
+t1297289025
+s1500
+i"Course.h"
+i"Teacher.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/CourseViewController.h
+c000000004D53078E0000000000000267
+t1297287054
+s615
+i<UIKit/UIKit.h>
+i"Teacher.h"
+i"ParserDelegate.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/CourseViewController.m
+c000000004D6C0663000000000000107F
+t1298925155
+s4223
+i"CourseViewController.h"
+i"Course.h"
+i"AssignmentViewController.h"
+i"Parser.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/Department.h
+c000000004D49D9DD00000000000002A4
+t1296685533
+s676
+i<Foundation/Foundation.h>
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/Department.m
+c000000004D72930A0000000000000587
+t1299354378
+s1415
+i"Department.h"
+i"Teacher.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/HomeworkCheckerAppDelegate.h
+c000000004D72B63900000000000001E9
+t1299363385
+s489
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/HomeworkCheckerAppDelegate.m
+c000000004D72B6390000000000000AC5
+t1299363385
+s2757
+i"HomeworkCheckerAppDelegate.h"
+i"RootViewController.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/Parser.h
+c000000004D6EAB2B00000000000002C4
+t1299098411
+s708
+i<UIKit/UIKit.h>
+i"ParserDelegate.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/Parser.m
+c000000004D72B419000000000000268A
+t1299362841
+s9866
+i"Parser.h"
+i"Department.h"
+i"Teacher.h"
+i"Course.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/ParserDelegate.h
+c000000004D5067CF0000000000000174
+t1297115087
+s372
+i"Teacher.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/RootViewController.h
+c000000004D72B0850000000000000256
+t1299361925
+s598
+i<UIKit/UIKit.h>
+i"Parser.h"
+i"TeacherViewController.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/RootViewController.m
+c000000004D72B085000000000000178A
+t1299361925
+s6026
+i"RootViewController.h"
+i"SplashScreenViewController.h"
+i"Department.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/SplashScreenViewController.h
+c000000004D6DCEB0000000000000010D
+t1299041968
+s269
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/SplashScreenViewController.m
+c000000004D6EB2810000000000000440
+t1299100289
+s1088
+i"SplashScreenViewController.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/Teacher.h
+c000000004D5853C70000000000000372
+t1297634247
+s882
+i<Foundation/Foundation.h>
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/Teacher.m
+c000000004D5853C7000000000000065D
+t1297634247
+s1629
+i"Teacher.h"
+i"Course.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/TeacherViewController.h
+c000000004D49D9DE0000000000000185
+t1296685534
+s389
+i<UIKit/UIKit.h>
+i"Department.h"
+
+N/Users/seth/Desktop/HomeworkChecker/Classes/TeacherViewController.m
+c000000004D5C44E300000000000009A5
+t1297892579
+s2469
+i"TeacherViewController.h"
+i"Teacher.h"
+i"AssignmentViewController.h"
+i"CourseViewController.h"
+
+N/Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch
+c000000004D72B6390000000000000150
+t1299363385
+s336
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/seth/Desktop/HomeworkChecker/MainWindow.xib
+c000000004D72B6390000000000006014
+t1299363385
+s24596
+
+N/Users/seth/Desktop/HomeworkChecker/RootViewController.xib
+c000000004D7286C8000000000000445E
+t1299351240
+s17502
+
+N/Users/seth/Desktop/HomeworkChecker/Splash.png
+c000000004D59A9AB0000000000045E34
+t1297721771
+s286260
+
+N/Users/seth/Desktop/HomeworkChecker/SplashScreenView.xib
+c000000004D6C1B9B0000000000004E9A
+t1298930587
+s20122
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app
+t1299363554
+s374
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app.dSYM
+t1299363467
+s102
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/AssignmentView.nib
+t1299363554
+s1170
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker
+t1299363467
+s73612
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/Info.plist
+t1299363465
+s629
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/MainWindow.nib
+t1299363465
+s1517
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/PkgInfo
+t1299363465
+s8
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/RootViewController.nib
+t1299363465
+s979
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/Splash.png
+t1299363527
+s286260
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/SplashScreenView.nib
+t1299363528
+s1700
+
+N/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/icon.png
+t1299363527
+s12454
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/AssignmentViewController.o
+t1299363467
+s54592
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Course.o
+t1299363466
+s14856
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/CourseViewController.o
+t1299363467
+s54568
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Department.o
+t1299363466
+s16888
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/HomeworkChecker.LinkFileList
+c000000004D72B6890000000000000649
+t1299363465
+s1609
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o
+t1299363466
+s53032
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Parser.o
+t1299363466
+s33424
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/RootViewController.o
+t1299363467
+s52480
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/SplashScreenViewController.o
+t1299363467
+s40208
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Teacher.o
+t1299363466
+s19764
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/TeacherViewController.o
+t1299363467
+s47904
+
+N/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/main.o
+t1299363466
+s6296
+
+N/Users/seth/Desktop/HomeworkChecker/icon.png
+c000000004D728DDE00000000000030A6
+t1299353054
+s12454
+
+N/Users/seth/Desktop/HomeworkChecker/main.m
+c000000004D72B639000000000000016F
+t1299363385
+s367
+i<UIKit/UIKit.h>
+
+NHomeworkChecker-Info.plist
+c000000004D72B639000000000000038D
+t1299363385
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies321056353#321056353#0(0"0(0#1#0"8656193984#0"0#
+
+CCompileXIB /Users/seth/Desktop/HomeworkChecker/AssignmentView.xib
+s321056353.611987
+e321056354.082935
+r1
+xCompileXIB
+x/Users/seth/Desktop/HomeworkChecker/AssignmentView.xib
+lSLF07#2@29"CompileXIB AssignmentView.xib321056353#321056354#0(0"0(0#0#54"/Users/seth/Desktop/HomeworkChecker/AssignmentView.xib8652822624#577"    cd /Users/seth/Desktop/HomeworkChecker    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/AssignmentView.nib /Users/seth/Desktop/HomeworkChecker/AssignmentView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/seth/Desktop/HomeworkChecker/MainWindow.xib
+s321056265.161994
+e321056265.703687
+r1
+xCompileXIB
+x/Users/seth/Desktop/HomeworkChecker/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib321056265#321056265#0(0"0(0#0#50"/Users/seth/Desktop/HomeworkChecker/MainWindow.xib8653776352#569"    cd /Users/seth/Desktop/HomeworkChecker    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/MainWindow.nib /Users/seth/Desktop/HomeworkChecker/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/seth/Desktop/HomeworkChecker/RootViewController.xib
+s321056265.163035
+e321056265.660107
+r1
+xCompileXIB
+x/Users/seth/Desktop/HomeworkChecker/RootViewController.xib
+lSLF07#2@33"CompileXIB RootViewController.xib321056265#321056265#0(0"0(0#0#58"/Users/seth/Desktop/HomeworkChecker/RootViewController.xib8652911072#585"    cd /Users/seth/Desktop/HomeworkChecker    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/RootViewController.nib /Users/seth/Desktop/HomeworkChecker/RootViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/seth/Desktop/HomeworkChecker/SplashScreenView.xib
+s321056327.856106
+e321056328.484580
+r1
+xCompileXIB
+x/Users/seth/Desktop/HomeworkChecker/SplashScreenView.xib
+lSLF07#2@31"CompileXIB SplashScreenView.xib321056327#321056328#0(0"0(0#0#56"/Users/seth/Desktop/HomeworkChecker/SplashScreenView.xib8670212736#581"    cd /Users/seth/Desktop/HomeworkChecker    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/SplashScreenView.nib /Users/seth/Desktop/HomeworkChecker/SplashScreenView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/HomeworkChecker.app/Splash.png "../../Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker v2/Splash.png"
+r0
+
+CCpResource build/Debug-iphonesimulator/HomeworkChecker.app/Splash.png Splash.png
+s321056327.855227
+e321056327.933612
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/HomeworkChecker.app/Splash.png
+xSplash.png
+lSLF07#2@15"Copy Splash.png321056327#321056327#0(0"0(0#0#46"/Users/seth/Desktop/HomeworkChecker/Splash.png8670902112#467"    cd /Users/seth/Desktop/HomeworkChecker    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/seth/Desktop/HomeworkChecker/Splash.png /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app0#
+
+CCpResource build/Debug-iphonesimulator/HomeworkChecker.app/icon.png "../../Dropbox/Documents/Milken/Computer Application Design and Programming '10-'11/Homework Checker v2/icon.png"
+r0
+
+CCpResource build/Debug-iphonesimulator/HomeworkChecker.app/icon.png icon.png
+s321056327.854129
+e321056327.919799
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/HomeworkChecker.app/icon.png
+xicon.png
+lSLF07#2@13"Copy icon.png321056327#321056327#0(0"0(0#0#44"/Users/seth/Desktop/HomeworkChecker/icon.png8671142848#465"    cd /Users/seth/Desktop/HomeworkChecker    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/seth/Desktop/HomeworkChecker/icon.png /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/AssignmentViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/AssignmentViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056266.665738
+e321056267.426129
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/AssignmentViewController.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/AssignmentViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73115] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73115] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@96"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/AssignmentViewController.m321056266#321056267#0(200"distcc[73115] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73115] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#70"/Users/seth/Desktop/HomeworkChecker/Classes/AssignmentViewController.m8669598144#2203"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/AssignmentViewController.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/AssignmentViewController.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Course.o /Users/seth/Desktop/HomeworkChecker/Classes/Course.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056265.718069
+e321056266.589684
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Course.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/Course.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73084] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73084] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@78"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/Course.m321056265#321056266#0(200"distcc[73084] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73084] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#52"/Users/seth/Desktop/HomeworkChecker/Classes/Course.m8606404512#2167"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/Course.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Course.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/CourseViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/CourseViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056266.589810
+e321056267.292655
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/CourseViewController.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/CourseViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73110] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73110] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@92"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/CourseViewController.m321056266#321056267#0(200"distcc[73110] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73110] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#66"/Users/seth/Desktop/HomeworkChecker/Classes/CourseViewController.m8672076096#2195"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/CourseViewController.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/CourseViewController.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Department.o /Users/seth/Desktop/HomeworkChecker/Classes/Department.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056265.707159
+e321056266.719356
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Department.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/Department.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73078] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73078] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@82"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/Department.m321056265#321056266#0(200"distcc[73078] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73078] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#56"/Users/seth/Desktop/HomeworkChecker/Classes/Department.m8647402176#2175"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/Department.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Department.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o /Users/seth/Desktop/HomeworkChecker/Classes/HomeworkCheckerAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056265.705549
+e321056266.508348
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/HomeworkCheckerAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73076] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73076] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@98"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/HomeworkCheckerAppDelegate.m321056265#321056266#0(200"distcc[73076] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73076] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#72"/Users/seth/Desktop/HomeworkChecker/Classes/HomeworkCheckerAppDelegate.m8650561504#2207"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/HomeworkCheckerAppDelegate.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/HomeworkCheckerAppDelegate.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Parser.o /Users/seth/Desktop/HomeworkChecker/Classes/Parser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056265.723852
+e321056266.787558
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Parser.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/Parser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73086] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73086] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@78"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/Parser.m321056265#321056266#0(200"distcc[73086] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73086] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#52"/Users/seth/Desktop/HomeworkChecker/Classes/Parser.m8603268576#2167"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/Parser.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Parser.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/RootViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056266.719484
+e321056267.494178
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/RootViewController.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73125] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73125] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@90"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/RootViewController.m321056266#321056267#0(200"distcc[73125] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73125] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#64"/Users/seth/Desktop/HomeworkChecker/Classes/RootViewController.m8656217920#2191"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/RootViewController.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/RootViewController.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/SplashScreenViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/SplashScreenViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056266.668969
+e321056267.444144
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/SplashScreenViewController.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/SplashScreenViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73116] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73116] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@98"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/SplashScreenViewController.m321056266#321056267#0(200"distcc[73116] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73116] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#72"/Users/seth/Desktop/HomeworkChecker/Classes/SplashScreenViewController.m8667840992#2207"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/SplashScreenViewController.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/SplashScreenViewController.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Teacher.o /Users/seth/Desktop/HomeworkChecker/Classes/Teacher.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056265.712711
+e321056266.663371
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Teacher.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/Teacher.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73081] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73081] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@79"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/Teacher.m321056265#321056266#0(200"distcc[73081] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73081] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#53"/Users/seth/Desktop/HomeworkChecker/Classes/Teacher.m8646336128#2169"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/Teacher.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/Teacher.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/TeacherViewController.o /Users/seth/Desktop/HomeworkChecker/Classes/TeacherViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056266.508472
+e321056267.022013
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/TeacherViewController.o
+x/Users/seth/Desktop/HomeworkChecker/Classes/TeacherViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73105] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73105] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@93"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/Classes/TeacherViewController.m321056266#321056267#0(200"distcc[73105] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73105] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#67"/Users/seth/Desktop/HomeworkChecker/Classes/TeacherViewController.m8645824704#2197"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/Classes/TeacherViewController.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/TeacherViewController.o0#
+
+CDistributed-CompileC build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/main.o /Users/seth/Desktop/HomeworkChecker/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321056265.703819
+e321056266.668854
+r1
+xDistributed-CompileC
+xbuild/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/main.o
+x/Users/seth/Desktop/HomeworkChecker/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+odistcc[73075] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?
+odistcc[73075] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally
+lSLF07#2@68"Distribute compilation of /Users/seth/Desktop/HomeworkChecker/main.m321056265#321056266#0(200"distcc[73075] Warning: INCLUDE_SERVER_PORT not set - did you forget to run under 'pump'?distcc[73075] (dcc_build_somewhere) Warning: failed to get includes from include server, preprocessing locally0(0#0#42"/Users/seth/Desktop/HomeworkChecker/main.m8651047936#2155"    cd /Users/seth/Desktop/HomeworkChecker    setenv DISTCC_COMPILER "gcc version 4.2.1 (Apple Inc. build 5664)"    setenv DISTCC_HOSTS "--randomize Leviathan.local./6,lzo,cpp"    setenv DISTCC_SYSTEM "10.6.6 (10J567, i386)"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/distcc /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-generated-files.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-own-target-headers.hmap -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-all-target-headers.hmap -iquote /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/HomeworkChecker-project-headers.hmap -fpch-preprocess -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -I/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/include -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources/i386 -I/Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/DerivedSources -include /Users/seth/Desktop/HomeworkChecker/HomeworkChecker_Prefix.pch -c /Users/seth/Desktop/HomeworkChecker/main.m -o /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/main.o0#
+
+CGenerateDSYMFile /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app.dSYM /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker
+s321056267.534290
+e321056267.576473
+r1
+xGenerateDSYMFile
+x/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app.dSYM
+x/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker
+lSLF07#2@133"GenerateDSYMFile build/Debug-iphonesimulator/HomeworkChecker.app.dSYM build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker321056267#321056267#0(0"0(0#0#99"/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker8652040416#398"    cd /Users/seth/Desktop/HomeworkChecker    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker -o /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app.dSYM0#
+
+CLd /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker normal i386
+s321056267.494293
+e321056267.534171
+r1
+xLd
+x/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker
+xnormal
+xi386
+lSLF07#2@104"Link /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker321056267#321056267#0(0"0(0#0#0"8654152544#925"    cd /Users/seth/Desktop/HomeworkChecker    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -F/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator -filelist /Users/seth/Desktop/HomeworkChecker/build/HomeworkChecker.build/Debug-iphonesimulator/HomeworkChecker.build/Objects-normal/i386/HomeworkChecker.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/HomeworkChecker0#
+
+CProcessInfoPlistFile /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/Info.plist HomeworkChecker-Info.plist
+s321056265.155228
+e321056265.161877
+r1
+xProcessInfoPlistFile
+x/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/Info.plist
+xHomeworkChecker-Info.plist
+lSLF07#2@34"Process HomeworkChecker-Info.plist321056265#321056265#0(0"0(0#0#62"/Users/seth/Desktop/HomeworkChecker/HomeworkChecker-Info.plist8655761696#494"    cd /Users/seth/Desktop/HomeworkChecker    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility HomeworkChecker-Info.plist -genpkginfo /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app/Info.plist0#
+
+CTouch /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app
+s321056354.084327
+e321056354.088783
+r1
+xTouch
+x/Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app
+lSLF07#2@89"Touch /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app321056354#321056354#0(0"0(0#0#0"8649961536#280"    cd /Users/seth/Desktop/HomeworkChecker    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/seth/Desktop/HomeworkChecker/build/Debug-iphonesimulator/HomeworkChecker.app0#
+
