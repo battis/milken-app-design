@@ -31,7 +31,7 @@
 	NSURL *milkenSite = [NSURL URLWithString:@"http://www.milkenschool.org/usfaculty/"];
 	NSURLRequest *request = [NSURLRequest requestWithURL:milkenSite
 											 cachePolicy:NSURLRequestReloadIgnoringCacheData
-										  timeoutInterval:30];	
+										 timeoutInterval:30];	
 	if (connectionInProgress)
 	{
 		[connectionInProgress cancel];
@@ -78,7 +78,7 @@
 			counter = i;
 			// 2011-03-02 SDB: Why are we stopping at 17 characters?
 			if(counter == 17){
-			break;}
+				break;}
 		}
 		
 		
@@ -105,8 +105,8 @@
 		
 		//create the regular expression
 		NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexString
-																		  options:0
-																			error:&error];
+																			   options:0
+																				 error:&error];
 		
 		//run the regular expression and place the results into matches
 		NSArray *matches = [regex matchesInString:htmlCheck 
@@ -126,15 +126,15 @@
 			
 			[departments addObject:[[Department alloc] initWithName:departmentName range:departmentRange]];
 		}
-				
+		
 		/* Mr. Battis' full faculty info regex */
 		NSString *facultyInfoPattern = @"<td[^>]*>(\\s*<span[^>]*>\\s*)?([^<]*)(((</span>)|(<br />))\\s*)?\\s*</td>\\s*<td[^>]*>.*<a.*mailto:([^\"]*)[^>]*>.*</td>\\s*<td[^>]*>.*<a.*faculty.[^\\.]+.org/([a-z0-9]+)";
 		NSRegularExpression *facultyInfo =[NSRegularExpression regularExpressionWithPattern:facultyInfoPattern
-																					 options:NSRegularExpressionCaseInsensitive
-																					   error:&error];
+																					options:NSRegularExpressionCaseInsensitive
+																					  error:&error];
 		NSArray *matchesFacultyInfo = [facultyInfo matchesInString:htmlCheck 
-															   options:0
-																 range:NSMakeRange(0,[htmlCheck length])];
+														   options:0
+															 range:NSMakeRange(0,[htmlCheck length])];
 		for (NSTextCheckingResult *matchFacultyInfo in matchesFacultyInfo)
 		{
 			//NSString *teacherName = [htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:2]];
@@ -146,7 +146,7 @@
 			[currentTeacher setEmail:[htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:7]]];
 			//[currentTeacher setName:[htmlCheck substringWithRange:[matchFacultyInfo rangeAtIndex:2]]];
 			NSRange teacherRange = [htmlCheck rangeOfString:[NSString stringWithFormat:@"%@@", [currentTeacher userid]]];
-					
+			
 			//checks the teacher's range and then matches it to a department based on that range
 			for (int i=0; i<[departments count]; i++) {
 				if (teacherRange.location>[[departments objectAtIndex:i] range].location && teacherRange.location<[[departments objectAtIndex:i]range].length+[[departments objectAtIndex:i] range].location) {
@@ -157,10 +157,10 @@
 			}
 			[currentTeacher release];
 		}
-	
+		
 		
 		[htmlCheck release];
-
+		
 		
 		if(delegate)
 		{
@@ -180,8 +180,8 @@
 		NSString *regexString = [NSString stringWithFormat:@"(http://faculty.milkenschool.org)?((/%@/.*/)|(?!(/%@))/.*/)index[^>]*>([^<]*)</a>", [teacherBeingParsed userid], [teacherBeingParsed userid]];
 		
 		NSRegularExpression *regexCourses = [NSRegularExpression regularExpressionWithPattern:regexString
-																				 options:NSRegularExpressionCaseInsensitive
-																				   error:&error];
+																					  options:NSRegularExpressionCaseInsensitive
+																						error:&error];
 		
 		NSArray *matchesCourses = [regexCourses matchesInString:htmlCheck 
 														options:0
@@ -197,11 +197,11 @@
 			NSURL *currentCourseUrl = [NSURL URLWithString:[currentCourseUrlName stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
 			//NSString *currentCourseName = [htmlCheck substringWithRange:[matchCourses rangeAtIndex:5]];
 			// NSLog(@"Courses %@ with URL %@", currentCourseName, currentCourseUrl);
-			[[Course alloc] initWithName:[htmlCheck substringWithRange:[matchCourses rangeAtIndex:5]]
-														taughtBy:teacherBeingParsed
-												  assignmentPage:currentCourseUrl];
+			Course *currentCourse = [[Course alloc] initWithName:[htmlCheck substringWithRange:[matchCourses rangeAtIndex:5]]
+								taughtBy:teacherBeingParsed
+						  assignmentPage:currentCourseUrl];
+			[currentCourse release]; // marking the course as taught by a teacher causes it to be added to the teacher's list of courses
 			
-		
 			
 		}		
 		
@@ -256,7 +256,7 @@
 		[milkenSiteData release];
 	}
     [super dealloc];
-
+	
 }
 
 @end
