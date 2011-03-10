@@ -124,7 +124,9 @@
 			
 			NSRange departmentRange = NSMakeRange(departmentNameRange.location, nextDepartmentNameRange.location-departmentNameRange.location);
 			
-			[departments addObject:[[Department alloc] initWithName:departmentName range:departmentRange]];
+			Department *currentDepartment = [[Department alloc] initWithName:departmentName range:departmentRange];
+			[departments addObject:currentDepartment];
+			[currentDepartment release];
 		}
 		
 		/* Mr. Battis' full faculty info regex */
