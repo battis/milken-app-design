@@ -32,8 +32,10 @@
 	[self.navigationItem setTitle:@"Departments"];
 
 	/* show splash screen */
-	[[self navigationController] pushViewController:[[SplashScreenViewController alloc] init]
+	SplashScreenViewController *splash = [[SplashScreenViewController alloc] init];
+	[[self navigationController] pushViewController:splash
 										   animated:NO];
+	[splash release];
 	[NSTimer scheduledTimerWithTimeInterval:SPLASH_SCREEN_DELAY
 									 target:self
 								   selector:@selector(closeSplashScreen:)
