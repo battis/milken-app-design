@@ -168,7 +168,7 @@
 		{
 			[[self delegate] parser:self didFinishParsingDepartments:departments];
 		}
-		
+		[departments release];
 		
 	}
 	
