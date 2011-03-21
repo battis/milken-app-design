@@ -26,7 +26,8 @@
 		5D7ADF421322EE400053A618 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF401322EE400053A618 /* icon.png */; };
 		5D7ADF431322EE400053A618 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF411322EE400053A618 /* Splash.png */; };
 		5D7ADF491322EE600053A618 /* AssignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF481322EE600053A618 /* AssignmentView.xib */; };
-		5D9D59ED1337F6BD00088741 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D59EC1337F6BD00088741 /* Reachability.m */; };
+		5D9D5A2C1337F7D700088741 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D59EC1337F6BD00088741 /* Reachability.m */; };
+		5D9D5A3D1337F80100088741 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9D5A3C1337F80100088741 /* SystemConfiguration.framework */; };
 		5DA92881133166F300CA58C3 /* SplashScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA92880133166F300CA58C3 /* SplashScreenView.xib */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		5D7ADF481322EE600053A618 /* AssignmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentView.xib; sourceTree = "<group>"; };
 		5D9D59EB1337F6BD00088741 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5D9D59EC1337F6BD00088741 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5D9D5A3C1337F80100088741 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5DA92880133166F300CA58C3 /* SplashScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HomeworkChecker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HomeworkChecker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				5D9D5A3D1337F80100088741 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +149,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				5D9D5A3C1337F80100088741 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -256,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9D5A2C1337F7D700088741 /* Reachability.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* HomeworkCheckerAppDelegate.m in Sources */,
 				5D7ADF1A1322EDD10053A618 /* Department.m in Sources */,
@@ -267,7 +272,6 @@
 				5D7ADF371322EE030053A618 /* AssignmentViewController.m in Sources */,
 				5D7ADF381322EE030053A618 /* SplashScreenViewController.m in Sources */,
 				5D7ADF391322EE030053A618 /* RootViewController.m in Sources */,
-				5D9D59ED1337F6BD00088741 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
