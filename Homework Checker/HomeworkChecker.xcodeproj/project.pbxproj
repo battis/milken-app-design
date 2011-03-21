@@ -25,8 +25,9 @@
 		5D7ADF391322EE030053A618 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7ADF341322EE030053A618 /* RootViewController.m */; };
 		5D7ADF421322EE400053A618 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF401322EE400053A618 /* icon.png */; };
 		5D7ADF431322EE400053A618 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF411322EE400053A618 /* Splash.png */; };
-		5D7ADF451322EE450053A618 /* SplashScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF441322EE450053A618 /* SplashScreenView.xib */; };
 		5D7ADF491322EE600053A618 /* AssignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF481322EE600053A618 /* AssignmentView.xib */; };
+		5D9D59ED1337F6BD00088741 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D59EC1337F6BD00088741 /* Reachability.m */; };
+		5DA92881133166F300CA58C3 /* SplashScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA92880133166F300CA58C3 /* SplashScreenView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +62,10 @@
 		5D7ADF341322EE030053A618 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		5D7ADF401322EE400053A618 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5D7ADF411322EE400053A618 /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash.png; sourceTree = "<group>"; };
-		5D7ADF441322EE450053A618 /* SplashScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenView.xib; sourceTree = "<group>"; };
 		5D7ADF481322EE600053A618 /* AssignmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentView.xib; sourceTree = "<group>"; };
+		5D9D59EB1337F6BD00088741 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5D9D59EC1337F6BD00088741 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5DA92880133166F300CA58C3 /* SplashScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HomeworkChecker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HomeworkChecker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +86,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5D9D59EB1337F6BD00088741 /* Reachability.h */,
+				5D9D59EC1337F6BD00088741 /* Reachability.m */,
 				5D7ADF2A1322EE030053A618 /* View Controllers */,
 				5D7ADF161322EDD10053A618 /* Parsing */,
 				5D7ADF0F1322EDD10053A618 /* Object Model */,
@@ -124,8 +129,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5DA92880133166F300CA58C3 /* SplashScreenView.xib */,
 				5D7ADF481322EE600053A618 /* AssignmentView.xib */,
-				5D7ADF441322EE450053A618 /* SplashScreenView.xib */,
 				5D7ADF401322EE400053A618 /* icon.png */,
 				5D7ADF411322EE400053A618 /* Splash.png */,
 				5D7ADF281322EDF60053A618 /* RootViewController.xib */,
@@ -239,8 +244,8 @@
 				5D7ADF291322EDF60053A618 /* RootViewController.xib in Resources */,
 				5D7ADF421322EE400053A618 /* icon.png in Resources */,
 				5D7ADF431322EE400053A618 /* Splash.png in Resources */,
-				5D7ADF451322EE450053A618 /* SplashScreenView.xib in Resources */,
 				5D7ADF491322EE600053A618 /* AssignmentView.xib in Resources */,
+				5DA92881133166F300CA58C3 /* SplashScreenView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +267,7 @@
 				5D7ADF371322EE030053A618 /* AssignmentViewController.m in Sources */,
 				5D7ADF381322EE030053A618 /* SplashScreenViewController.m in Sources */,
 				5D7ADF391322EE030053A618 /* RootViewController.m in Sources */,
+				5D9D59ED1337F6BD00088741 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +310,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos4.2;
 			};
 			name = Debug;
 		};
@@ -318,7 +324,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos4.2;
 			};
 			name = Release;
 		};
