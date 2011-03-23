@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "SplashScreenViewController.h"
 #import "Department.h";
+#import "Reachability.h"
 
 #define SPLASH_SCREEN_DELAY 3 // seconds
 
@@ -23,6 +24,7 @@
 
 - (void)viewDidLoad
 {
+	
     [super viewDidLoad];
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -41,6 +43,19 @@
 								   selector:@selector(closeSplashScreen:)
 								   userInfo:nil
 									repeats:NO];
+	
+	Reachability *networkCheck = [Reachability reachabilityForInternetConnection];
+	if ([networkCheck currentReachabilityStatus] == 0) {
+		NSLog(@"NETWORK ERROR. EVERYBODY RUN!!");
+		UIAlertView *networkAlert = [[UIAlertView alloc] initWithTitle:@"Error" 
+															   message:@"This application requires an internet connection" 
+															  delegate:self 
+													 cancelButtonTitle:@"Ok"
+													 otherButtonTitles:nil];
+		[networkAlert show];
+		[networkAlert release];
+		
+	}
 
 	/* if no departments, parse them */
 	parser = [[Parser alloc] init];
@@ -118,6 +133,7 @@
 }
 
 
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -161,6 +177,7 @@
 */
 
 
+
 #pragma mark -
 #pragma mark Table view delegate
 
@@ -170,6 +187,8 @@
 	if (!teacherView) {
 		[self setTeacherView:[[TeacherViewController alloc] init]];
 	}
+	
+	
 	
 	[teacherView setDepartment:[departments objectAtIndex:[indexPath row]]];
 	
