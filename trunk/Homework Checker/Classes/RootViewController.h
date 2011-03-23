@@ -22,4 +22,6 @@
 @property (nonatomic, retain) NSMutableArray *departments;
 @property (nonatomic, retain) TeacherViewController *teacherView;
 
+-(void)showNetworkError;
+
 @end
