@@ -1,7 +1,7 @@
 //
-//  Copyright Milken Community High School All rights reserved.
-//  Based on the "Homepwer" application created by bhardy.
+//  Copyright Milk N' Cookies App Design All rights reserved.
 //
+
 
 
 #import <UIKit/UIKit.h>
