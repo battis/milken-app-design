@@ -28,6 +28,11 @@
 		5D7ADF491322EE600053A618 /* AssignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF481322EE600053A618 /* AssignmentView.xib */; };
 		5D9D5A2C1337F7D700088741 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D59EC1337F6BD00088741 /* Reachability.m */; };
 		5D9D5A3D1337F80100088741 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9D5A3C1337F80100088741 /* SystemConfiguration.framework */; };
+		5DA55251133A9C9300B47E9F /* Departments Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA55250133A9C9300B47E9F /* Departments Screenshot.png */; };
+		5DA55253133A9D1300B47E9F /* Teachers Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA55252133A9D1300B47E9F /* Teachers Screenshot.png */; };
+		5DA55257133A9D9500B47E9F /* Courses Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA55256133A9D9500B47E9F /* Courses Screenshot.png */; };
+		5DA55259133A9DC300B47E9F /* Assignments Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA55258133A9DC300B47E9F /* Assignments Screenshot.png */; };
+		5DA5525B133A9E3300B47E9F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA5525A133A9E3300B47E9F /* Default.png */; };
 		5DA92881133166F300CA58C3 /* SplashScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA92880133166F300CA58C3 /* SplashScreenView.xib */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +72,11 @@
 		5D9D59EB1337F6BD00088741 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5D9D59EC1337F6BD00088741 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5D9D5A3C1337F80100088741 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5DA55250133A9C9300B47E9F /* Departments Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Departments Screenshot.png"; sourceTree = "<group>"; };
+		5DA55252133A9D1300B47E9F /* Teachers Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Teachers Screenshot.png"; sourceTree = "<group>"; };
+		5DA55256133A9D9500B47E9F /* Courses Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Courses Screenshot.png"; sourceTree = "<group>"; };
+		5DA55258133A9DC300B47E9F /* Assignments Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Assignments Screenshot.png"; sourceTree = "<group>"; };
+		5DA5525A133A9E3300B47E9F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5DA92880133166F300CA58C3 /* SplashScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HomeworkChecker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HomeworkChecker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,12 +142,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5DA92880133166F300CA58C3 /* SplashScreenView.xib */,
-				5D7ADF481322EE600053A618 /* AssignmentView.xib */,
+				5DA55255133A9D5E00B47E9F /* Views */,
+				5DA55254133A9D4C00B47E9F /* Screenshots */,
 				5D7ADF401322EE400053A618 /* icon.png */,
 				5D7ADF411322EE400053A618 /* Splash.png */,
-				5D7ADF281322EDF60053A618 /* RootViewController.xib */,
-				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* HomeworkChecker-Info.plist */,
 			);
 			name = Resources;
@@ -192,6 +200,29 @@
 				5D7ADF341322EE030053A618 /* RootViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5DA55254133A9D4C00B47E9F /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				5DA5525A133A9E3300B47E9F /* Default.png */,
+				5DA55250133A9C9300B47E9F /* Departments Screenshot.png */,
+				5DA55252133A9D1300B47E9F /* Teachers Screenshot.png */,
+				5DA55256133A9D9500B47E9F /* Courses Screenshot.png */,
+				5DA55258133A9DC300B47E9F /* Assignments Screenshot.png */,
+			);
+			name = Screenshots;
+			sourceTree = "<group>";
+		};
+		5DA55255133A9D5E00B47E9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				5D7ADF281322EDF60053A618 /* RootViewController.xib */,
+				5DA92880133166F300CA58C3 /* SplashScreenView.xib */,
+				5D7ADF481322EE600053A618 /* AssignmentView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +281,11 @@
 				5D7ADF431322EE400053A618 /* Splash.png in Resources */,
 				5D7ADF491322EE600053A618 /* AssignmentView.xib in Resources */,
 				5DA92881133166F300CA58C3 /* SplashScreenView.xib in Resources */,
+				5DA55251133A9C9300B47E9F /* Departments Screenshot.png in Resources */,
+				5DA55253133A9D1300B47E9F /* Teachers Screenshot.png in Resources */,
+				5DA55257133A9D9500B47E9F /* Courses Screenshot.png in Resources */,
+				5DA55259133A9DC300B47E9F /* Assignments Screenshot.png in Resources */,
+				5DA5525B133A9E3300B47E9F /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
