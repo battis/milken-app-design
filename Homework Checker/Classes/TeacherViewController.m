@@ -7,6 +7,7 @@
 #import "Teacher.h"
 #import "AssignmentViewController.h"
 #import "CourseViewController.h"
+#import "Reachability.h"
 
 @implementation TeacherViewController
 
@@ -74,12 +75,25 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 	if (!courseViewController) {
 		courseViewController = [[CourseViewController alloc] init];
 	}
-	
+	Reachability *networkCheck = [Reachability reachabilityForInternetConnection];
+	if ([networkCheck currentReachabilityStatus] == 0) {
+		NSLog(@"NETWORK ERROR. EVERYBODY RUN!!");
+		UIAlertView *networkAlert = [[UIAlertView alloc] initWithTitle:@"Error" 
+															   message:@"This application requires an internet connection" 
+															  delegate:self 
+													 cancelButtonTitle:@"Ok"
+													 otherButtonTitles:nil];
+		[networkAlert show];
+		[networkAlert release];
+		
+		
+		
+	}else {
 	[courseViewController setTeacher:[[department teachers] objectAtIndex: [indexPath row]]];
 	
 	// Push it onto the top of the navigation controller's stack
 	[[self navigationController] pushViewController:courseViewController 
-										   animated:YES];
+										   animated:YES];}
 }
 
 
