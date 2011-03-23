@@ -1,10 +1,7 @@
 //
-//  SplashScreenViewController.m
-//  Homework Checker
+//  Copyright Milk N' Cookies App Design All rights reserved.
 //
-//  Created by (11) Aaron Daniel on 2/9/11.
-//  Copyright 2011 Milken Community High School. All rights reserved.
-//
+
 
 #import "SplashScreenViewController.h"
 
