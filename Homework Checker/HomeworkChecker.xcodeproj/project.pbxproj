@@ -23,7 +23,6 @@
 		5D7ADF371322EE030053A618 /* AssignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7ADF301322EE030053A618 /* AssignmentViewController.m */; };
 		5D7ADF381322EE030053A618 /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7ADF321322EE030053A618 /* SplashScreenViewController.m */; };
 		5D7ADF391322EE030053A618 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7ADF341322EE030053A618 /* RootViewController.m */; };
-		5D7ADF421322EE400053A618 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF401322EE400053A618 /* icon.png */; };
 		5D7ADF431322EE400053A618 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF411322EE400053A618 /* Splash.png */; };
 		5D7ADF491322EE600053A618 /* AssignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7ADF481322EE600053A618 /* AssignmentView.xib */; };
 		5D9D5A2C1337F7D700088741 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D59EC1337F6BD00088741 /* Reachability.m */; };
@@ -66,7 +65,6 @@
 		5D7ADF321322EE030053A618 /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
 		5D7ADF331322EE030053A618 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		5D7ADF341322EE030053A618 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		5D7ADF401322EE400053A618 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5D7ADF411322EE400053A618 /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash.png; sourceTree = "<group>"; };
 		5D7ADF481322EE600053A618 /* AssignmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentView.xib; sourceTree = "<group>"; };
 		5D9D59EB1337F6BD00088741 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -110,6 +108,13 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		1380DCF5133D3D6F007E294D /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,9 +147,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1380DCF5133D3D6F007E294D /* Icons */,
 				5DA55255133A9D5E00B47E9F /* Views */,
 				5DA55254133A9D4C00B47E9F /* Screenshots */,
-				5D7ADF401322EE400053A618 /* icon.png */,
 				5D7ADF411322EE400053A618 /* Splash.png */,
 				8D1107310486CEB800E47090 /* HomeworkChecker-Info.plist */,
 			);
@@ -277,7 +282,6 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				5D7ADF291322EDF60053A618 /* RootViewController.xib in Resources */,
-				5D7ADF421322EE400053A618 /* icon.png in Resources */,
 				5D7ADF431322EE400053A618 /* Splash.png in Resources */,
 				5D7ADF491322EE600053A618 /* AssignmentView.xib in Resources */,
 				5DA92881133166F300CA58C3 /* SplashScreenView.xib in Resources */,
