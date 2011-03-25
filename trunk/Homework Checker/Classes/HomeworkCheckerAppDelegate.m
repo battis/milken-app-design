@@ -1,10 +1,7 @@
 //
-//  HomeworkCheckerAppDelegate.m
-//  HomeworkChecker
+//  Copyright Milk N' Cookies App Design All rights reserved.
 //
-//  Created by Seth Battis on 3/5/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+
 
 #import "HomeworkCheckerAppDelegate.h"
 #import "RootViewController.h"
