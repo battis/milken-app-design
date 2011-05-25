@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1306F2B1138D9143009F7887 /* Icon 50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1306F2AD138D9143009F7887 /* Icon 50.png */; };
+		1306F2B2138D9143009F7887 /* Icon 72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1306F2AE138D9143009F7887 /* Icon 72.png */; };
+		1306F2B3138D9143009F7887 /* Icon 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 1306F2AF138D9143009F7887 /* Icon 114.png */; };
+		1306F2B4138D9143009F7887 /* Icon 512.png in Resources */ = {isa = PBXBuildFile; fileRef = 1306F2B0138D9143009F7887 /* Icon 512.png */; };
 		1D3623260D0F684500981E51 /* HomeworkCheckerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* HomeworkCheckerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -37,6 +41,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1306F2AD138D9143009F7887 /* Icon 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 50.png"; sourceTree = "<group>"; };
+		1306F2AE138D9143009F7887 /* Icon 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 72.png"; sourceTree = "<group>"; };
+		1306F2AF138D9143009F7887 /* Icon 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 114.png"; sourceTree = "<group>"; };
+		1306F2B0138D9143009F7887 /* Icon 512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 512.png"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* HomeworkCheckerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeworkCheckerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* HomeworkCheckerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeworkCheckerAppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +121,10 @@
 		1380DCF5133D3D6F007E294D /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				1306F2AD138D9143009F7887 /* Icon 50.png */,
+				1306F2AE138D9143009F7887 /* Icon 72.png */,
+				1306F2AF138D9143009F7887 /* Icon 114.png */,
+				1306F2B0138D9143009F7887 /* Icon 512.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -294,6 +306,10 @@
 				5DA55259133A9DC300B47E9F /* Assignments Screenshot.png in Resources */,
 				5DA5525B133A9E3300B47E9F /* Default.png in Resources */,
 				5D3DB623133D412F00DBA55C /* Spash Screen Screenshot.png in Resources */,
+				1306F2B1138D9143009F7887 /* Icon 50.png in Resources */,
+				1306F2B2138D9143009F7887 /* Icon 72.png in Resources */,
+				1306F2B3138D9143009F7887 /* Icon 114.png in Resources */,
+				1306F2B4138D9143009F7887 /* Icon 512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
