@@ -320,10 +320,40 @@ i<Availability.h>
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Icon 114.png
+c000000004D8D082F00000000000071DA
+t1301088303
+s29146
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Icon 50.png
+c000000004D8D065600000000000020AC
+t1301087830
+s8364
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Icon 512.png
+c000000004D8D06620000000000078868
+t1301087842
+s493672
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Icon 72.png
+c000000004D8D04E900000000000035E6
+t1301087465
+s13798
+
 N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/MainWindow.xib
 c000000004D754ED00000000000006014
 t1299533520
 s24596
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Milken Icon 50.png
+c000000004D8D050500000000000020AC
+t1301087493
+s8364
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Milken Icon 512.png
+c000000004D8D053D0000000000078868
+t1301087549
+s493672
 
 N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/RootViewController.xib
 c000000004D754ED0000000000000445E
@@ -346,8 +376,8 @@ t1301085295
 s22113
 
 N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app
-t1301085303
-s578
+t1301343961
+s612
 
 N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app.dSYM
 t1301085303
@@ -381,6 +411,22 @@ N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/
 t1301085303
 s81728
 
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app/Icon 114.png
+t2
+s0
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app/Icon 50.png
+t2
+s0
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app/Icon 512.png
+t2
+s0
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app/Icon 72.png
+t2
+s0
+
 N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app/Info.plist
 t1299533526
 s629
@@ -388,6 +434,14 @@ s629
 N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app/MainWindow.nib
 t1299533527
 s1517
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app/Milken Icon 50.png
+t2
+s0
+
+N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app/Milken Icon 512.png
+t2
+s0
 
 N/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app/PkgInfo
 t1299533526
@@ -1037,6 +1091,24 @@ xDepartments Screenshot.png
 lSLF07#2@31"Copy Departments Screenshot.png322778102#322778102#0(0"0(0#0#77"/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Departments Screenshot.png32088581143724132#534"    cd "/Users/23203/Dropbox/Aaron Daniel/Homework Checker"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/23203/Dropbox/Aaron Daniel/Homework Checker/Departments Screenshot.png" "/Users/23203/Dropbox/Aaron Daniel/Homework Checker/build/Debug-iphonesimulator/HomeworkChecker.app"0#
 
 CCpResource "build/Debug-iphonesimulator/HomeworkChecker.app/Fuller Clock Hero.png" "Fuller Clock Hero.png"
+r0
+
+CCpResource "build/Debug-iphonesimulator/HomeworkChecker.app/Icon 114.png" "Icon 114.png"
+r0
+
+CCpResource "build/Debug-iphonesimulator/HomeworkChecker.app/Icon 50.png" "Icon 50.png"
+r0
+
+CCpResource "build/Debug-iphonesimulator/HomeworkChecker.app/Icon 512.png" "Icon 512.png"
+r0
+
+CCpResource "build/Debug-iphonesimulator/HomeworkChecker.app/Icon 72.png" "Icon 72.png"
+r0
+
+CCpResource "build/Debug-iphonesimulator/HomeworkChecker.app/Milken Icon 50.png" "Milken Icon 50.png"
+r0
+
+CCpResource "build/Debug-iphonesimulator/HomeworkChecker.app/Milken Icon 512.png" "Milken Icon 512.png"
 r0
 
 CCpResource "build/Debug-iphonesimulator/HomeworkChecker.app/Teachers Screenshot.png" "Teachers Screenshot.png"
